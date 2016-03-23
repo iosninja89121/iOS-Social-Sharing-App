@@ -1,0 +1,1230 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Social Network </title>
+	
+	<meta name="description" content="Social Network Project Documentation">
+	<meta name="author" content="Eric Schanet">
+	<meta name="copyright" content="Eric Schanet">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2015-07-09T00:00:00+02:00">
+	
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	
+	
+	
+	<script src="assets/js/jquery.js"></script>
+	
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	
+	<script>document.createElement('section');var duration='500',easing='swing';</script>
+	<script src="assets/js/script.js"></script>
+	
+	<style>
+		html{background-color:#EEEEEE;color:#383838;}
+		::-moz-selection{background:#333636;color:#00DFFC;}
+		::selection{background:#333636;color:#00DFFC;}
+		#documenter_sidebar #documenter_logo{background-image:url();}
+		a{color:#008C9E;}
+		.btn {
+			border-radius:3px;
+		}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #008C9E, #006673);
+			  background-image: -ms-linear-gradient(top, #008C9E, #006673);
+			  background-image: -webkit-gradient(linear, 0 0, 0 008C9E%, from(#343838), to(#006673));
+			  background-image: -webkit-linear-gradient(top, #008C9E, #006673);
+			  background-image: -o-linear-gradient(top, #008C9E, #006673);
+			  background-image: linear-gradient(top, #008C9E, #006673);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#008C9E', endColorstr='#006673', GradientType=0);
+			  border-color: #006673 #006673 #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #008C9E #008C9E #bfbfbf;
+		  background-color: #006673;
+		}
+		hr{border-top:1px solid #D4D4D4;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#343838;color:#FFFFFF;}
+		#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #494F4F;-moz-text-shadow:1px 1px 0px #494F4F;text-shadow:1px 1px 0px #494F4F;}
+		#documenter_sidebar ul{border-top:1px solid #212424;}
+		#documenter_sidebar ul a{border-top:1px solid #494F4F;border-bottom:1px solid #212424;color:#FFFFFF;}
+		#documenter_sidebar ul a:hover{background:#333636;color:#00DFFC;border-top:1px solid #333636;}
+		#documenter_sidebar ul a.current{background:#333636;color:#00DFFC;border-top:1px solid #333636;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body class="documenter-project-social-network-">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+				
+			<li><a href="#preliminaries" title="PRELIMINARIES">PRELIMINARIES</a></li>
+			<li><a href="#first_steps" title="FIRST STEPS">FIRST STEPS</a></li>
+			<li><a href="#classes" title="CLASSES">CLASSES</a>
+				<ul>
+					<li><a href="#classes_launchscreen">LaunchScreen</a>
+					<li><a href="#classes_login_and_signup">Login and Signup</a>
+					<li><a href="#classes_terms_of_service">Terms of Service</a>
+					<li><a href="#classes_edit_and_complete_the_user_39s_profile">Edit and complete the user&#39;s profile</a>
+					<li><a href="#classes_brhomeviewcontroller_and_tabbarcontroller">HomeViewController and TabbarController</a>
+					<li><a href="#classes_bresphotoheaderview">ESPhotoHeaderView</a>
+					<li><a href="#classes_bresphotofooterview">ESPhotoFooterView</a>
+					<li><a href="#classes_bresphotocell">ESPhotoCell</a>
+					<li><a href="#classes_esphotodetailsviewcontroller">ESPhotoDetailsViewController</a>
+					<li><a href="#classes_esphotodetailsheaderview_and_esvideodetailsheaderview">ESPhotoDetailsHeaderView and ESVideoDetailsHeaderView</a>
+					<li><a href="#classes_esphotodetailsfooterview">ESPhotoDetailsFooterView</a>
+					<li><a href="#classes_the_comments_esbasetextcell">The comments - ESBaseTextCell</a>
+					<li><a href="#classes_profile_page">Profile page</a>
+					<li><a href="#classes_taking_a_photo_or_video">Taking a photo or video</a>
+					<li><a href="#classes_messenger">Messenger</a>
+					<li><a href="#classes_esmessagecell">ESMessageCell</a>
+					<li><a href="#classes_esfindfriendsviewcontroller">ESFindFriendsViewController</a>
+					<li><a href="#classes_popular_posts">Popular posts</a>
+					<li><a href="#classes_settings">Settings</a>
+					<li><a href="#classes_logout">Logout</a>
+				</ul>
+			</li>
+			<li><a href="#localization" title="LOCALIZATION">LOCALIZATION</a></li>
+			<li><a href="#reskinning" title="RESKINNING">RESKINNING</a></li>
+			<li><a href="#checklist" title="CHECKLIST">CHECKLIST</a></li>
+			<li><a href="#dependencies" title="DEPENDENCIES">DEPENDENCIES</a></li>
+			<li><a href="#license" title="LICENSE">LICENSE</a></li>
+
+		</ul>
+		<div id="documenter_copyright">Copyright Eric Schanet 2015<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v2.0</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover">
+	<h1>Social Network </h1>
+	
+	<div id="documenter_buttons">
+		
+	</div>
+	<hr>
+	<ul>
+	<li>created: 05/20/2015</li>
+	<li>latest update: 07/9/2015</li>
+	<li>by: Eric Schanet</li>
+	<li><a href=""></a></li>
+	<li>email: <a href="mailto:&#101;&#114;&#105;&#99;&#64;&#110;&#101;&#116;&#122;&#119;&#105;&#101;&#114;&#107;&#46;&#108;&#117;">&#101;&#114;&#105;&#99;&#64;&#110;&#101;&#116;&#122;&#119;&#105;&#101;&#114;&#107;&#46;&#108;&#117;</a></li>
+	</ul>
+	<p>Congratulations for purchasing the Social Network project. This documentation guides you through the setup and explains, step by step, the basics of the code, so that you can modify and customise it easily. </p>
+	</section>
+	
+	<section id="preliminaries">
+	<div class="page-header"><h3>PRELIMINARIES</h3><hr class="notop"></div>
+<p>
+	This project has been developped during 2014, and is originally a social network for Luxembourg, my home country. It has been published in August 2014 under the name of <a href="http://www.netzwierk.lu">Netzwierk</a>, meaning &quot;Network&quot; in luxembourgish. After a certain number of enhancements and updates, we have decided to make the source code available to other developers, so that they can create their own social network.&nbsp;</p>
+<p>
+	The project uses <a href="http://www.parse.com">Parse</a>&nbsp;as backend - a service that lets you host your data and essentially spares you of the whole server-side programmation, you don&#39;t need to write a single line of server-side code (PHP, etc.). This is a huge advantage, because you, as a developer, can completely focus on creating a wonderful user interface and experience, without having to think much about data modelling - you send your data to parse, and they store it for you. Fortunately, Parse has a great free plan, where you can store 20GB of files, 20GB of database and even transfer 1TB of data - for free! This means you have enough space for your users and don&#39;t need to host expensive servers. Additionally, Parse offers a Push Notification service (which is really cool for a social network). Concerning the login, we also make use of the <a href="https://developers.facebook.com/docs/ios">Facebook SDK</a>, because we do not only offer a classic username/password login, but also a Facebook login via Facebook button.</p>
+<p>
+	For the Messenger in our social network, we decided to use&nbsp;<a href="http://www.firebase.com">Firebase</a> alongside with Parse. Roughly, we store the messages on Firebase but the proper chatrooms on Parse. This has some very good reasons, it reduces the latency of the messenger and allows us to integrate read and delivered receipts.&nbsp;</p>
+<p>
+	In the folder you have downloaded are two files called&nbsp;<em>Documentation.html&nbsp;</em>and&nbsp;<em>Documentation.pdf</em>. These files are a complete documentation of the whole source code, simply double click on the .html file and the documentation should open in your browser. In case the .html documentation doesn&#39;t work, use the .pdf documentation (although the layout of the .html version is much better). Nearly every method that is not a delegate method from the iOS or Parse SDK and practically every declared variable is explained in this documentation.</p>
+<p>
+	The next sections will guide you through the basic setup, explain you the functional principle of the project and tell you what you have to know about this social network and its dependencies. There are, however, a few things I&#39;d like to mention here, because you need to know them in order to understand the code. The project contains three very important helper classes: the<em>&nbsp;ESConstants</em>, the <em>ESUtility</em>&nbsp;and the<em> ESCache&nbsp;</em>class.&nbsp;</p>
+<p>
+	&bull; The&nbsp;<strong>ESConstants</strong>&nbsp;files contain all the important constants for the whole project. Most of the strings you find there are related to Parse and the datamodel we use to store our data. You have to understand that, although Parse.com is messing around with the data for us, we have to store the data efficiently and with a clever system so that we can gather any data we need at any moment and without much effort. Let&#39;s look for example at the user class in Parse.com. A &nbsp;model user has a unique objectId, a username, a mail adress, a password, a display name, a lower version of the display name, maybe a facebookID, etc. You see, there are lots of keys we need to assign to a user - and these keys have unique names. Thus, we define these keys in the&nbsp;<em>ESConstants</em> class, avoiding to get lost confused while using them.&nbsp;<br>
+	Here is an example, can you guess what we need this key for?&nbsp;</p>
+<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+	<span style="font-variant-ligatures: no-common-ligatures; color: #3495af">NSString</span> *<span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">const</span> kESUserDisplayNameKey &nbsp; = <span style="font-variant-ligatures: no-common-ligatures; color: #b4261a">@&quot;displayName&quot;</span>;</p>
+<div>
+	&nbsp;</div>
+<div>
+	&bull; The&nbsp;<strong>ESUtility&nbsp;</strong>is, obviously, a utility class where we define public methods that are oftenly used. An example is following a user:</div>
+<div>
+	&nbsp;</div>
+<div>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		+ (<span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">void</span>)followUserInBackground:(<span style="font-variant-ligatures: no-common-ligatures; color: #3495af">PFUser</span> *)user block:(<span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">void</span> (^)(<span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">BOOL</span> succeeded, <span style="font-variant-ligatures: no-common-ligatures; color: #3495af">NSError</span> *error))completionBlock;</p>
+	<div>
+		&nbsp;</div>
+</div>
+<p>
+	&bull; The&nbsp;<strong>ESCache</strong>&nbsp;files define methods we use for caching purposes. Our users may not have unlimited data volume or a very stable connection, so we want to minimize the use of internet connection. Therefore, we try to cache every query and check the cache everytime before we use an active internet connection. This reduces also the amount of times the user has to face empty viewcontrollers because we can always display old results from the cache before updating to the new ones.&nbsp;</p>
+<p>
+	One last general notice before we begin - most of the time I denote files and classes by writing their names in italics, for example&nbsp;<em>ESConstants.m</em> file. The folder in which these files are lying will be denoted by the following procedure:&nbsp;<em>SocialNetwork &gt; Supporting Files&nbsp;</em>folder. What I mean is that the&nbsp;<em>ESConstants.m&nbsp;</em>file is in the&nbsp;<em>Supporting Files&nbsp;</em>folder which is a subfolder of the&nbsp;<em>SocialNetwork&nbsp;</em>folder. Alright? Let&#39;s go!</p>
+</section>
+<section id="first_steps">
+	<div class="page-header"><h3>FIRST STEPS</h3><hr class="notop"></div>
+<p>
+	Obviously, the first thing to do, is to open the project. You will find the .xcodeproj file in the same folder you found the documentation, double click the file, and XCode should open you the well-known project window.&nbsp;</p>
+<p>
+	<img alt="" src="http://i.imgur.com/2Pxrogr.png?1" style="width: 600px; height: 416px;"></p>
+<p>
+	Don&#39;t be overwhelmed by the number of files in the project, it is a complete social network, so there is a certain number of different classes. Instead, immediately try to run the application for the very first time on your device or on the simulator. It should work without any problems. If you do encounter problems you can&#39;t solve on your own, please don&#39;t hesitate to contact me. Normally, you shouldn&#39;t encounter any problems, and the project should run properly, without having changed anything. In that case, you&#39;ll see the app on your device (or simulator) - you can begin to navigate through it, become familiar with it, but we need to change some things before you can really call this social network your own.</p>
+<p>
+	We&#39;ll start with integrating your own Parse app.&nbsp;<br>
+	&nbsp;</p>
+<h3>
+	Parse Integration</h3>
+<p>
+	At the moment, you still run the app with my preset database on my Parse.com account. You need to register yourself at Parse.com, and create a new app (the name is your choice). Once you&#39;ve done that, you should familiarize yourself a bit with Parse and its databrowser (currently empty)</p>
+<p>
+	Navigate to the &#39;Keys&#39; section on the left (right under the &#39;Settings&#39; section). There, you&#39;ll have to copy the &#39;APPLICATION ID&#39; and the &#39;CLIENT KEY&#39;. In your XCode project again, navigate to the <em>AppDelegate.m</em>&nbsp;file which is in the <em>SocialNetwork</em> folder in the project navigator. You&#39;ll see the &#39;application:didFinishLaunchingWithOptions&#39; method in the<em> AppDelegate.m</em>. In the beginning of the method is mentioned an APPLICATION ID and a CLIENT KEY - exchange these keys with the ones you have copied from your app&#39;s settings on Parse.com:</p>
+<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(180, 38, 26);">
+	<span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp; &nbsp; [</span><span style="font-variant-ligatures: no-common-ligatures; color: #3495af">Parse</span><span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span><span style="font-variant-ligatures: no-common-ligatures; color: #3495af">setApplicationId</span><span style="font-variant-ligatures: no-common-ligatures; color: #000000">:</span>@&quot;YOUR_APPLICATION_KEY&quot;<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span><span style="font-variant-ligatures: no-common-ligatures; color: #3495af">clientKey</span><span style="font-variant-ligatures: no-common-ligatures; color: #000000">:</span>@&quot;YOUR_CLIENT_KEY&quot;<span style="font-variant-ligatures: no-common-ligatures; color: #000000">]; &nbsp; &nbsp;</span></p>
+<div>
+	<br>
+	Run the project again, there should be no problem at all (except for the facebook login). To clarify - what you&#39;ve done now, is giving your project another backend app on parse, which means that your app now gets its data from another databrowser, your own databrowser (and not the one I have preset) because you want to have control over the data, don&#39;t you?</div>
+<p>
+	We&#39;re nearly done with the Parse.com part, the last thing to do is connect our Parse app with the Facebook login in the project. Therefore, go to the <a href="https://developers.facebook.com">developers page</a> of Facebook.<br>
+	&nbsp;</p>
+<h3>
+	Facebook Integration</h3>
+<p>
+	Create a new app on the developers page of Facebook (again, the name is your choice). Once you&#39;ve done that, you&#39;ll be presented with the dashboard view of the Facebook app. In this view copy the APP ID and the APP SECRET keys and, in your XCode project, navigate to the <em>Info.plist</em>&nbsp;file, which is in the <em>SocialNetwork &gt; Supporting Files</em> folder in the project navigator.</p>
+<p>
+	<img alt="" src="http://i.imgur.com/deverXu.png?1" style="width: 600px; height: 172px;"></p>
+<p>
+	<br>
+	In the <em>Info.plist</em> file you have to change three things:</p>
+<p style="margin-left: 40px;">
+	&bull; the &#39;FacebookAppID&#39; value should match you APP ID you copied from the Facebook developers page<br>
+	&bull; the &#39;Facebook Display Name&#39; value should match the display name you chose for your app on the Facebook developers page<br>
+	&bull; in the &#39;URL Types&#39; key, you&#39;ll find an &#39;Item 0&#39; with an &#39;URL Schemes&#39; key. In this key, change the value for &#39;Item 0&#39; &nbsp;to match your custom url scheme. Normally, this is &#39;fbYOUR_APP_ID&#39;.</p>
+<p style="margin-left: 40px;">
+	<img alt="" src="http://i.imgur.com/mqKTQAD.png?2" style="width: 500px; height: 118px;"></p>
+<p>
+	Back to the Facebook developers page. Go to the Settings tab of your Facebook app and add a new platform. Choose iOS as platform and enter your bundle ID (per default eric.SocialNetwork, but you should change this to match your own), as well as the URL Scheme you jsut created in the&nbsp;<em>Info.plist</em>. Don&#39;t forget to save the changes.</p>
+<p>
+	<img alt="" src="http://i.imgur.com/lBwnbgb.png?1" style="width: 600px; height: 396px;"></p>
+<p>
+	Now back to Parse.com. In the settings tab of you app&#39;s dashboard on Parse.com, navigate to the &#39;Authentication&#39; section. Uncheck the &#39;new authentication methods by default&#39; setting, as well as the &#39;Anonymous users&#39; setting, but allow &#39;password and username-based authentication&#39; (we want the users to have a possibility to login besides the Facebook loging button, don&#39;t we?).&nbsp;<br>
+	Scroll down to the &#39;Facebook authentication&#39; part, check the &#39;allow Facebook authentication&#39; checkbox, and add your Facebook app (by entering the copied APP ID and APP SECRET).&nbsp;</p>
+<p>
+	<img alt="" src="http://i.imgur.com/spyReVZ.png?2" style="width: 600px; height: 219px;"></p>
+<p>
+	That&#39;s it. Run your project again, and try to login with Facebook (only on your physical device). If you&#39;ve setup your Facebook profile on your device, you&#39;ll be asked to grant Facebook some basic permissions and once you&#39;ve done that, you&#39;re ready to go an are signed up to the social network.</p>
+<p>
+	We now cope with the remaining Firebase part.<br>
+	&nbsp;</p>
+<h3>
+	Firebase Integration</h3>
+<p>
+	As already mentioned, this project uses Firebase to store the actual messages you write another user via the messenger in the app. That means that you need to register yourself at <a href="http://www.firebase.com">Firebase.com</a>&nbsp;and create a new app with your own custom and fancy name. After finishing the registration and creating your own app, go to the app&#39;s dashboard and copy the link of your safari&#39;s window (normally it will be something like https://YOUR_APP_NAME.firebase.com). Now go to your XCode Project and navigate to the <em>ESConstants.m</em>&nbsp;file, which is in the <em>SocialNetwork &gt; Supporting Files&nbsp;</em>folder&nbsp;- there you have to replace the &#39;kESChatFirebaseCrendetialKey&#39; with your copied link:</p>
+<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+	<span style="font-variant-ligatures: no-common-ligatures; color: #3495af">NSString</span> *<span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">const</span> kESChatFirebaseCredentialKey &nbsp;= &nbsp;<span style="font-variant-ligatures: no-common-ligatures; color: #b4261a">@&quot;https://YOUR_APP_NAME.firebaseio.com&quot;</span>;</p>
+<p>
+	Run your app again, and send some test messages to any user. You should see them in your databrowser on Firebase.com. This is where your messages will be saved.</p>
+<p>
+	The last part to do, is messing around with the Parse Push Notifications. That&#39;s what we&#39;ll do in the following steps.</p>
+<p>
+	&nbsp;</p>
+<h3>
+	Parse Push Notifications</h3>
+<p>
+	But first some important things about push notifications by Parse. First of all, we need to register our app for push notifications at Parse.com and in the iOS Developper Center from Apple (we&#39;ll do that in a few moments, stay calm).<br>
+	The next important thing is, that we basically have two possibilities to send pushes from Parse in an iOS project. The first one is to do it from inside the source code, this is a so-called &#39;client-side&#39; push because the user (client) creates the push from inside the app (by liking or commenting a photo, for example). This method is hardcoded in the source code and therefore potentially a bit more insecure than method two: the Cloud Code Push Notification. Parse allows you not only to store data but also Javascript code on their servers, which will NOT be in your app, but only on the servers. This comes with one great advantage: In case an offender modifies the source code of your app (yes, this can actually happen), he will not be able to repeatedly trigger the push notification code, because there simply is none in the app&#39;s source code, it&#39;s all server-based. That&#39;s cool, isn&#39;t it? For sensitive code snippets, it&#39;s always a good idea to run them on the cloud and not in the app itself. Keep that in mind.</p>
+<p>
+	Now back to the project - in this project I have used both methods. The second one (CloudCode) for the Notifications that will be triggered when someone mentions you in a comment, likes or comments your photos/videos or follows you - the moment that these activities are stored on Parse.com, the respective CloudCode parts are triggered, and the Notifications are send to all the registered devices of the respective recipients.&nbsp;<br>
+	The first method is used in the Messenger of the social network. Why use this method if CloudCode is safer? Because it isn&#39;t trivial at all to implement these Notifications in the CloudCode because of the fact, that the actual messages are not stored on Parse.com but on the faster Firebase.com, allowing to reduce the latency substantially. This means, that the notifications that are triggered, when someone sends you a message, are client-based, because they&#39;re triggered from within the app&#39;s source code and not from CloudCode on the servers. Thus, you&#39;ll have to ensure, that the &#39;Client pushes&#39; are checked (enabled) in your app&#39;s push settings on Parse.com.&nbsp;</p>
+<p>
+	<img alt="" src="http://i.imgur.com/Ce60cYC.png?1" style="width: 600px; height: 141px;"></p>
+<p>
+	Finally, after these explanations, you&#39;re ready to setup the Push Notifications and actually understand how they work in the app. Parse has an excellent <a href="https://parse.com/tutorials/ios-push-notifications">Quick Guide for iOS Push Notifications</a>, which guides you through the (a bit complicated) setup. Basically, you have to generate some signing certificates and enable Push Services in your iOS Dev Center from Apple. This is the moment to choose your app&#39;s Bundle ID and replace the old &#39;eric.SocialNetwork&#39; Bundle ID in the <em>Info.plist</em>&nbsp;file with your new one, if you haven&#39;t done it already (you should, because changing it now will affect your Facebook login, and you&#39;ll have to update the Bundle ID also on Facebook&#39;s developer page). You can now also change the &#39;Bundle Display Name&#39; in the <em>Info.plist&nbsp;</em>to match your own cool app name.&nbsp;</p>
+<p>
+	Once you&#39;re done with setting up the pushes, run your app again (ideally on two different physical devices, with two different users), and send a message from one user to anothere - you&#39;ll see that the pushes will arrive on the respective devices, if you&#39;ve done the setup correctly. Note that you&#39;ll see no pushes when you like or comment photos. As I mentioned, these pushes are triggered from CloudCode and you haven&#39;t set this one up yet. But we&#39;ll do this in a few moments.</p>
+<p>
+	Again, if you have any problems, questions or suggestions, please don&#39;t hesitate to contact me.&nbsp;</p>
+<h3>
+	&nbsp;</h3>
+<h3>
+	Cloud Code</h3>
+<p>
+	This project comes already with the cloud code files. Everything you need to do, is upload the javascript files to your parse app. Parse has an excellent guide for setting up cloud code, available <a href="https://parse.com/docs/js/guide#cloud-code">here</a>. The following quick guide is inspired by the Parse docs.</p>
+<p>
+	We start with installing the command line tool. Open the terminal and install the tool with this line:</p>
+<pre style="box-sizing: inherit; margin-top: 25px; margin-bottom: 25px; padding: 0px; border: 0px; font-family: inherit; line-height: 16px; font-size: 16px; vertical-align: baseline; position: relative; color: rgb(0, 0, 0); margin-left: 40px;">
+<code class="hljs bash" style="box-sizing: inherit; margin: 0px 0px 14px; padding: 15px; border: 1px solid rgb(240, 240, 240); font-family: InputMono, Monaco, 'Courier New', Courier; font-style: inherit; font-variant: inherit; line-height: 20px; font-size: 13px; vertical-align: baseline; -webkit-font-feature-settings: 'ss02' 1, 'ss07' 1, 'ss06' 1, 'zero' 1; color: rgb(109, 126, 138); display: block; overflow-x: auto; background-color: rgb(245, 245, 245); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; transition: border-color 0.7s; -webkit-transition: border-color 0.7s;">curl -s <span class="hljs-symbol" style="box-sizing: inherit; margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-style: inherit; font-variant: inherit; line-height: inherit; vertical-align: baseline; color: rgb(203, 75, 22);">https:</span>/<span class="hljs-regexp" style="box-sizing: inherit; margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-style: inherit; font-variant: inherit; line-height: inherit; vertical-align: baseline; color: rgb(42, 161, 152);">/www.parse.com/downloads</span><span class="hljs-regexp" style="box-sizing: inherit; margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-style: inherit; font-variant: inherit; line-height: inherit; vertical-align: baseline; color: rgb(42, 161, 152);">/cloud_code/installer</span>.sh | sudo /bin/bash
+</code></pre>
+<div>
+	You will be asked to enter your password (note that in the terminal, you don&#39;t see that you entered something when entering a password). After entering your password, hit return, and let the installation pass through.&nbsp;</div>
+<div>
+	Once you&#39;re done, create a new Parse CloudCode folder:</div>
+<div>
+	<p style="margin-left: 40px;">
+		<span class="hljs-variable" style="box-sizing: inherit; margin: 0px; padding: 0px; border: 0px; font-family: InputMono, Monaco, 'Courier New', Courier; line-height: 20px; font-size: 13px; vertical-align: baseline; color: rgb(181, 137, 0); white-space: pre; background-color: rgb(245, 245, 245);">$ </span><span style="color: rgb(109, 126, 138); font-family: InputMono, Monaco, 'Courier New', Courier; font-size: 13px; line-height: 20px; white-space: pre; background-color: rgb(245, 245, 245);">parse new </span><span class="hljs-constant" style="box-sizing: inherit; margin: 0px; padding: 0px; border: 0px; font-family: InputMono, Monaco, 'Courier New', Courier; line-height: 20px; font-size: 13px; vertical-align: baseline; color: rgb(181, 137, 0); white-space: pre; background-color: rgb(245, 245, 245);">MyCloudCode</span><span style="color: rgb(109, 126, 138); font-family: InputMono, Monaco, 'Courier New', Courier; font-size: 13px; line-height: 20px; white-space: pre; background-color: rgb(245, 245, 245);"> </span></p>
+	<div>
+		You will be asked to enter your email adress you use to login at Parse:</div>
+	<div>
+		<p style="margin-left: 40px;">
+			<span class="hljs-constant" style="box-sizing: inherit; margin: 0px; padding: 0px; border: 0px; font-family: InputMono, Monaco, 'Courier New', Courier; line-height: 20px; font-size: 13px; vertical-align: baseline; color: rgb(181, 137, 0); white-space: pre; background-color: rgb(245, 245, 245);">Email</span><span class="hljs-symbol" style="box-sizing: inherit; margin: 0px; padding: 0px; border: 0px; font-family: InputMono, Monaco, 'Courier New', Courier; line-height: 20px; font-size: 13px; vertical-align: baseline; color: rgb(203, 75, 22); white-space: pre; background-color: rgb(245, 245, 245);">:</span><span style="color: rgb(109, 126, 138); font-family: InputMono, Monaco, 'Courier New', Courier; font-size: 13px; line-height: 20px; white-space: pre; background-color: rgb(245, 245, 245);"> ninja</span><span class="hljs-variable" style="box-sizing: inherit; margin: 0px; padding: 0px; border: 0px; font-family: InputMono, Monaco, 'Courier New', Courier; line-height: 20px; font-size: 13px; vertical-align: baseline; color: rgb(181, 137, 0); white-space: pre; background-color: rgb(245, 245, 245);">@gmail</span><span style="color: rgb(109, 126, 138); font-family: InputMono, Monaco, 'Courier New', Courier; font-size: 13px; line-height: 20px; white-space: pre; background-color: rgb(245, 245, 245);">.com </span></p>
+		<p>
+			Then, enter the password you use to login at Parse:</p>
+		<div style="margin-left: 40px;">
+			<span class="hljs-constant" style="box-sizing: inherit; margin: 0px; padding: 0px; border: 0px; font-family: InputMono, Monaco, 'Courier New', Courier; line-height: 20px; font-size: 13px; vertical-align: baseline; color: rgb(181, 137, 0); white-space: pre; background-color: rgb(245, 245, 245);">Password</span><span class="hljs-symbol" style="box-sizing: inherit; margin: 0px; padding: 0px; border: 0px; font-family: InputMono, Monaco, 'Courier New', Courier; line-height: 20px; font-size: 13px; vertical-align: baseline; color: rgb(203, 75, 22); white-space: pre; background-color: rgb(245, 245, 245);">:</span><span style="color: rgb(109, 126, 138); font-family: InputMono, Monaco, 'Courier New', Courier; font-size: 13px; line-height: 20px; white-space: pre; background-color: rgb(245, 245, 245);"> </span></div>
+	</div>
+</div>
+<p>
+	Hit return. Next thing to do is select the app you want to connect the&nbsp;<em>MyCloudCode</em> folder with:</p>
+<div>
+	<p style="margin-left: 40px;">
+		<span class="hljs-number" style="box-sizing: inherit; margin: 0px; padding: 0px; border: 0px; font-family: InputMono, Monaco, 'Courier New', Courier; line-height: 20px; font-size: 13px; vertical-align: baseline; color: rgb(42, 161, 152); white-space: pre; background-color: rgb(245, 245, 245);">1</span><span class="hljs-symbol" style="box-sizing: inherit; margin: 0px; padding: 0px; border: 0px; font-family: InputMono, Monaco, 'Courier New', Courier; line-height: 20px; font-size: 13px; vertical-align: baseline; color: rgb(203, 75, 22); white-space: pre; background-color: rgb(245, 245, 245);">:MyApp</span><span style="color: rgb(109, 126, 138); font-family: InputMono, Monaco, 'Courier New', Courier; font-size: 13px; line-height: 20px; white-space: pre; background-color: rgb(245, 245, 245);"> </span></p>
+	<p style="margin-left: 40px;">
+		<span class="hljs-constant" style="box-sizing: inherit; margin: 0px; padding: 0px; border: 0px; font-family: InputMono, Monaco, 'Courier New', Courier; line-height: 20px; font-size: 13px; vertical-align: baseline; color: rgb(181, 137, 0); white-space: pre; background-color: rgb(245, 245, 245);">Select</span><span style="color: rgb(109, 126, 138); font-family: InputMono, Monaco, 'Courier New', Courier; font-size: 13px; line-height: 20px; white-space: pre; background-color: rgb(245, 245, 245);"> an </span><span class="hljs-constant" style="box-sizing: inherit; margin: 0px; padding: 0px; border: 0px; font-family: InputMono, Monaco, 'Courier New', Courier; line-height: 20px; font-size: 13px; vertical-align: baseline; color: rgb(181, 137, 0); white-space: pre; background-color: rgb(245, 245, 245);">App</span><span class="hljs-symbol" style="box-sizing: inherit; margin: 0px; padding: 0px; border: 0px; font-family: InputMono, Monaco, 'Courier New', Courier; line-height: 20px; font-size: 13px; vertical-align: baseline; color: rgb(203, 75, 22); white-space: pre; background-color: rgb(245, 245, 245);">:</span><span style="color: rgb(109, 126, 138); font-family: InputMono, Monaco, 'Courier New', Courier; font-size: 13px; line-height: 20px; white-space: pre; background-color: rgb(245, 245, 245);"> </span><span class="hljs-number" style="box-sizing: inherit; margin: 0px; padding: 0px; border: 0px; font-family: InputMono, Monaco, 'Courier New', Courier; line-height: 20px; font-size: 13px; vertical-align: baseline; color: rgb(42, 161, 152); white-space: pre; background-color: rgb(245, 245, 245);">1</span></p>
+</div>
+<p>
+	Now go to your&nbsp;<em>MyCloudCode</em> folder:</p>
+<pre style="box-sizing: inherit; margin-top: 25px; margin-bottom: 25px; padding: 0px; border: 0px; font-family: inherit; line-height: 16px; font-size: 16px; vertical-align: baseline; position: relative; color: rgb(0, 0, 0); margin-left: 40px;">
+<code class="hljs bash" style="box-sizing: inherit; margin: 0px 0px 14px; padding: 15px; border: 1px solid rgb(240, 240, 240); font-family: InputMono, Monaco, 'Courier New', Courier; font-style: inherit; font-variant: inherit; line-height: 20px; font-size: 13px; vertical-align: baseline; -webkit-font-feature-settings: 'ss02' 1, 'ss07' 1, 'ss06' 1, 'zero' 1; color: rgb(109, 126, 138); display: block; overflow-x: auto; background-color: rgb(245, 245, 245); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; transition: border-color 0.7s; -webkit-transition: border-color 0.7s;"><span class="hljs-variable" style="box-sizing: inherit; margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-style: inherit; font-variant: inherit; line-height: inherit; vertical-align: baseline; color: rgb(181, 137, 0);">$ </span>cd <span class="hljs-constant" style="box-sizing: inherit; margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-style: inherit; font-variant: inherit; line-height: inherit; vertical-align: baseline; color: rgb(181, 137, 0);">MyCloudCode</span>
+</code></pre>
+<p>
+	In your project folder, (right at the beginning) you will find another<i>&nbsp;CloudCode</i> folder, that I have created. Exchange the the content of the <em>cloud</em> folder (5 .js files)&nbsp;with the content of your newly created&nbsp;<em>MyCloudCode cloud&nbsp;</em>folder. Now upload these files by running the command (in the terminal, still in the MyCloudCode directory):</p>
+<p style="margin-left: 40px;">
+	<span class="hljs-variable" style="font-family: inherit; font-style: inherit; font-variant: inherit; line-height: inherit; font-size: 13px; white-space: pre; background-color: rgb(245, 245, 245); box-sizing: inherit; margin: 0px; padding: 0px; border: 0px; vertical-align: baseline; color: rgb(181, 137, 0);">$ </span><span class="hljs-variable" style="font-style: inherit; font-variant: inherit; font-size: 13px; white-space: pre; background-color: rgb(245, 245, 245); box-sizing: inherit; margin: 0px; padding: 0px; border: 0px; vertical-align: baseline; line-height: 20px;"><font color="#6d7e8a" face="InputMono, Monaco, Courier New, Courier">parse deploy</font></span></p>
+<p>
+	This should upload the files to your parse app. Go to your parse dashboard, and navigate to the cloudcode section of your app. The files should be there, everythfileing&#39;s fine. If you encounter some errors and the Parse CloudCode guide doesn&#39;t help you, please don&#39;t hesitate to contact me.</p>
+<p>
+	Now to the .js files themselves.&nbsp;</p>
+<p>
+	The<em> Activity.js&nbsp;</em>file contains code that is called once a new activity is created in the parse databrowser. This is the place where we send the cloud push notifications (heureka).&nbsp;<br>
+	The <i>Installation.js&nbsp;</i>file contains code that is called when a new device is registered at Parse. This file doesn&#39;t do anything really interesting, it only ensures all installation are accurate and not falsified.&nbsp;<br>
+	The&nbsp;<em>MasterKeyFunctions.js</em> file currently doesn&#39;t contain any code, but it is the place where you would place functions that require the master key. This is necessary when you want, for example, to resort your databrowser and don&#39;t want to do it manually.<br>
+	The&nbsp;<em>photo.js</em> file contains code that is called once a new photo or video is uploaded. It ensures no errors occur during the upload.&nbsp;<br>
+	The&nbsp;<em>main.js</em> file is the main file where all the other files have to be imported in order for them to be really considered by the CloudCode compiler of parse.</p>
+</section>
+<section id="classes">
+	<div class="page-header"><h3>CLASSES</h3><hr class="notop"></div>
+<p>	If you have no experience in iOS programmation at all (or even worse, no experience in programmation at all), it will be really hard for you to really understand the whole source code, or be able to do deep changes to it.&nbsp;</p>
+<p>	What I can do to help you understand a bit where what lies, and which classes are responsible for which behavior and ViewController. One thing beforehand: most of the classes have quite straightforward names, so that you immediately know what they do.<br>
+	Another general thing to mention is that the code is not written to be condensed at a maximum. If you have some experience in development in Objective-C, you will sometimes think that there may be ways to implement certain functions in a shorter and cleaner way. The main problem is that condensed and short code often comes with one great disadvantage: its readibility decreases rapidly, and this is a great disadvantage when it comes to unexperienced developers looking at a code. You could argue that these developers then do not get the right notion of clean code, this is certainly true, but in this case clean code doesn&#39;t help them if it comes to bug fixing, maintenance and customisation. If you want to learn something about clean code, consider specialised literature, there are some really good books out there.</p>
+<p>	Thus, I often chose readability and straightforwardness over complex and condensed code. Apart from this, there are also parts of the code where I simply was not in the mood to completely rewrite them in order to get real clean code. For example, I often talk about photos, even if there are also videos - you should <strong>always</strong> keep in mind, that the videos have been added on a later update to this project, so initially there were only photos, explaining why the term <em>photo </em>often refers to photos and videos, a general mediaItem (if this suits you better).&nbsp;May Sauron forgive me...</p>
+<p>	That said, let&#39;s go and start to orientate us in a more than 1.200.000 code-lines long project. I will give you several screenshots and code snippets of the app and explain where you will find the different classes and what the most important things about them are.<br>
+	&nbsp;</p>
+<p>	&nbsp;</p>
+<h4 id="classes_launchscreen">LaunchScreen</h4>
+<p>	We&#39;ll start with the Launch Screen because it is the very first screen you see of the app.&nbsp;</p>
+<p>	Customising this one is really easy, because it is an .xib file, the <em>LaunchScreen.xib</em>&nbsp;which you find in the <em>SocialNetwork &gt; Supporting Files</em>&nbsp;folder in the project navigator of XCode. Currently it shows the name of our luxembourgish social network, the link to the website and a fancy quote by the famous physicist Richard Feynman. I am a physicist, so this is legit (ha ha).<br>
+	&nbsp;</p>
+<h4 id="classes_login_and_signup">Login and Signup</h4>
+<p>	The next thing we look at is the LoginViewController and the SignupViewController. The respective classes are the <em>ESLoginViewController.h/.m</em>&nbsp;and the <em>ESSignupViewController.h/.m</em>, which you&#39;ll find in the<i>&nbsp;SocialNetwork &gt; Controllers &gt; Login</i>&nbsp;folder the project navigator. They both have .xib files, but the main layout is done in the tableview delegate and data source methods</p>
+<p>	You&#39;ll notice that the Login folder contains another class - the <em>WelcomeViewController</em>&nbsp;class. This one decides at runtime if a user is logged in, and the feed shall be shown or if there is no valid user session and the <em>ESWelcomeViewController</em>&nbsp;shall be shown. It is in face a ViewController where the user is presented with a short introduction of the project and can decide whether or not he wants to login or signup.</p>
+<p>	The fourth class in this folder is the&nbsp;<em>ESPageViewController,&nbsp;</em>the actual PageViewController that is displayed in the&nbsp;<em>WelcomeViewController</em>. The data source is defined in the&nbsp;<em>WelcomeViewController,&nbsp;</em>but if you want to change something about the design, better do it in the <i>ESPageViewController&nbsp;</i>class.</p>
+<h4 id="classes_terms_of_service">Terms of Service</h4>
+<p>	The first time a user logs in and enters the network, we show him classic UIAlertView prompting him to accept our terms of use.</p>
+<p>	You&#39;ll also have to change the Terms of Service to your own. Currently, they are shown by a link, that takes the user to the mobile safari app, and shows the Terms of Service that are displayed on our website. If you have no website to display the terms, you can save them as a .pdf an show the .pdf to the user instead of taking him to the external link. If you choose to adopt our terms, be sure to have read them at least [ ;-) ]. In case you want to change the link to your own custom terms, you have to do it at two places: one instance is in the&nbsp;<em>AppDelegate.m</em> file,&nbsp;the other in the&nbsp;<em>ESHomeViewController.m</em> file, both times in the delegate method of the UIAlertView.</p>
+<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+	<span style="color: rgb(0, 0, 0);">[[</span>UIApplication<span style="color: rgb(0, 0, 0);">&nbsp;</span>sharedApplication<span style="color: rgb(0, 0, 0);">]&nbsp;</span>openURL<span style="color: rgb(0, 0, 0);">:[</span>NSURL<font color="#000000">&nbsp;</font>URLWithString<span style="color: rgb(0, 0, 0);">:</span><span style="color: rgb(180, 38, 26);">@&quot;https://www.netzwierk.lu/terms&quot;</span><span style="color: rgb(0, 0, 0);">]];</span><br>
+	&nbsp;</p>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; font-size: 11px; font-family: Menlo;">
+	&nbsp;</p>
+<h4 id="classes_edit_and_complete_the_user_39s_profile">Edit and complete the user&#39;s profile</h4>
+<p>	The next view that will be presented to the user at his first login, is a view, where he will be prompted to complete his profile information. You&#39;ll notice, that lots of users don&#39;t even set a profile picture if you don&#39;t remind them at least once. Therefore, I created this view, its class is the&nbsp;<em>ESEditProfileViewController.m&nbsp;</em>that you find in&nbsp;<em>SocialNetwork &gt; Controllers &gt; Settings.</em>&nbsp;<br>
+	You can add new fields and remove some of them, or change everything you&#39;d like. This class handles all of its methods on its own, so no utility or wrapper class needed. It is a simple tableviewcontroller - you set your desired number of sections and number of cells per section:</p>
+<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+	- (<span style="font-variant-ligatures: no-common-ligatures; color: #3495af">NSInteger</span>)numberOfSectionsInTableView:(<span style="font-variant-ligatures: no-common-ligatures; color: #3495af">UITableView</span> *)tableView {</p>
+<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+	&nbsp; &nbsp; <span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">return</span> 4;</p>
+<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+	}</p>
+<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; min-height: 13px;">
+	&nbsp;</p>
+<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+	- (<span style="font-variant-ligatures: no-common-ligatures; color: #3495af">NSInteger</span>)tableView:(<span style="font-variant-ligatures: no-common-ligatures; color: #3495af">UITableView</span> *)tableView numberOfRowsInSection:(<span style="font-variant-ligatures: no-common-ligatures; color: #3495af">NSInteger</span>)section {</p>
+<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+	&nbsp; &nbsp; <span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">switch</span> (section) {</p>
+<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+	&nbsp; &nbsp; &nbsp; &nbsp; <span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">case</span> 0:</p>
+<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">return</span> 3;</p>
+<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">break</span>;</p>
+<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+	&nbsp; &nbsp; &nbsp; &nbsp; <span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">case</span> 1:</p>
+<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">return</span> 2;</p>
+<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">break</span>;</p>
+<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+	&nbsp; &nbsp; &nbsp; &nbsp; <span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">case</span> 2:</p>
+<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">return</span> 3;</p>
+<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">break</span>;</p>
+<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+	&nbsp; &nbsp; &nbsp; &nbsp; <span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">case</span> 3:</p>
+<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">return</span> 3;</p>
+<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">break</span>;</p>
+<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+	&nbsp; &nbsp; &nbsp; &nbsp; <span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">default</span>:</p>
+<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">return</span> 0;</p>
+<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+	&nbsp; &nbsp; };</p>
+<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+	}</p>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; font-size: 11px; font-family: Menlo;">
+	<br>
+	<span style="font-family: Arial, Verdana, sans-serif; font-size: 12px;">And then you design the cells and simply define actions that are performed when the respective cells are tapped. No magic at all here.&nbsp;</span><br>
+	<span style="font-family: Arial, Verdana, sans-serif; font-size: 12px;">Note that the user can only then continue to the app if he changes at least one field. This prevents the user from tapping that view away without completing at least some of its information.</span></p>
+<h4 id="classes_brhomeviewcontroller_and_tabbarcontroller"><br>
+	HomeViewController and TabbarController</h4>
+<p>	Once the user has completed his information, he will be guided to the News Feed ViewController.</p>
+<p>	The class responsible for this view is the&nbsp;<em>ESHomeViewController.m&nbsp;</em>that can be found in&nbsp;<em>SocialNetwork &gt; Controllers &gt; Home</em>. The&nbsp;<em>ESHomeViewController</em>&nbsp;is one of four controllers in the TabbarController. Most of the actions of the social network happen in that tabbar controller, only a few will take the user to a separate UINavigationController on top of the TabbarController.&nbsp;</p>
+<p>	Note that the&nbsp;<em>ESHomeViewController</em>&nbsp;is a subclass of&nbsp;the&nbsp;<em>ESPhotoTimelineViewController</em>&nbsp;class (you can see that in the the&nbsp;<em>ESHomeViewController.h&nbsp;</em>file):</p>
+<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+	<span style="color: rgb(4, 51, 255);">@interface</span><span style="color: rgb(0, 0, 0);">&nbsp;ESHomeViewController :&nbsp;</span>ESPhotoTimelineViewController<span style="color: rgb(0, 0, 0);">&nbsp;&lt;</span>EAIntroDelegate<span style="color: rgb(0, 0, 0);">,&nbsp;</span>MFMailComposeViewControllerDelegate<span style="color: rgb(0, 0, 0);">&gt;</span></p>
+<p>	Thus the&nbsp;<em>ESHomeViewController&nbsp;</em>contains all the methods of the&nbsp;<em>ESPhotoTimelineViewController</em>, esp. the ones that are responsible for the timeline, the feed, itself. The <em>ESHomeViewController</em> class handles some methods that are specific for the HomeViewController (the one with the feed), such as an Easter Egg, a mail composer, etc. The behavior of the timeline is defined in the <em>ESPhotoTimelineViewController&nbsp;</em>file, so if you want to change some things in the timeline, do it there. In case you head to the <em>ESPhotoTimelineViewController.m</em> file, you&#39;ll notice that there are other classes with a quite similar name:&nbsp;</p>
+<p>	<img alt="" src="assets/images/image_1.jpg" style="width: 250px; height: 445px; float: right;"></p>
+<p>	&nbsp;</p>
+<p>	&bull;&nbsp;<em>ESPhotoTimelineAccountViewController.h/.m</em>: this class is responsible for the timeline on the profile page.<br>
+	&bull;&nbsp;<em>ESHashtagTimelineViewController.h/.m</em>: this class is responsible for the timeline that is displayed when the user searches for a specific hashtag.<br>
+	There was a need to split these classes in different ones because of the fact that the behavior of them is slightly different, despite them doing practically the same thing - displaying a timeline full of photos and videos.</p>
+<p>	There is, however, one thing they have in common: their layout structure. Look for a example at the HomeViewController and its feed - you&#39;ll see that it is essentially built of individual sections. Each sections contains a header, the&nbsp;<em>ESPhotoHeaderView</em>&nbsp;(on the screenshot marked blue) and a footer, the&nbsp;<em>ESPhotoFooterView</em>&nbsp;(on the screenshot marked green) (we don&#39;t differentiate here between video and photo, the headers and footers have the same behavior, so no need to split them up) and a&nbsp;<em>ESPhotoCell</em>&nbsp;between the header and the footer (marked red), containing the photo or the video. The&nbsp;<em>ESPhotoHeader-&nbsp;</em>and&nbsp;<em>ESPhotoFooterView</em>&nbsp;can be found in the&nbsp;<em>SocialNetwork &gt; Categories &gt; View &gt; TimelineView&nbsp;</em>folder.</p>
+<p>	Another thing important to mention is the procedure triggered when the user hits the middle button in the tabbarcontroller - the photo button. He is then presented with a UIActionView prompting him to choose one of three options: taking a new photo or choosing a photo or a video from the camera roll. The methods triggered when the user makes his choice are in the&nbsp;<em>ESTabbarController.m&nbsp;</em>file:</p>
+<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+	- (<span style="color: rgb(4, 51, 255);">BOOL</span>)shouldStartCameraController&nbsp;</p>
+<div>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		- (<span style="color: rgb(4, 51, 255);">BOOL</span>)shouldStartPhotoLibraryPickerController&nbsp;</p>
+</div>
+<p>	If you have a more precise look at these methods, you&#39;ll see that the lines responsible for pushing a new viewcontroller run in a dispatch_async block:</p>
+<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+	dispatch_async<span style="color: rgb(0, 0, 0);">(</span>dispatch_get_main_queue<span style="color: rgb(0, 0, 0);">(), ^{</span></p>
+<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+	<span style="color: rgb(0, 0, 0);">&nbsp; &nbsp; &nbsp; &nbsp; [</span><span style="color: rgb(4, 51, 255);">self</span><span style="color: rgb(0, 0, 0);">&nbsp;</span>presentViewController<span style="color: rgb(0, 0, 0);">:cameraUI&nbsp;</span>animated<span style="color: rgb(0, 0, 0);">:</span><span style="color: rgb(4, 51, 255);">YES</span><span style="color: rgb(0, 0, 0);">&nbsp;</span>completion<span style="color: rgb(0, 0, 0);">:</span><span style="color: rgb(4, 51, 255);">nil</span><span style="color: rgb(0, 0, 0);">];</span></p>
+<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+	&nbsp; &nbsp; });</p>
+<p>	This is to avoid that, in case the user uses an iPad, no viewcontroller is presented (see&nbsp;<a href="http://stackoverflow.com/questions/24854802/presenting-a-view-controller-modally-from-an-action-sheets-delegate-in-ios8">this Stackoverflow thread</a>). Throughout the whole project, you should notice that this approach is used quite oftenly. Simply keep in mind that UIKit updates need to be done on the main thread.&nbsp;</p>
+<p>	<strong>Important:</strong>&nbsp;There is one thing you should never forget. The timelines always show a certain number of photos/videos, defined in the initWithStyle method:</p>
+<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+	&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">self</span>.<span style="font-variant-ligatures: no-common-ligatures; color: #3495af">objectsPerPage</span> = 10;</p>
+<div>
+	<br>
+	And once the user scrolls to the end of the current number of sections, there will be a LoadMoreCell (an instance of the&nbsp;<em>ESLoadMoreCell</em>&nbsp;class). Now, since we use Parse&#39;s&nbsp;<span style="color: rgb(52, 149, 175); font-family: Menlo; font-size: 11px;">PFQueryTableViewController&nbsp;</span>the delegate method with which we fetch a new page of results (thus a new page of photos and videos) is provided by the Parse SDK, meaning that we have no direct access to it. Unfortunately, after the version 1.2.19 of the SDK, Parse changed its implementation of that method, causing a crash when a section based tableview tries to fetch a new page of results. I have filed a bug report, and many other developers too, but currently, there still is no fix to that bug. Although I managed to find a workaround, remember to always be careful before updating to a newer Parse SDK because the workaround could potentially break down.<br>
+	If you mind, please file a bug report, so that this bug gets fixed as soon as possible.</div>
+<h4 id="classes_bresphotoheaderview"><br>
+	ESPhotoHeaderView</h4>
+<p>	The ESPhotoHeaderView class is, as already said, responsible for the header above the photo in a timeline. It sets the layout for the photo an the name of the photo&#39;s user, as well as its location and a timeinterval. Thus, if you want to change the design of the header, do this here.<br>
+	But the class cannot get information on its own the name and the user &nbsp;photo are empty, so it needs another class to give that information about the user. This happens in the&nbsp;<em>ESPhotoTimelineViewController</em>&nbsp;(or whatever timeline you consider: hasthag, home or profile) - more precisely in the following method:</p>
+<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+	- (<span style="color: rgb(52, 149, 175);">UIView</span>&nbsp;*)tableView:(<span style="color: rgb(52, 149, 175);">UITableView</span>&nbsp;*)tableView viewForHeaderInSection:(<span style="color: rgb(52, 149, 175);">NSInteger</span>)section&nbsp;</p>
+<h2 style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; font-size: 11px; font-family: Menlo;">
+	&nbsp;</h2>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px;">
+	which should seem obvious, because we talk about a custom UITableViewSection (the&nbsp;<em>ESPhotoHeaderView</em>)<font face="Menlo"><span style="font-size: 11px;">.</span></font></p>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px;">
+	There is another method important for the behavior of the header of a section:<br>
+	&nbsp;</p>
+<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+	- (<span style="color: rgb(4, 51, 255);">void</span>)photoHeaderView:(<span style="color: rgb(52, 149, 175);">ESPhotoHeaderView</span>&nbsp;*)photoHeaderView didTapUserButton:(<span style="color: rgb(52, 149, 175);">UIButton</span>&nbsp;*)button user:(<span style="color: rgb(52, 149, 175);">PFUser</span>&nbsp;*)user {</p>
+<div>
+	&nbsp;</div>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px;">
+	This method is being called when a user taps on the name or the photo of another user in a timeline.</p>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px;">
+	&nbsp;</p>
+<h4 id="classes_bresphotofooterview"><br>
+	ESPhotoFooterView</h4>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; font-size: 11px; font-family: Menlo;">
+	&nbsp;</p>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; font-size: 11px; font-family: Menlo;">
+	<span style="font-family: Arial, Verdana, sans-serif; font-size: 12px;">Same procedure goes for the ESPhotoFooterView&nbsp;class. It sets the layout for the like, share and comment buttons (thus changements in the design should be done here), but the actual logic behind these buttons is, again, implemented in the respective TimelineViewController:&nbsp;</span></p>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; font-size: 11px; font-family: Menlo;">
+	&nbsp;</p>
+<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+	- (<span style="color: rgb(52, 149, 175);">UIView</span>&nbsp;*)tableView:(<span style="color: rgb(52, 149, 175);">UITableView</span>&nbsp;*)tableView viewForFooterInSection:(<span style="color: rgb(52, 149, 175);">NSInteger</span>)section&nbsp;</p>
+<div>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		- (<span style="color: rgb(4, 51, 255);">void</span>)photoFooterView:(<span style="color: rgb(52, 149, 175);">ESPhotoFooterView</span>&nbsp;*)photoFooterView didTapSharePhotoButton:(<span style="color: rgb(52, 149, 175);">UIButton</span>&nbsp;*)button&nbsp; photo:(<span style="color: rgb(52, 149, 175);">PFObject</span>&nbsp;*)photo&nbsp;</p>
+	<div>
+		<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+			- (<span style="color: rgb(4, 51, 255);">void</span>)photoFooterView:(<span style="color: rgb(52, 149, 175);">ESPhotoFooterView</span>&nbsp;*)photoFooterView didTapCommentOnPhotoButton:(<span style="color: rgb(52, 149, 175);">UIButton</span>&nbsp;*)button&nbsp; photo:(<span style="color: rgb(52, 149, 175);">PFObject</span>&nbsp;*)photo&nbsp;</p>
+		<div>
+			<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+				- (<span style="color: rgb(4, 51, 255);">void</span>)photoFooterView:(<span style="color: rgb(52, 149, 175);">ESPhotoFooterView</span>&nbsp;*)photoFooterView didTapLikePhotoButton:(<span style="color: rgb(52, 149, 175);">UIButton</span>&nbsp;*)button photo:(<span style="color: rgb(52, 149, 175);">PFObject</span>&nbsp;*)photo&nbsp;</p>
+		</div>
+	</div>
+</div>
+<div>
+	&nbsp;</div>
+<div>
+	I think it is more than obvious what these methods do, therefore you should have a look at them in the code.&nbsp;</div>
+<h4 id="classes_bresphotocell"><br>
+	ESPhotoCell</h4>
+<div>
+	The ESPhotoCell is the actual cell betwen the header and the footer in the tableviews (timelines). It is a custom class, apparently, because it has to fit our special needs. You can find this class in the&nbsp;<em>SocialNetwork &gt; Categories &gt; View &gt; UITableViewCells&nbsp;</em>folder. Again, in the ESPhotoCell class, we define the layout of the cell, because we want to display a photo in it. The actual photo is added to the cell in the&nbsp;<em>ESPhotoTimelineViewController</em>&nbsp;(or whatever timeline you consider: hasthag, home or profile):</div>
+<div>
+	&nbsp;</div>
+<div>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		- (<span style="color: rgb(52, 149, 175);">UITableViewCell</span>&nbsp;*)tableView:(<span style="color: rgb(52, 149, 175);">UITableView</span>&nbsp;*)tableView cellForRowAtIndexPath:(<span style="color: rgb(52, 149, 175);">NSIndexPath</span>&nbsp;*)indexPath object:(<span style="color: rgb(52, 149, 175);">PFObject</span>&nbsp;*)object&nbsp;</p>
+	<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; font-size: 11px; font-family: Menlo;">
+		<br>
+		<span style="font-family: Arial, Verdana, sans-serif; font-size: 12px;">And then there are some other important methods:</span><br>
+		&nbsp;</p>
+</div>
+<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+	- (<span style="color: rgb(52, 149, 175);">UITableViewCell</span>&nbsp;*)tableView:(<span style="color: rgb(52, 149, 175);">UITableView</span>&nbsp;*)tableView cellForRowAtIndexPath:(<span style="color: rgb(52, 149, 175);">NSIndexPath</span>&nbsp;*)indexPath object:(<span style="color: rgb(52, 149, 175);">PFObject</span>&nbsp;*)object&nbsp;</p>
+<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+	- (<span style="color: rgb(4, 51, 255);">void</span>)didTapOnPhotoAction:(<span style="color: rgb(52, 149, 175);">UIButton</span>&nbsp;*)sender&nbsp;</p>
+<div>
+	&nbsp;</div>
+<div>
+	The first method here is actually the delegate method from the tableview, d and calling the second one, which then takes the user to a detail view of the photo, where also the comments are shown.<br>
+	&nbsp;</div>
+<h4 id="classes_esphotodetailsviewcontroller">ESPhotoDetailsViewController</h4>
+<div>
+	<p>		<img alt="" src="assets/images/image_2.jpg" style="width: 250px; height: 445px; float: right;"></p>
+	<p>		&nbsp;</p>
+	Once a user taps on a photo or a video, he is taken to a new tableviewcontroller, showing the photo/video as well as the likes and comments. Depending on the nature of the media object (photo or video), the behavior of the tableviewcontroller is defined by the&nbsp;<em>ESPhotoDetailsViewController&nbsp;</em>or the<em>&nbsp;ESVideoDetailViewController&nbsp;</em>class. Both classes are subclasses of the&nbsp;<span style="color: rgb(52, 149, 175); font-family: Menlo; font-size: 11px;">PFQueryTableViewController&nbsp;</span>class from Parse.&nbsp;The basic structure of the tableviewcontroller is quite easy to guess: It&#39;s a simple tableview with a tableviewheader <em>ESPhotoDetailsHeaderView&nbsp;</em>(marked blue) with the photo/video being part of the header, a tableviewfooter ESPhotoDetailsFooterView (marked in green)&nbsp;and some custom <em>ESBaseTextCells&nbsp;</em>(marked in red)&nbsp;in between.
+	<p>		&nbsp;</p>
+	<div>
+		On launch in 2014, we only had integrated photos. Videos came some weeks later, this is why I have split the&nbsp;<em>ESPhotoDetailsViewController&nbsp;</em>and the&nbsp;<em>ESVideoDetailViewController&nbsp;</em>classes - they have some own classes they don&#39;t share, but other classes they share:</div>
+	<p>		<strong>Not sharing:</strong> ESPhotoDetailsHeaderView and ESVideoDetailsHeaderView<br>
+		<strong>Sharing:</strong> ESPhotoDetailsFooterView and ESBaseTextCell (because here the behavior doesn&#39;t diverge for the resp. class).&nbsp;<br>
+		&nbsp;</p>
+	<h4 id="classes_esphotodetailsheaderview_and_esvideodetailsheaderview">ESPhotoDetailsHeaderView and ESVideoDetailsHeaderView</h4>
+	<p>		These two classes are custom classes of a tableview header. They display the user&#39;s profile picture, his name, as well as the location of the photo/video (if there is one) and the time interval since its upload. As with the&nbsp;<em>ESPhotoHeaderView</em>&nbsp;class, tapping on the user&#39;s name or profile photo takes you to his profile page.<br>
+		But additionally to this, these headers also contain the photo/video itself, as well as the likes.Tapping the like button calls a method in the&nbsp;<em>ESPhoto-/ESVideoDetailsHeaderView&nbsp;</em>class:</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		- (<span style="color: rgb(4, 51, 255);">void</span>)didTapLikePhotoButtonAction:(<span style="color: rgb(52, 149, 175);">UIButton</span>&nbsp;*)button&nbsp;</p>
+	<div>
+		<br>
+		Most of the view&#39;s layout is determined in the following method:<br>
+		&nbsp;</div>
+	<div>
+		<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+			- (<span style="color: rgb(4, 51, 255);">void</span>)createView&nbsp;</p>
+		<div>
+			&nbsp;</div>
+		<h4 id="classes_esphotodetailsfooterview">ESPhotoDetailsFooterView</h4>
+	</div>
+	<p>		The&nbsp;<em>ESPhotoDetailsFooterView</em>&nbsp;is a UIView subclass, and we use it as a tableview footer in the Photo and Video DetailViewController. Its role is to display a UITextField in which the user can type his comment to a photo or video, and we display it at the very end of the tableview in the Photo-/VideoDetailsViewController with:</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="color: rgb(0, 0, 0);">&nbsp;</span>ESPhotoDetailsFooterView<span style="color: rgb(0, 0, 0);">&nbsp;*footerView = [[</span>ESPhotoDetailsFooterView<span style="color: rgb(0, 0, 0);">&nbsp;</span>alloc<span style="color: rgb(0, 0, 0);">]&nbsp;</span>initWithFrame<span style="color: rgb(0, 0, 0);">:[</span>ESPhotoDetailsFooterView<span style="color: rgb(0, 0, 0);">&nbsp;</span>rectForView<span style="color: rgb(0, 0, 0);">]];</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		<font color="#000000">&nbsp;</font><span style="color: rgb(52, 149, 175);">commentTextField<span style="color: rgb(0, 0, 0);">&nbsp;= footerView.</span>commentField<span style="color: rgb(0, 0, 0);">;</span></span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="color: rgb(0, 0, 0);">&nbsp;</span>commentTextField<span style="color: rgb(0, 0, 0);">.</span>delegate<span style="color: rgb(0, 0, 0);">&nbsp;=&nbsp;</span><span style="color: rgb(4, 51, 255);">self</span><span style="color: rgb(0, 0, 0);">;</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="color: rgb(0, 0, 0);">&nbsp;</span><span style="color: rgb(4, 51, 255);">self</span><span style="color: rgb(0, 0, 0);">.</span>tableView<span style="color: rgb(0, 0, 0);">.</span>tableFooterView<span style="color: rgb(0, 0, 0);">&nbsp;= footerView;</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		&nbsp;</p>
+	<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px;">
+		As soon as the user hits the return key on his keyboard, the following delegate method is called from within the Photo-/VideoDetailsViewController:</p>
+	<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px;">
+		&nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		- (<span style="color: rgb(4, 51, 255);">BOOL</span>)textFieldShouldReturn:(<span style="color: rgb(52, 149, 175);">UITextField</span>&nbsp;*)textField&nbsp;</p>
+	<div>
+		&nbsp;</div>
+	<div>
+		In this method, we search for hashtags, mentions, links, etc., edit the comment a bit (trim it, if the user has entered unnecessary space behind it for example) and save it to Parse.</div>
+	<div>
+		&nbsp;</div>
+	<h4 id="classes_the_comments_esbasetextcell">The comments - ESBaseTextCell</h4>
+	<p>		Between the header (the user&#39;s profile photo and name as well as the like button and the actual photo/video file) and the footer (the comment textfield) are the existing comments. These are custom UITableViewCells (the&nbsp;<em>ESBaseTextCell,&nbsp;</em>we&#39;ll face this class several times) as you can see in this TableView delegate method in the <em>ESPhoto-/ESVideoDetailView.m</em> file:</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		- (<span style="color: rgb(52, 149, 175);">UITableViewCell</span>&nbsp;*)tableView:(<span style="color: rgb(52, 149, 175);">UITableView</span>&nbsp;*)tableView cellForRowAtIndexPath:(<span style="color: rgb(52, 149, 175);">NSIndexPath</span>&nbsp;*)indexPath object:(<span style="color: rgb(52, 149, 175);">PFObject</span>&nbsp;*)object {</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		&nbsp; &nbsp;&nbsp;<span style="color: rgb(4, 51, 255);">static</span>&nbsp;<span style="color: rgb(52, 149, 175);">NSString</span>&nbsp;*cellID =&nbsp;<span style="color: rgb(180, 38, 26);">@&quot;CommentCell&quot;</span>;</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; min-height: 13px;">
+		&nbsp;&nbsp; &nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(0, 143, 0);">
+		<span style="color: rgb(0, 0, 0);">&nbsp; &nbsp;&nbsp;</span><span style="color: rgb(52, 149, 175);">ESBaseTextCell</span><span style="color: rgb(0, 0, 0);">&nbsp;*cell = [tableView&nbsp;</span><span style="color: rgb(52, 149, 175);">dequeueReusableCellWithIdentifier</span><span style="color: rgb(0, 0, 0);">:cellID];</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="color: rgb(0, 0, 0);">&nbsp; &nbsp;[...]</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="color: rgb(0, 0, 0);">}</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		&nbsp;</p>
+	<div>
+		The <em>ESBaseTextCell</em> has a profile picture view, a name label, a contentTextLabel and a date label as well as a reply label that can be set dynamically (for example in case the user is the current user - we don&#39;t want to reply ourselves do we? Or when we simply don&#39;t need the reply function because the ESBaseTextCell doesn&#39;t act as comment cell - we&#39;ll see this case later).</div>
+	<div>
+		&nbsp;</div>
+	<div>
+		The user can delete his own comments, or report other users&#39; comments for infringing the terms of service with this method:</div>
+	<div>
+		&nbsp;</div>
+	<div>
+		<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+			- (<span style="color: rgb(52, 149, 175);">NSArray</span>&nbsp;*)tableView:(<span style="color: rgb(52, 149, 175);">UITableView</span>&nbsp;*)tableView editActionsForRowAtIndexPath:(<span style="color: rgb(52, 149, 175);">NSIndexPath</span>&nbsp;*)indexPath {</p>
+		<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+			&nbsp; &nbsp;&nbsp;<span style="color: rgb(52, 149, 175);">PFObject</span>&nbsp;*object = [<span style="color: rgb(4, 51, 255);">self</span>.<span style="color: rgb(52, 149, 175);">objects</span>&nbsp;<span style="color: rgb(52, 149, 175);">objectAtIndex</span>:indexPath.<span style="color: rgb(52, 149, 175);">row</span>];</p>
+		<p style="margin: 0px 0px 0px 80px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+			<span style="color: rgb(4, 51, 255);">if</span><span style="color: rgb(0, 0, 0);">&nbsp;([[[object&nbsp;</span>objectForKey<span style="color: rgb(0, 0, 0);">:</span><span style="color: rgb(180, 38, 26);">@&quot;fromUser&quot;</span><span style="color: rgb(0, 0, 0);">]&nbsp;</span>objectId<span style="color: rgb(0, 0, 0);">]&nbsp;</span>isEqualToString<span style="color: rgb(0, 0, 0);">:[[</span>PFUser<span style="color: rgb(0, 0, 0);">&nbsp;</span>currentUser<span style="color: rgb(0, 0, 0);">]&nbsp;</span>objectId<span style="color: rgb(0, 0, 0);">]]) {</span></p>
+		<p style="margin: 0px 0px 0px 120px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+			UITableViewRowAction<span style="color: rgb(0, 0, 0);">&nbsp;*deleteAction = [</span>UITableViewRowAction<span style="color: rgb(0, 0, 0);">&nbsp;</span>rowActionWithStyle<span style="color: rgb(0, 0, 0);">:</span>UITableViewRowActionStyleDefault<span style="color: rgb(0, 0, 0);">&nbsp;</span>title<span style="color: rgb(0, 0, 0);">:</span><span style="color: rgb(4, 51, 255);">NSLocalizedString</span><span style="color: rgb(0, 0, 0);">(</span><span style="color: rgb(180, 38, 26);">@&quot;Delete&quot;</span><span style="color: rgb(0, 0, 0);">,&nbsp;</span><span style="color: rgb(4, 51, 255);">nil</span><span style="color: rgb(0, 0, 0);">)&nbsp;</span>handler<span style="color: rgb(0, 0, 0);">:^(</span>UITableViewRowAction<span style="color: rgb(0, 0, 0);">&nbsp;*action,&nbsp;</span>NSIndexPath<span style="color: rgb(0, 0, 0);">&nbsp;*indexPath) {</span></p>
+		<p style="margin: 0px 0px 0px 160px; font-size: 11px; font-family: Menlo; color: rgb(0, 143, 0);">
+			<span style="color: rgb(52, 149, 175);">UIActionSheet</span><span style="color: rgb(0, 0, 0);">&nbsp;*actionSheet = [[</span><span style="color: rgb(52, 149, 175);">UIActionSheet</span><span style="color: rgb(0, 0, 0);">&nbsp;</span><span style="color: rgb(52, 149, 175);">alloc</span><span style="color: rgb(0, 0, 0);">]</span><span style="color: rgb(52, 149, 175);">initWithTitle</span><span style="color: rgb(0, 0, 0);">:</span><span style="color: rgb(4, 51, 255);">NSLocalizedString</span><span style="color: rgb(0, 0, 0);">(</span><span style="color: rgb(180, 38, 26);">@&quot;Do you really want to delete this comment?&quot;</span><span style="color: rgb(0, 0, 0);">,&nbsp;</span><span style="color: rgb(4, 51, 255);">nil</span><span style="color: rgb(0, 0, 0);">)&nbsp;</span><span style="color: rgb(52, 149, 175);">delegate</span><span style="color: rgb(0, 0, 0);">:</span><span style="color: rgb(4, 51, 255);">self</span><span style="color: rgb(0, 0, 0);">&nbsp;</span><span style="color: rgb(52, 149, 175);">cancelButtonTitle</span><span style="color: rgb(0, 0, 0);">:</span><span style="color: rgb(4, 51, 255);">NSLocalizedString</span><span style="color: rgb(0, 0, 0);">(</span><span style="color: rgb(180, 38, 26);">@&quot;Cancel&quot;</span><span style="color: rgb(0, 0, 0);">,&nbsp;</span><span style="color: rgb(4, 51, 255);">nil</span><span style="color: rgb(0, 0, 0);">)&nbsp;</span><span style="color: rgb(52, 149, 175);">destructiveButtonTitle</span><span style="color: rgb(0, 0, 0);">:</span><span style="color: rgb(4, 51, 255);">NSLocalizedString</span><span style="color: rgb(0, 0, 0);">(</span><span style="color: rgb(180, 38, 26);">@&quot;Delete&quot;</span><span style="color: rgb(0, 0, 0);">,&nbsp;</span><span style="color: rgb(4, 51, 255);">nil</span><span style="color: rgb(0, 0, 0);">)&nbsp;</span><span style="color: rgb(52, 149, 175);">otherButtonTitles</span><span style="color: rgb(0, 0, 0);">:&nbsp;</span><span style="color: rgb(4, 51, 255);">nil</span><span style="color: rgb(0, 0, 0);">];</span></p>
+		<p style="margin: 0px 0px 0px 80px; font-size: 11px; font-family: Menlo;">
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [actionSheet&nbsp;<span style="color: rgb(52, 149, 175);">showInView</span>:<span style="color: rgb(4, 51, 255);">self</span>.<span style="color: rgb(52, 149, 175);">view</span>];</p>
+		<p style="margin: 0px 0px 0px 80px; font-size: 11px; font-family: Menlo;">
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; actionSheet.<span style="color: rgb(52, 149, 175);">tag</span>&nbsp;=&nbsp;<span style="color: rgb(52, 149, 175);">DeleteCommentTag</span>;</p>
+		<p style="margin: 0px 0px 0px 80px; font-size: 11px; font-family: Menlo;">
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<span style="color: rgb(52, 149, 175);">savedIndexPath</span>&nbsp;= indexPath; &nbsp; &nbsp;</p>
+		<p style="margin: 0px 0px 0px 80px; font-size: 11px; font-family: Menlo;">
+			&nbsp; &nbsp; &nbsp; }];</p>
+		<p style="margin: 0px 0px 0px 80px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+			<span style="color: rgb(0, 0, 0);">&nbsp; &nbsp; &nbsp; deleteAction.</span>backgroundColor<span style="color: rgb(0, 0, 0);">&nbsp;= [</span>UIColor<span style="color: rgb(0, 0, 0);">&nbsp;</span>redColor<span style="color: rgb(0, 0, 0);">];</span></p>
+		<p style="margin: 0px 0px 0px 80px; font-size: 11px; font-family: Menlo;">
+			&nbsp; &nbsp; &nbsp;&nbsp;<span style="color: rgb(4, 51, 255);">return</span>&nbsp;@[deleteAction];&nbsp;</p>
+		<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+			&nbsp; &nbsp; }&nbsp;<span style="color: rgb(4, 51, 255);">else</span>&nbsp;{</p>
+		<p style="margin: 0px 0px 0px 120px; font-size: 11px; font-family: Menlo;">
+			<span style="color: rgb(52, 149, 175);">UITableViewRowAction</span><span style="color: rgb(0, 0, 0);">&nbsp;*reportAction = [</span><span style="color: rgb(52, 149, 175);">UITableViewRowAction</span><span style="color: rgb(0, 0, 0);">&nbsp; &nbsp;</span><span style="color: rgb(52, 149, 175);">rowActionWithStyle</span><span style="color: rgb(0, 0, 0);">:</span><span style="color: rgb(52, 149, 175);">UITableViewRowActionStyleDefault</span><span style="color: rgb(0, 0, 0);">&nbsp;</span><span style="color: rgb(52, 149, 175);">title</span><span style="color: rgb(0, 0, 0);">:</span><span style="color: rgb(4, 51, 255);">NSLocalizedString</span><span style="color: rgb(0, 0, 0);">(</span><span style="color: rgb(180, 38, 26);">@&quot;Report User&quot;</span><span style="color: rgb(0, 0, 0);">,&nbsp;</span><span style="color: rgb(4, 51, 255);">nil</span><span style="color: rgb(0, 0, 0);">)&nbsp;</span><span style="color: rgb(52, 149, 175);">handler</span><span style="color: rgb(0, 0, 0);">:^(</span><span style="color: rgb(52, 149, 175);">UITableViewRowAction</span><span style="color: rgb(0, 0, 0);">&nbsp;*action,&nbsp;</span><span style="color: rgb(52, 149, 175);">NSIndexPath</span><span style="color: rgb(0, 0, 0);">&nbsp;*indexPath) {</span></p>
+		<p style="margin: 0px 0px 0px 160px; font-size: 11px; font-family: Menlo;">
+			<span style="color: rgb(52, 149, 175);">UIActionSheet</span><span style="color: rgb(0, 0, 0);">&nbsp;*actionSheet = [[</span><span style="color: rgb(52, 149, 175);">UIActionSheet</span><font color="#000000">&nbsp;</font><span style="color: rgb(52, 149, 175);">alloc</span><span style="color: rgb(0, 0, 0);">]</span><span style="color: rgb(52, 149, 175);">initWithTitle</span><span style="color: rgb(0, 0, 0);">:</span><span style="color: rgb(4, 51, 255);">NSLocalizedString</span><span style="color: rgb(0, 0, 0);">(</span><span style="color: rgb(180, 38, 26);">@&quot;Do you really want to report this user?&quot;</span><span style="color: rgb(0, 0, 0);">,&nbsp;</span><span style="color: rgb(4, 51, 255);">nil</span><span style="color: rgb(0, 0, 0);">)&nbsp;</span><span style="color: rgb(52, 149, 175);">delegate</span><span style="color: rgb(0, 0, 0);">:</span><span style="color: rgb(4, 51, 255);">self</span><span style="color: rgb(0, 0, 0);">&nbsp;</span><span style="color: rgb(52, 149, 175);">cancelButtonTitle</span><span style="color: rgb(0, 0, 0);">:</span><span style="color: rgb(4, 51, 255);">NSLocalizedString</span><span style="color: rgb(0, 0, 0);">(</span><span style="color: rgb(180, 38, 26);">@&quot;Cancel&quot;</span><span style="color: rgb(0, 0, 0);">,&nbsp;</span><span style="color: rgb(4, 51, 255);">nil</span><span style="color: rgb(0, 0, 0);">)&nbsp;</span><span style="color: rgb(52, 149, 175);">destructiveButtonTitle</span><span style="color: rgb(0, 0, 0);">:</span><span style="color: rgb(4, 51, 255);">NSLocalizedString</span><span style="color: rgb(0, 0, 0);">(</span><span style="color: rgb(180, 38, 26);">@&quot;Report&quot;</span><span style="color: rgb(0, 0, 0);">,&nbsp;</span><span style="color: rgb(4, 51, 255);">nil</span><span style="color: rgb(0, 0, 0);">)&nbsp;</span><span style="color: rgb(52, 149, 175);">otherButtonTitles</span><span style="color: rgb(0, 0, 0);">:&nbsp;</span><span style="color: rgb(4, 51, 255);">nil</span><span style="color: rgb(0, 0, 0);">];</span></p>
+		<p style="margin: 0px 0px 0px 80px; font-size: 11px; font-family: Menlo;">
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [actionSheet&nbsp;<span style="color: rgb(52, 149, 175);">showInView</span>:<span style="color: rgb(4, 51, 255);">self</span>.<span style="color: rgb(52, 149, 175);">view</span>];</p>
+		<p style="margin: 0px 0px 0px 80px; font-size: 11px; font-family: Menlo;">
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; actionSheet.<span style="color: rgb(52, 149, 175);">tag</span>&nbsp;=&nbsp;<span style="color: rgb(52, 149, 175);">ReportUserCommentTag</span>;</p>
+		<p style="margin: 0px 0px 0px 80px; font-size: 11px; font-family: Menlo;">
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<span style="color: rgb(52, 149, 175);">savedIndexPath</span>&nbsp;= indexPath;</p>
+		<p style="margin: 0px 0px 0px 80px; font-size: 11px; font-family: Menlo;">
+			&nbsp; &nbsp; &nbsp; }];</p>
+		<p style="margin: 0px 0px 0px 80px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+			<span style="color: rgb(0, 0, 0);">&nbsp; &nbsp; &nbsp; reportAction.</span>backgroundColor<span style="color: rgb(0, 0, 0);">&nbsp;= [</span>UIColor<span style="color: rgb(0, 0, 0);">&nbsp;</span>redColor<span style="color: rgb(0, 0, 0);">];</span></p>
+		<p style="margin: 0px 0px 0px 80px; font-size: 11px; font-family: Menlo;">
+			&nbsp; &nbsp; &nbsp;&nbsp;<span style="color: rgb(4, 51, 255);">return</span>&nbsp;@[reportAction];</p>
+		<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+			&nbsp; &nbsp; } &nbsp;&nbsp;</p>
+		<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+			}</p>
+	</div>
+	<div>
+		&nbsp;</div>
+	<h4 id="classes_profile_page">Profile page</h4>
+	<p>		We now jump to the second tab of the tabbar controller - it is the profile page of the logged-in user. Its structure is, again, quite easy to grasp: we have a UITableView with different sections (the photos and videos) and a custom tableview header that displays some personal information of the user. The newsfeed you see on the profile page is the&nbsp;<em>ESTimelineAccountViewController&nbsp;</em>which is essentially the same class as the&nbsp;<em>ESPhotoTimelineViewController</em>&nbsp;except for one important thing: it only displays the user&#39;s personal photos and videos. For the rest, it essentially works like the ESPhotoTimelineViewController.</p>
+	<p>		The&nbsp;<em>ESAccountViewController&nbsp;</em>class is a subclass of the&nbsp;<i>ESTimelineAccountViewController</i>, meaning that it inherits all the methods from it, just like the&nbsp;<em>ESHomeViewController&nbsp;</em>inherits from the&nbsp;<em>ESTimelineAccountViewController</em>. There should be nothing more to say here, because the structure of the timeline has already been discussed. There are however new things here that have not yet been explained - the actual header containing the user information. Most of its setup is in the following method in the&nbsp;<em>ESAccountViewController.m&nbsp;</em>file:</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		- (<span style="color: rgb(4, 51, 255);">void</span>) setupHeader&nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		&nbsp;</p>
+	<div>
+		In short, the whole header displays following things:</div>
+	<div style="margin-left: 40px;">
+		&bull; Name of the user</div>
+	<div style="margin-left: 40px;">
+		&bull; mention name of the user (usually &quot;@username_of_the_user&quot;)</div>
+	<div style="margin-left: 40px;">
+		&bull; a short bio&nbsp;</div>
+	<div style="margin-left: 40px;">
+		&bull; the home town/city of the user</div>
+	<div style="margin-left: 40px;">
+		&bull; a website/link that the user has provided</div>
+	<div style="margin-left: 40px;">
+		&bull; the number of photos/videos the user has posted, as well as the approximate number of followers and followed users</div>
+	<div style="margin-left: 40px;">
+		&bull; an&nbsp;<em>Edit Profile&nbsp;</em>Button, taking the user to the&nbsp;<em>ESEditProfileViewController&nbsp;</em>we have already seen at the very beginning or a&nbsp;<em>Follow/Unfollow</em> button when we visit the profile of another user</div>
+	<div style="margin-left: 40px;">
+		&bull; a header photo an a profile photo that the user can set in the&nbsp;<em>ESEditProfileViewController</em></div>
+	<div>
+		The profile header view is really easy to customise, simply study the&nbsp;<em>setupHeader</em>&nbsp;method above and fulfill the changes you want.&nbsp;</div>
+	<div>
+		There are, however, two cool things absolutely worthy to say about the profile page. The first one is that the user can set a custom colour to the navigation bar, that applies to everyone visiting your profile page. The secont one is a smooth animation to the header picture as one tries to refresh the profile page.&nbsp;</div>
+	<div>
+		&nbsp;</div>
+	<h4 id="classes_taking_a_photo_or_video">Taking a photo or video</h4>
+	<p>		Once a user presses on the middle camera button in the tabbar, a UIActionView prompts him to choose wether to take a new photo or video or to choose one of the camera roll. If the user decides to take a photo, he will be presented a&nbsp;<span style="color: rgb(52, 149, 175); font-family: Menlo; font-size: 11px;">UIImagePickerController </span>and once he has taken the photo, the controller crops the image to the size 1:1. On the other hand, if the user decides to take a new video, he will be presented a custom video recorder controller, the&nbsp;<em>RecorderController</em>. The&nbsp;<em>RecorderController&nbsp;</em>uses the&nbsp;<em>KZCameraView</em> class and allows the user to take a stop-and-go video: a recording style that is widely used in the well-known Vines. It also allows to change the camera during the video or delete the last recorded part of the video.&nbsp;</p>
+	<p>		After taking a video, it is automatically uploaded once the user hits the&nbsp;<em>Done</em> button. However, the photos are not automatically uploaded - the user is guided to a new videocontroller where he can customise his photo by applying filters and effects on it. This gorgeous controller is provided by the&nbsp;<em><a href="http://github.com/yackle/CLImageEditor">CLImageEditor</a>&nbsp;</em>a powerful project on GitHub. We call the editor controller from the&nbsp;<em>ESTabbarController</em>:</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		- (<span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">void</span>)imagePickerController:(<span style="font-variant-ligatures: no-common-ligatures; color: #3495af">UIImagePickerController</span> *)picker didFinishPickingMediaWithInfo:(<span style="font-variant-ligatures: no-common-ligatures; color: #3495af">NSDictionary</span> *)info {</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp; &nbsp; [</span><span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">self</span><span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span>dismissViewControllerAnimated<span style="font-variant-ligatures: no-common-ligatures; color: #000000">:</span><span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">NO</span><span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span>completion<span style="font-variant-ligatures: no-common-ligatures; color: #000000">:</span><span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">nil</span><span style="font-variant-ligatures: no-common-ligatures; color: #000000">];</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp; &nbsp; </span>UIImage<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> *image = [info </span>objectForKey<span style="font-variant-ligatures: no-common-ligatures; color: #000000">:</span>UIImagePickerControllerEditedImage<span style="font-variant-ligatures: no-common-ligatures; color: #000000">];</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; min-height: 13px;">
+		<span style="color: rgb(0, 0, 0);">&nbsp; &nbsp;&nbsp;</span><span style="color: rgb(52, 149, 175);">CLImageEditor</span><span style="color: rgb(0, 0, 0);"> *editor = [[</span><span style="color: rgb(52, 149, 175);">CLImageEditor</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(52, 149, 175);">alloc</span><span style="color: rgb(0, 0, 0);">] </span><span style="color: rgb(52, 149, 175);">initWithImage</span><span style="color: rgb(0, 0, 0);">:image];</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		&nbsp; &nbsp; editor.<span style="font-variant-ligatures: no-common-ligatures; color: #3495af">delegate</span> = <span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">self</span>;</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp; &nbsp; [[</span>CLImageEditorTheme<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span>theme<span style="font-variant-ligatures: no-common-ligatures; color: #000000">] </span>setBackgroundColor<span style="font-variant-ligatures: no-common-ligatures; color: #000000">:[</span>UIColor<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span>blackColor<span style="font-variant-ligatures: no-common-ligatures; color: #000000">]];</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp; &nbsp; [[</span>CLImageEditorTheme<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span>theme<span style="font-variant-ligatures: no-common-ligatures; color: #000000">] </span>setToolbarColor<span style="font-variant-ligatures: no-common-ligatures; color: #000000">:[[</span>UIColor<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span>blackColor<span style="font-variant-ligatures: no-common-ligatures; color: #000000">] </span>colorWithAlphaComponent<span style="font-variant-ligatures: no-common-ligatures; color: #000000">:0.8]];</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp; &nbsp; [[</span>CLImageEditorTheme<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span>theme<span style="font-variant-ligatures: no-common-ligatures; color: #000000">] </span>setToolbarTextColor<span style="font-variant-ligatures: no-common-ligatures; color: #000000">:[</span>UIColor<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span>whiteColor<span style="font-variant-ligatures: no-common-ligatures; color: #000000">]];</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp; &nbsp; [[</span>CLImageEditorTheme<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span>theme<span style="font-variant-ligatures: no-common-ligatures; color: #000000">] </span>setToolIconColor<span style="font-variant-ligatures: no-common-ligatures; color: #000000">:</span><span style="font-variant-ligatures: no-common-ligatures; color: #b4261a">@&quot;white&quot;</span><span style="font-variant-ligatures: no-common-ligatures; color: #000000">];</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp; &nbsp; [</span><span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">self</span><span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span>presentViewController<span style="font-variant-ligatures: no-common-ligatures; color: #000000">:editor </span>animated<span style="font-variant-ligatures: no-common-ligatures; color: #000000">:</span><span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">YES</span><span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span>completion<span style="font-variant-ligatures: no-common-ligatures; color: #000000">:</span><span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">nil</span><span style="font-variant-ligatures: no-common-ligatures; color: #000000">];</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		}</p>
+	<div>
+		&nbsp;</div>
+	<div>
+		Check it out, you&#39;ll be stunned how customisable the photos now are because the large variety of filters and effects in this controller. Once the user hits the&nbsp;<em>Done</em> button, he is taken to a new viewcontroller where he can add a comment below his photo. This&nbsp;<em>ESEditPhotoViewController&nbsp;</em>shows the photo in a photoImageView:</div>
+	<div>
+		<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+			<span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+		<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+			photoImageView<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> = [[</span>UIImageView<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span>alloc<span style="font-variant-ligatures: no-common-ligatures; color: #000000">] </span>initWithFrame<span style="font-variant-ligatures: no-common-ligatures; color: #000000">:</span>CGRectMake<span style="font-variant-ligatures: no-common-ligatures; color: #000000">(0.0f, 0.0f,[</span>UIScreen<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span>mainScreen<span style="font-variant-ligatures: no-common-ligatures; color: #000000">].</span>bounds<span style="font-variant-ligatures: no-common-ligatures; color: #000000">.</span>size<span style="font-variant-ligatures: no-common-ligatures; color: #000000">.</span>width<span style="font-variant-ligatures: no-common-ligatures; color: #000000">, [</span>UIScreen<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span>mainScreen<span style="font-variant-ligatures: no-common-ligatures; color: #000000">].</span>bounds<span style="font-variant-ligatures: no-common-ligatures; color: #000000">.</span>size<span style="font-variant-ligatures: no-common-ligatures; color: #000000">.</span>width<span style="font-variant-ligatures: no-common-ligatures; color: #000000">)];</span></p>
+		<div>
+			&nbsp;</div>
+		<div>
+			And lets the user enter a comment in the&nbsp;<em>ESPhotoDetailsFooterView&nbsp;</em>we&#39;ve already seen:</div>
+		<div>
+			&nbsp;</div>
+		<div>
+			<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+				ESPhotoDetailsFooterView<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> *footerView = [[</span>ESPhotoDetailsFooterView<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span>alloc<span style="font-variant-ligatures: no-common-ligatures; color: #000000">] </span>initWithFrame<span style="font-variant-ligatures: no-common-ligatures; color: #000000">:footerRect];</span></p>
+			<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+				<span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">self</span><span style="font-variant-ligatures: no-common-ligatures; color: #000000">.</span>commentTextField<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> = footerView.</span>commentField<span style="font-variant-ligatures: no-common-ligatures; color: #000000">;</span></p>
+			<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+				<span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">self</span><span style="font-variant-ligatures: no-common-ligatures; color: #000000">.</span>commentTextField<span style="font-variant-ligatures: no-common-ligatures; color: #000000">.</span>delegate<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> = </span><span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">self</span><span style="font-variant-ligatures: no-common-ligatures; color: #000000">;</span></p>
+			<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+				[<span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">self</span>.<span style="font-variant-ligatures: no-common-ligatures; color: #3495af">scrollView</span> <span style="font-variant-ligatures: no-common-ligatures; color: #3495af">addSubview</span>:footerView];</p>
+			<div>
+				&nbsp;</div>
+			<div>
+				As you may have already noticed, this controller is not a subclass of the UITableView but a subclass of the UIViewController, thus we don&#39;t use any cells but a scrollview with subviews here. After hitting the&nbsp;<em>Publish</em> button, the photo is published and all the followers can see it.</div>
+			<div>
+				&nbsp;</div>
+		</div>
+	</div>
+	<h4 id="classes_messenger">Messenger</h4>
+	<p>		Some information beforehand: the messenger of this social network project is based on the&nbsp;<a href="http://github.com/jessesquires/JSQMessagesViewController">JSQMessagesViewController</a>&nbsp;framework by Jesse Squires. It&#39;s a fantastic project! You should head over to github and have a look at it. However, Jesse Squires did not design his project to work specifically with Parse.com. Yet, we need this particular behavior, and therefore some of the Messenger in this app is also based on modified parts of&nbsp;<a href="https://github.com/relatedcode/NotificationChat">NotificationChat</a>&nbsp;by RelatedCode (esp. the idea with Firebase is originated from this project - it&#39;s a great idea!). Again, you should head over to github to have a look at this fantastic project.&nbsp;</p>
+	<p>		If you tap on the fourth button of the tabbarcontroller (the one behing the camera button), the in-app messenger opens. The viewcontroller you now see is the ESConversationViewController. It shows all the active conversations you have, either private ones or groups. The way it does this, is by a UITableViewController and custom tableview cells, the&nbsp;<em>ESMessageCell</em>.</p>
+	<h4 id="classes_esmessagecell">ESMessageCell</h4>
+	<p>		The ESMessageCell is a custom tableview class displaying the name of the user, the last message that has been sent as well as a date when the message has been sent an a small label indicating if the message has been delivered and read. Additionally, it shows the profile picture of the user that last sent a message, and if there are unread messages, a blue badge in the upper right corner of the profile picture indicating how many messages haven&#39;t been read yet.&nbsp;</p>
+	<p>		The ESMessageCell is one of the only classes featuring a .xib file, so customising this one is really easy, even for someone with little to no experience in programming. Initially, there is no active conversation with someone - so you have to tap on the right button in the navigation bar, and select someone to chat with. If you want to select someone of your phone contacts, the app presents you the&nbsp;<em>ESPhoneContacts&nbsp;</em>viewcontroller, a simple UITableView displaying all of your contacts. You can now select the registered users or send an invitation SMS/mail to someone who isn&#39;t yet registered.&nbsp;</p>
+	<p>		If you, however, want to choose or search for an existing user in the user database, the app presents you the&nbsp;<em>ESSelectRecipientsViewController</em>&nbsp;where you can select one or multiple recipients and search for specific usernames.&nbsp;</p>
+	<p>		Once you select your recipients (group or private chat), a new viewcontroller appears. It&#39;s the&nbsp;<em>ESMessengerView</em>&nbsp;viewcontroller, a subclass of the&nbsp;<em>JSQMessagesViewController.&nbsp;</em>This viewcontroller supports normal text messages, as well as photo, video and audio messages and handles all the send and save methods when a user writes a message:</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		- (<span style="color: rgb(4, 51, 255);">void</span>)sendMessage:(<span style="color: rgb(52, 149, 175);">NSString</span>&nbsp;*)text withPicture:(<span style="color: rgb(52, 149, 175);">UIImage</span>&nbsp;*)picture withVideo:(<span style="color: rgb(52, 149, 175);">NSURL</span>&nbsp;*)video andWithAudio:(<span style="color: rgb(52, 149, 175);">NSString</span>&nbsp;*)audio&nbsp;</p>
+	<div>
+		<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+			- (<span style="color: rgb(4, 51, 255);">void</span>)eventuallySaveMessage:(<span style="color: rgb(52, 149, 175);">NSMutableDictionary</span>&nbsp;*)messengerItem&nbsp;</p>
+		<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+			&nbsp;</p>
+		<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; font-size: 11px; font-family: Menlo;">
+			<span style="font-family: Arial, Verdana, sans-serif; font-size: 12px;">The methods send the message to the other user by updating the last sent message in the resp. conversation in the Parse database and eventually save the message in the Firebase database. The Firsebase database gives us even the possibility to include read and delivered notifications, as well as a typing indicator when the other user is typing a new message. The&nbsp;<em>ESMessengerView&nbsp;</em>also supports blocking a user:</span></p>
+		<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; font-size: 11px; font-family: Menlo;">
+			&nbsp;</p>
+		<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+			- (<span style="color: rgb(4, 51, 255);">void</span>)userBlockAction</p>
+	</div>
+	<p>		There are, however, actions that are performed in the background by the&nbsp;<em>ESUtility</em>&nbsp;class. One of those is sending a push notification from within the code. As mentioned in the beginning, sending a message triggers a parse push notification that is being sent to the other user(s). The responsible method is the following one:</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		+ (<span style="color: rgb(4, 51, 255);">void</span>)deliverPushTo:(<span style="color: rgb(52, 149, 175);">NSString</span>&nbsp;*)groupId withText:(<span style="color: rgb(52, 149, 175);">NSString</span>&nbsp;*)text;</p>
+	<p>		As you can see, it is a public method other classes can access. We trigger this method in the&nbsp;<em>eventuallySaveMessage:</em>&nbsp;method:</p>
+	<p style="margin-left: 40px;">
+		<span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);">[</span><span style="color: rgb(52, 149, 175); font-family: Menlo; font-size: 11px;">ESUtility</span><span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);">&nbsp;</span><span style="color: rgb(52, 149, 175); font-family: Menlo; font-size: 11px;">deliverPushTo</span><span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);">:</span><span style="color: rgb(52, 149, 175); font-family: Menlo; font-size: 11px;">groupId</span><span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);">&nbsp;</span><span style="color: rgb(52, 149, 175); font-family: Menlo; font-size: 11px;">withText</span><span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);">:[messengerItem&nbsp;</span><span style="color: rgb(52, 149, 175); font-family: Menlo; font-size: 11px;">objectForKey</span><span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);">:</span><span style="font-family: Menlo; font-size: 11px; color: rgb(180, 38, 26);">@&quot;text&quot;</span><span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);">]];</span></p>
+	<p>		Another thing we do in the background is resetting the badge in the&nbsp;ESConversationViewController indicating how many messages haven&#39;t been read and call it from within our&nbsp;<em>ESMessengerView</em>:</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="color: rgb(34, 34, 34);">+ (</span><span style="color: rgb(4, 51, 255);">void</span><span style="color: rgb(34, 34, 34);">)resetUnreadMessagesCounterFor:(</span>NSString<span style="color: rgb(34, 34, 34);">&nbsp;*)groupId withCounter:(</span>NSInteger<span style="color: rgb(34, 34, 34);">)amount andLastMessage:(</span>NSString<span style="color: rgb(34, 34, 34);">&nbsp;*)lastMessage;</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<br>
+		<span style="color: rgb(0, 0, 0);">[</span>ESUtility<span style="color: rgb(0, 0, 0);">&nbsp;</span>resetUnreadMessagesCounterFor<span style="color: rgb(0, 0, 0);">:</span>groupId<span style="color: rgb(0, 0, 0);">&nbsp;</span>withCounter<span style="color: rgb(0, 0, 0);">:1&nbsp;</span>andLastMessage<span style="color: rgb(0, 0, 0);">:[messengerItem&nbsp;</span>objectForKey<span style="color: rgb(0, 0, 0);">:</span><span style="color: rgb(180, 38, 26);">@&quot;text&quot;</span><span style="color: rgb(0, 0, 0);">]];</span></p>
+	<div>
+		&nbsp;</div>
+	<div>
+		If you want to customise the actual design of the message bubbles, you better consider the documentation of the <a href="http://github.com/jessesquires/JSQMessagesViewController">JSQMessagesViewController</a>. The only thing that is really trivial is changing the color of the bubbles and limiting the length of a video. The respective constants can be found in the&nbsp;<em>ESConstants.m</em> file:</div>
+	<div>
+		&nbsp;</div>
+	<div>
+		<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(4, 51, 255);">
+			#define<span class="Apple-tab-span" style="white-space:pre"> </span>MESSAGE_OUT_COLOUR&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;HEXCOLOR(<span style="font-variant-ligatures: no-common-ligatures; color: #000000">0x007AFFFF</span>)</p>
+		<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(4, 51, 255);">
+			#define<span class="Apple-tab-span" style="white-space:pre"> </span>MESSAGE_IN_COLOUR<span class="Apple-tab-span" style="white-space:pre"> </span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;HEXCOLOR(<span style="font-variant-ligatures: no-common-ligatures; color: #000000">0xE6E5EAFF</span>)</p>
+		<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(4, 51, 255);">
+			#define<span class="Apple-tab-span" style="white-space:pre"> </span>VIDEO_LENGTH&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="font-variant-ligatures: no-common-ligatures; color: #000000">5</span></p>
+		<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(4, 51, 255);">
+			&nbsp;</p>
+		<h3 style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; font-size: 11px; font-family: Menlo; color: rgb(4, 51, 255);">
+			&nbsp;</h3>
+		<h3 style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; font-size: 11px; font-family: Menlo; color: rgb(4, 51, 255);">
+			<br>
+			<span style="color: rgb(34, 34, 34); font-family: Arial, Verdana, sans-serif; font-size: 12px;">ActivityFeedViewController</span></h3>
+		<img alt="" src="assets/images/image_3.jpg" style="width: 250px; height: 445px; float: right;"></div>
+	<p>		We&#39;ve now arrived at the last tabbar controller - the&nbsp;<em>ESActivityFeedViewController</em>. In this viewcontroller are listed all the activities related to the logged-in user. In short, it&#39;s similar to the notifications you know for example from facebook: when a user likes or comments one of your photos, follows you or mentions you in a comment, you get a notification and a new acitivity appears in the&nbsp;<em>ESActivityFeedViewController</em>. The nature of the controller is a simple uitableview, with custom cells, the&nbsp;<em>ESActivityCell</em> a subclass of the&nbsp;<em>ESBaseTextCell&nbsp;</em>(there it is again). This time, we don&#39;t show the replyButton, but display a text indicating the nature of the activity. The exact text is determined in the following method in the&nbsp;<em>ESActivityFeedViewController:</em></p>
+	<p style="margin-left: 40px;">
+		<span style="font-family: Menlo; font-size: 11px;">+ (</span><span style="font-family: Menlo; font-size: 11px; color: rgb(52, 149, 175);">NSString</span><span style="font-family: Menlo; font-size: 11px;">&nbsp;*)stringForActivityType:(</span><span style="font-family: Menlo; font-size: 11px; color: rgb(52, 149, 175);">NSString</span><span style="font-family: Menlo; font-size: 11px;">&nbsp;*)activityType&nbsp;</span></p>
+	<div>
+		There are two other methods that are quite important in this viewcontroller:<br>
+		&nbsp;</div>
+	<div>
+		<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+			- (<span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">void</span>)cell:(<span style="font-variant-ligatures: no-common-ligatures; color: #3495af">ESActivityCell</span> *)cellView didTapActivityButton:(<span style="font-variant-ligatures: no-common-ligatures; color: #3495af">PFObject</span> *)activity&nbsp;</p>
+		<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+			- (<span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">void</span>)cell:(<span style="font-variant-ligatures: no-common-ligatures; color: #3495af">ESBaseTextCell</span> *)cellView didTapUserButton:(<span style="font-variant-ligatures: no-common-ligatures; color: #3495af">PFUser</span> *)user&nbsp;</p>
+		<div>
+			&nbsp;</div>
+	</div>
+	<p>		The first one is a delegate method of the ESActivityCell, triggered when the cell is selected - we then open the photo, video or profile page of the user that is underlying the activity. The second one is a delegate method of the ESBaseTextCell and triggered when a username is selected.</p>
+	<p>		&nbsp;</p>
+	<h3>
+		The SideViewController</h3>
+	<p>		Since we&#39;ve covered now all the controllers within the tabbarcontroller, we can head to the resting controllers and classes. Let&#39;s start with the controller, appearing when swiping the whole screen to the right - the&nbsp;<em>SideViewController</em>. It&#39;s a normal UIViewController, but you is it possible to trigger this custom behavior? The answer is quite simple, we used a MFSideMenuContainerViewController in the&nbsp;<em>AppDelegate.h:</em></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">@property</span><span style="font-variant-ligatures: no-common-ligatures; color: #000000"> (</span><span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">strong</span><span style="font-variant-ligatures: no-common-ligatures; color: #000000">, </span><span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">nonatomic</span><span style="font-variant-ligatures: no-common-ligatures; color: #000000">) </span>MFSideMenuContainerViewController<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> *container;</span></p>
+	<p>		&nbsp;</p>
+	<div>
+		In the&nbsp;<em>AppDelegate.m&nbsp;</em>we then assign a leftViewController and a centerViewController to it:</div>
+	<div>
+		&nbsp;</div>
+	<div style="margin-left: 40px;">
+		<span style="font-family: Menlo; font-size: 11px; color: rgb(4, 51, 255);">self</span><span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);">.</span><span style="color: rgb(52, 149, 175); font-family: Menlo; font-size: 11px;">container</span><span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);">&nbsp;= [</span><span style="color: rgb(52, 149, 175); font-family: Menlo; font-size: 11px;">MFSideMenuContainerViewController</span><span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);">&nbsp;</span><span style="color: rgb(52, 149, 175); font-family: Menlo; font-size: 11px;">containerWithCenterViewController</span><span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);">:</span><span style="font-family: Menlo; font-size: 11px; color: rgb(4, 51, 255);">self</span><span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);">.</span><span style="color: rgb(52, 149, 175); font-family: Menlo; font-size: 11px;">tabBarController</span><span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);">&nbsp;</span><span style="color: rgb(52, 149, 175); font-family: Menlo; font-size: 11px;">leftMenuViewController</span><span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);">:leftDrawer&nbsp;</span><span style="color: rgb(52, 149, 175); font-family: Menlo; font-size: 11px;">rightMenuViewController</span><span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);">:</span><span style="font-family: Menlo; font-size: 11px; color: rgb(4, 51, 255);">nil</span><span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);">];</span></div>
+	<div>
+		&nbsp;</div>
+	<div>
+		This leaves us with the desired behavior. But we need a method for the tabbarController and the SideViewController to communicate with each other. We use the NSNotificationCenter to acquire this. First, we define a method in the SideViewController, used to post a notification to the NSNotificationCenter:</div>
+	<div>
+		<br>
+		<div>
+			<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+				- (<span style="color: rgb(4, 51, 255);">void</span>)postNotificationWithString:(<span style="color: rgb(52, 149, 175);">NSString</span>&nbsp;*)string {</p>
+			<p style="margin: 0px 0px 0px 80px; font-size: 11px; font-family: Menlo;">
+				&nbsp;<span style="color: rgb(52, 149, 175);">NSString</span>&nbsp;*notificationName =&nbsp;<span style="color: rgb(180, 38, 26);">@&quot;ESNotification&quot;</span>;</p>
+			<p style="margin: 0px 0px 0px 80px; font-size: 11px; font-family: Menlo;">
+				<span style="color: rgb(180, 38, 26);"><span style="color: rgb(0, 0, 0);">&nbsp;</span><span style="color: rgb(52, 149, 175);">NSString</span><span style="color: rgb(0, 0, 0);">&nbsp;*key =&nbsp;</span>@&quot;SocialNetwork&quot;</span><font color="#000000">;</font></p>
+			<p style="margin: 0px 0px 0px 80px; font-size: 11px; font-family: Menlo;">
+				<font color="#000000">&nbsp;</font><span style="color: rgb(52, 149, 175);">NSDictionary</span><span style="color: rgb(0, 0, 0);">&nbsp;*dictionary = [</span><span style="color: rgb(52, 149, 175);">NSDictionary</span><span style="color: rgb(0, 0, 0);">&nbsp;</span><span style="color: rgb(52, 149, 175);">dictionaryWithObject</span><span style="color: rgb(0, 0, 0);">:string&nbsp;</span><span style="color: rgb(52, 149, 175);">forKey</span><span style="color: rgb(0, 0, 0);">:key];</span></p>
+			<p style="margin: 0px 0px 0px 80px; font-size: 11px; font-family: Menlo;">
+				<span style="color: rgb(0, 0, 0);">&nbsp;[[</span><font color="#3495af">NSNotificationCenter</font><span style="color: rgb(0, 0, 0);">&nbsp;</span><font color="#3495af">defaultCenter</font><span style="color: rgb(0, 0, 0);">]&nbsp;</span><font color="#3495af">postNotificationName</font><span style="color: rgb(0, 0, 0);">:notificationName&nbsp;</span><font color="#3495af">object</font><span style="color: rgb(0, 0, 0);">:</span><span style="color: rgb(4, 51, 255);">nil</span><font color="#000000">&nbsp;</font><font color="#3495af">userInfo</font><span style="color: rgb(0, 0, 0);">:dictionary];</span></p>
+			<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+				}</p>
+			<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+				&nbsp;</p>
+		</div>
+	</div>
+	<div>
+		And everytime we want to communicate to the <em>ESHomeViewController</em>&nbsp;that we did something, so that it can do what it is supposed to do, we call:</div>
+	<div>
+		&nbsp;</div>
+	<div style="margin-left: 40px;">
+		<span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);">[</span><span style="font-family: Menlo; font-size: 11px; color: rgb(4, 51, 255);">self</span><span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);"> </span><span style="color: rgb(52, 149, 175); font-family: Menlo; font-size: 11px;">postNotificationWithString</span><span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);">:</span><span style="font-family: Menlo; font-size: 11px; color: rgb(180, 38, 26);">@&quot;OpenSettings&quot;</span><span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);">];</span></div>
+	<div style="margin-left: 40px;">
+		<div>
+			&nbsp;</div>
+	</div>
+	<div>
+		With a custom string (here &quot;OpenSettings&quot;) describing what we want the <em>ESHomeViewController</em> to do. Now in the <em>ESHomeViewController</em> we listen for Notifications:</div>
+	<div>
+		<p style="margin: 0px; font-size: 11px; font-family: Menlo;">
+			&nbsp;</p>
+		<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+			<span style="color: rgb(52, 149, 175);">NSString</span>&nbsp;*notificationName =&nbsp;<span style="color: rgb(180, 38, 26);">@&quot;ESNotification&quot;</span>;</p>
+		<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+			[[<span style="color: rgb(52, 149, 175);">NSNotificationCenter</span>&nbsp;<span style="color: rgb(52, 149, 175);">defaultCenter</span>]&nbsp;<span style="color: rgb(52, 149, 175);">addObserver</span>:<span style="color: rgb(4, 51, 255);">self</span>&nbsp;<span style="color: rgb(52, 149, 175);">selector</span>:<span style="color: rgb(4, 51, 255);">@selector</span>(useNotificationWithString:)&nbsp;<span style="color: rgb(52, 149, 175);">name</span>:notificationName&nbsp;<span style="color: rgb(52, 149, 175);">object</span>:<span style="color: rgb(4, 51, 255);">nil</span>];</p>
+	</div>
+	<div>
+		&nbsp;</div>
+	<div>
+		And once we detect one, we call:&nbsp;</div>
+	<div>
+		&nbsp;</div>
+	<div>
+		<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+			- (<span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">void</span>)useNotificationWithString:(<span style="font-variant-ligatures: no-common-ligatures; color: #3495af">NSNotification</span> *)notification&nbsp;</p>
+		<div>
+			&nbsp;</div>
+		<div>
+			And let the HomeViewController do what we intended to do, based on the Notification string we set beforehand. Here is an example, guess what we wanted to do:</div>
+		<div>
+			&nbsp;</div>
+		<div>
+			<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(180, 38, 26);">
+				<span style="font-variant-ligatures: no-common-ligatures; color: #3495af">NSString</span><span style="font-variant-ligatures: no-common-ligatures; color: #000000"> *key = </span>@&quot;SocialNetwork&quot;<span style="font-variant-ligatures: no-common-ligatures; color: #000000">;</span></p>
+			<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+				<span style="font-variant-ligatures: no-common-ligatures; color: #3495af">NSDictionary</span> *dictionary = [notification <span style="font-variant-ligatures: no-common-ligatures; color: #3495af">userInfo</span>];</p>
+			<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+				<span style="font-variant-ligatures: no-common-ligatures; color: #3495af">NSString</span> *stringValueToUse = [dictionary <span style="font-variant-ligatures: no-common-ligatures; color: #3495af">valueForKey</span>:key];</p>
+			<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+				<span style="color: rgb(4, 51, 255);">if</span>([stringValueToUse <span style="color: rgb(52, 149, 175);">isEqualToString</span>:<span style="color: rgb(180, 38, 26);">@&quot;ProfileOpen&quot;</span>]) {</p>
+			<p style="margin: 0px 0px 0px 80px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+				ESAccountViewController<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> *accountViewController = [[</span>ESAccountViewController<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span>alloc<span style="font-variant-ligatures: no-common-ligatures; color: #000000">]&nbsp;</span>initWithStyle<span style="font-variant-ligatures: no-common-ligatures; color: #000000">:</span>UITableViewStylePlain<span style="font-variant-ligatures: no-common-ligatures; color: #000000">];</span></p>
+			<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+				&nbsp; &nbsp; &nbsp; [accountViewController <span style="font-variant-ligatures: no-common-ligatures; color: #3495af">setUser</span>:[<span style="font-variant-ligatures: no-common-ligatures; color: #3495af">PFUser</span> <span style="font-variant-ligatures: no-common-ligatures; color: #3495af">currentUser</span>]];</p>
+			<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+				<span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp; &nbsp; &nbsp; [</span><span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">self</span><span style="font-variant-ligatures: no-common-ligatures; color: #000000">.</span>navigationController<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span>pushViewController<span style="font-variant-ligatures: no-common-ligatures; color: #000000">:accountViewController </span>animated<span style="font-variant-ligatures: no-common-ligatures; color: #000000">:</span><span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">YES</span><span style="font-variant-ligatures: no-common-ligatures; color: #000000">];</span></p>
+			<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+				<span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp; &nbsp; &nbsp; [</span><span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">self</span><span style="font-variant-ligatures: no-common-ligatures; color: #000000">.</span>menuContainerViewController<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span>setMenuState<span style="font-variant-ligatures: no-common-ligatures; color: #000000">:</span>MFSideMenuStateClosed<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span>completion<span style="font-variant-ligatures: no-common-ligatures; color: #000000">:^{}];</span><span style="color: rgb(34, 34, 34);">&nbsp; &nbsp;&nbsp;</span></p>
+			<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+				}</p>
+		</div>
+	</div>
+	<p>		The rest of the SideViewController is just a simple tableviewcontroller and delegate methods of the UITableView. You&#39;ll see, that from the SideViewController, you can:</p>
+	<p style="margin-left: 40px;">
+		&bull; Open your profile page<br>
+		&bull; Open the FindFriendsViewController<br>
+		&bull; Open the Settings<br>
+		&bull; Logout</p>
+	<p>		FindFriendsViewController? That&#39;s something new, isn&#39;t it? Let&#39;s have a look at it.<br>
+		&nbsp;</p>
+	<h4 id="classes_esfindfriendsviewcontroller">ESFindFriendsViewController</h4>
+	<p>		This is a UITableViewController subclass that we use to display the users of the social network. As our project is based on a follower system, we need a possibility to search for a particular user. This is implemented by the&nbsp;<em>ESFindFriendsViewController</em> a subclass of the&nbsp;<em>PFQueryTableViewController.&nbsp;</em>We display a search bar as table header view, a&nbsp;<em>Invite Friends&nbsp;</em>cell as first cell and all the queried users in the remaining cells. We use&nbsp;<em>ESFindFriendsCell</em> cells to achieve our desired behavior:</p>
+	<p style="margin-left: 40px;">
+		<span style="color: rgb(52, 149, 175); font-family: Menlo; font-size: 11px;">ESFindFriendsCell</span><span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);"> *cell = [tableView </span><span style="color: rgb(52, 149, 175); font-family: Menlo; font-size: 11px;">dequeueReusableCellWithIdentifier</span><span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);">:FriendCellIdentifier];</span><br>
+		<span style="font-family: Menlo; font-size: 11px; color: rgb(4, 51, 255);">if</span><span style="font-family: Menlo; font-size: 11px;"> (cell == </span><span style="font-family: Menlo; font-size: 11px; color: rgb(4, 51, 255);">nil</span><span style="font-family: Menlo; font-size: 11px;">) {</span><br>
+		<span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);">cell = [[</span><span style="color: rgb(52, 149, 175); font-family: Menlo; font-size: 11px;">ESFindFriendsCell</span><span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);"> </span><span style="color: rgb(52, 149, 175); font-family: Menlo; font-size: 11px;">alloc</span><span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);">] </span><span style="color: rgb(52, 149, 175); font-family: Menlo; font-size: 11px;">initWithStyle</span><span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);">:</span><span style="color: rgb(52, 149, 175); font-family: Menlo; font-size: 11px;">UITableViewCellStyleDefault</span><span style="font-family: Menlo; font-size: 11px;"><font color="#000000">&nbsp;</font></span><span style="color: rgb(52, 149, 175); font-family: Menlo; font-size: 11px;">reuseIdentifier</span><span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);">:FriendCellIdentifier];</span><br>
+		<span style="font-family: Menlo; font-size: 11px;">[cell </span><span style="font-family: Menlo; font-size: 11px; color: rgb(52, 149, 175);">setDelegate</span><span style="font-family: Menlo; font-size: 11px;">:</span><span style="font-family: Menlo; font-size: 11px; color: rgb(4, 51, 255);">self]</span><br>
+		<span style="font-family: Menlo; font-size: 11px;">}</span></p>
+	<p>		As you can see in the<i>&nbsp;ESFindFriendsCell</i> class, we display a profile picture view, the name, the number of uploaded photos and a followbutton:</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		<span style="color: rgb(4, 51, 255);">@property</span>&nbsp;(<span style="color: rgb(4, 51, 255);">nonatomic</span>,&nbsp;<span style="color: rgb(4, 51, 255);">strong</span>)&nbsp;<span style="color: rgb(52, 149, 175);">UIButton</span>&nbsp;*avatarImageButton;</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		<span style="color: rgb(4, 51, 255);">@property</span>&nbsp;(<span style="color: rgb(4, 51, 255);">nonatomic</span>,&nbsp;<span style="color: rgb(4, 51, 255);">strong</span>)&nbsp;<span style="color: rgb(52, 149, 175);">ESProfileImageView</span>&nbsp;*avatarImageView;</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(4, 51, 255);">
+		@property<span style="color: rgb(0, 0, 0);">&nbsp;(</span>nonatomic<span style="color: rgb(0, 0, 0);">,&nbsp;</span>strong<span style="color: rgb(0, 0, 0);">)&nbsp;</span><span style="color: rgb(52, 149, 175);">UIButton</span><span style="color: rgb(0, 0, 0);">&nbsp;*nameButton;</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(4, 51, 255);">
+		@property<span style="color: rgb(0, 0, 0);">&nbsp;(</span>nonatomic<span style="color: rgb(0, 0, 0);">,&nbsp;</span>strong<span style="color: rgb(0, 0, 0);">)&nbsp;</span><span style="color: rgb(52, 149, 175);">UILabel</span><span style="color: rgb(0, 0, 0);">&nbsp;*photoLabel;</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(4, 51, 255);">
+		@property<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> (</span>nonatomic<span style="font-variant-ligatures: no-common-ligatures; color: #000000">, </span>strong<span style="font-variant-ligatures: no-common-ligatures; color: #000000">) </span><span style="font-variant-ligatures: no-common-ligatures; color: #3495af">UIButton</span><span style="font-variant-ligatures: no-common-ligatures; color: #000000"> *followButton;</span></p>
+	<div>
+		<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(4, 51, 255);">
+			&nbsp;</p>
+	</div>
+	<p>		Tapping on the image or the name of a user takes you to his profile page, while tapping on the follow button triggers a follow-method in the&nbsp;<em>ESFindFriends</em><em>ViewController</em>:</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		- (<span style="color: rgb(4, 51, 255);">void</span>)cell:(<span style="color: rgb(52, 149, 175);">ESFindFriendsCell</span>&nbsp;*)cellView didTapUserButton:(<span style="color: rgb(52, 149, 175);">PFUser</span>&nbsp;*)aUser {</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(0, 143, 0);">
+		<span style="color: rgb(0, 0, 0);">&nbsp; &nbsp;&nbsp;</span><span style="color: rgb(52, 149, 175);">ESAccountViewController</span><span style="color: rgb(0, 0, 0);">&nbsp;*accountViewController = [[</span><span style="color: rgb(52, 149, 175);">ESAccountViewController</span><span style="color: rgb(0, 0, 0);">&nbsp;</span><span style="color: rgb(52, 149, 175);">alloc</span><span style="color: rgb(0, 0, 0);">]&nbsp;</span><span style="color: rgb(52, 149, 175);">initWithStyle</span><span style="color: rgb(0, 0, 0);">:</span><span style="color: rgb(52, 149, 175);">UITableViewStylePlain</span><span style="color: rgb(0, 0, 0);">];</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		&nbsp; &nbsp; [accountViewController&nbsp;<span style="color: rgb(52, 149, 175);">setUser</span>:aUser];</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="color: rgb(0, 0, 0);">&nbsp; &nbsp; [</span><span style="color: rgb(4, 51, 255);">self</span><span style="color: rgb(0, 0, 0);">.</span>navigationController<span style="color: rgb(0, 0, 0);">&nbsp;</span>pushViewController<span style="color: rgb(0, 0, 0);">:accountViewController&nbsp;</span>animated<span style="color: rgb(0, 0, 0);">:</span><span style="color: rgb(4, 51, 255);">YES</span><span style="color: rgb(0, 0, 0);">];</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		}</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; min-height: 13px;">
+		&nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		- (<span style="color: rgb(4, 51, 255);">void</span>)cell:(<span style="color: rgb(52, 149, 175);">ESFindFriendsCell</span>&nbsp;*)cellView didTapFollowButton:(<span style="color: rgb(52, 149, 175);">PFUser</span>&nbsp;*)aUser {</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="color: rgb(0, 0, 0);">&nbsp; &nbsp; [</span><span style="color: rgb(4, 51, 255);">self</span><span style="color: rgb(0, 0, 0);">&nbsp;</span>shouldToggleFollowFriendForCell<span style="color: rgb(0, 0, 0);">:cellView];</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		}</p>
+	<p>		Hitting the&nbsp;<em>InviteFriends&nbsp;</em>cell takes you to the&nbsp;<em>ESPhoneContacts</em> viewcontroller:</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		- (<span style="color: rgb(4, 51, 255);">void</span>)inviteFriendsButtonAction:(<span style="color: rgb(4, 51, 255);">id</span>)sender {</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="color: rgb(0, 0, 0);">&nbsp; &nbsp;&nbsp;</span>dispatch_async<span style="color: rgb(0, 0, 0);">(</span>dispatch_get_main_queue<span style="color: rgb(0, 0, 0);">(), ^{</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="color: rgb(0, 0, 0);">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span>ESPhoneContacts<span style="color: rgb(0, 0, 0);">&nbsp;*addressBookView = [[</span>ESPhoneContacts<span style="color: rgb(0, 0, 0);">&nbsp;</span>alloc<span style="color: rgb(0, 0, 0);">]&nbsp;</span>init<span style="color: rgb(0, 0, 0);">];</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="color: rgb(0, 0, 0);">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span>UINavigationController<span style="color: rgb(0, 0, 0);">&nbsp;*navController = [[</span>UINavigationController<span style="color: rgb(0, 0, 0);">&nbsp;</span>alloc<span style="color: rgb(0, 0, 0);">]&nbsp;</span>initWithRootViewController<span style="color: rgb(0, 0, 0);">:addressBookView];</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="color: rgb(0, 0, 0);">&nbsp; &nbsp; &nbsp; &nbsp; [</span><span style="color: rgb(4, 51, 255);">self</span><span style="color: rgb(0, 0, 0);">&nbsp;</span>presentViewController<span style="color: rgb(0, 0, 0);">:navController&nbsp;</span>animated<span style="color: rgb(0, 0, 0);">:</span><span style="color: rgb(4, 51, 255);">YES</span><span style="color: rgb(0, 0, 0);">&nbsp;</span>completion<span style="color: rgb(0, 0, 0);">:</span><span style="color: rgb(4, 51, 255);">nil</span><span style="color: rgb(0, 0, 0);">];</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		&nbsp; &nbsp; });</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		}</p>
+	<h4 id="classes_popular_posts">Popular posts</h4>
+	<p>		The&nbsp;<em>ESPopularViewController&nbsp;</em>which is in the&nbsp;<em>Controllers</em> folder is a class that is really similar to the&nbsp;<em>ESHashtagTimelineViewController</em>. It&#39;s purpose is to show the most popular posts on the network. The important part of that class is the query defining which post is popular and which not:</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp;</span>NSDate<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> *now = [</span>NSDate<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span>date<span style="font-variant-ligatures: no-common-ligatures; color: #000000">];</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		&nbsp; &nbsp; <span style="font-variant-ligatures: no-common-ligatures; color: #3495af">NSDate</span> *sevenDaysAgo = [now <span style="font-variant-ligatures: no-common-ligatures; color: #3495af">dateByAddingTimeInterval</span>:-7*24*60*60];</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		&nbsp; &nbsp; <span style="font-variant-ligatures: no-common-ligatures; color: #3495af">NSDate</span> *aDayAgo = [now <span style="font-variant-ligatures: no-common-ligatures; color: #3495af">dateByAddingTimeInterval</span>:-1*24*60*60];</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; min-height: 13px;">
+		&nbsp;&nbsp; &nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp; &nbsp; </span>PFQuery<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> *photosFromUsersQuery = [</span>PFQuery<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span>queryWithClassName<span style="font-variant-ligatures: no-common-ligatures; color: #000000">:</span><span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">self</span><span style="font-variant-ligatures: no-common-ligatures; color: #000000">.</span>parseClassName<span style="font-variant-ligatures: no-common-ligatures; color: #000000">];</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		&nbsp; &nbsp; [photosFromUsersQuery <span style="font-variant-ligatures: no-common-ligatures; color: #3495af">whereKeyDoesNotExist</span>:<span style="font-variant-ligatures: no-common-ligatures; color: #b4261a">@&quot;type&quot;</span>];</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp; &nbsp; [photosFromUsersQuery </span>whereKeyExists<span style="font-variant-ligatures: no-common-ligatures; color: #000000">:</span>kESPhotoPictureKey<span style="font-variant-ligatures: no-common-ligatures; color: #000000">];</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; min-height: 13px;">
+		&nbsp;&nbsp; &nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(0, 143, 0);">
+		<span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp; &nbsp; </span>//The photos displayed here are at maximum seven days old and have been updated the last 24hours (comment or like), and they have at least N popularity points.</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		&nbsp; &nbsp; [photosFromUsersQuery <span style="font-variant-ligatures: no-common-ligatures; color: #3495af">whereKey</span>:<span style="font-variant-ligatures: no-common-ligatures; color: #b4261a">@&quot;createdAt&quot;</span> <span style="font-variant-ligatures: no-common-ligatures; color: #3495af">greaterThanOrEqualTo</span>:sevenDaysAgo];</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		&nbsp; &nbsp; [photosFromUsersQuery <span style="font-variant-ligatures: no-common-ligatures; color: #3495af">whereKey</span>:<span style="font-variant-ligatures: no-common-ligatures; color: #b4261a">@&quot;updatedAt&quot;</span> <span style="font-variant-ligatures: no-common-ligatures; color: #3495af">greaterThanOrEqualTo</span>:aDayAgo];</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp; &nbsp; [photosFromUsersQuery </span>whereKey<span style="font-variant-ligatures: no-common-ligatures; color: #000000">:</span>kESPhotoPopularPointsKey<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span>greaterThan<span style="font-variant-ligatures: no-common-ligatures; color: #000000">:[</span>NSNumber<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span>numberWithInt<span style="font-variant-ligatures: no-common-ligatures; color: #000000">:</span><span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">POPULARITY_POINTS_MIN</span><span style="font-variant-ligatures: no-common-ligatures; color: #000000">]];</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; min-height: 13px;">
+		&nbsp;&nbsp; &nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp; &nbsp; </span>PFQuery<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> *videosFromUserQuery = [</span>PFQuery<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span>queryWithClassName<span style="font-variant-ligatures: no-common-ligatures; color: #000000">:</span><span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">self</span><span style="font-variant-ligatures: no-common-ligatures; color: #000000">.</span>parseClassName<span style="font-variant-ligatures: no-common-ligatures; color: #000000">];</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		&nbsp; &nbsp; [videosFromUserQuery <span style="font-variant-ligatures: no-common-ligatures; color: #3495af">whereKeyExists</span>:<span style="font-variant-ligatures: no-common-ligatures; color: #b4261a">@&quot;type&quot;</span>];</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp; &nbsp; [videosFromUserQuery </span>whereKeyExists<span style="font-variant-ligatures: no-common-ligatures; color: #000000">:</span>kESVideoFileKey<span style="font-variant-ligatures: no-common-ligatures; color: #000000">];</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; min-height: 13px;">
+		&nbsp;&nbsp; &nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(0, 143, 0);">
+		<span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp; &nbsp; </span>//The videos displayed here are at maximum seven days old and have been updated the last 24hours (comment or like), and they have at least N popularity points.</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		&nbsp; &nbsp; [videosFromUserQuery <span style="font-variant-ligatures: no-common-ligatures; color: #3495af">whereKey</span>:<span style="font-variant-ligatures: no-common-ligatures; color: #b4261a">@&quot;createdAt&quot;</span> <span style="font-variant-ligatures: no-common-ligatures; color: #3495af">greaterThanOrEqualTo</span>:sevenDaysAgo];</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		&nbsp; &nbsp; [videosFromUserQuery <span style="font-variant-ligatures: no-common-ligatures; color: #3495af">whereKey</span>:<span style="font-variant-ligatures: no-common-ligatures; color: #b4261a">@&quot;updatedAt&quot;</span> <span style="font-variant-ligatures: no-common-ligatures; color: #3495af">greaterThanOrEqualTo</span>:aDayAgo];</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp; &nbsp; [videosFromUserQuery </span>whereKey<span style="font-variant-ligatures: no-common-ligatures; color: #000000">:</span>kESPhotoPopularPointsKey<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span>greaterThan<span style="font-variant-ligatures: no-common-ligatures; color: #000000">:[</span>NSNumber<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span>numberWithInt<span style="font-variant-ligatures: no-common-ligatures; color: #000000">:</span><span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">POPULARITY_POINTS_MIN</span><span style="font-variant-ligatures: no-common-ligatures; color: #000000">]];</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; min-height: 13px;">
+		&nbsp;&nbsp; &nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		&nbsp; &nbsp; <span style="font-variant-ligatures: no-common-ligatures; color: #3495af">PFQuery</span> *query = [<span style="font-variant-ligatures: no-common-ligatures; color: #3495af">PFQuery</span> <span style="font-variant-ligatures: no-common-ligatures; color: #3495af">orQueryWithSubqueries</span>:[<span style="font-variant-ligatures: no-common-ligatures; color: #3495af">NSArray</span> <span style="font-variant-ligatures: no-common-ligatures; color: #3495af">arrayWithObjects</span>:photosFromUsersQuery, videosFromUserQuery, <span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">nil</span>]];</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp; &nbsp; [query </span>includeKey<span style="font-variant-ligatures: no-common-ligatures; color: #000000">:</span>kESPhotoUserKey<span style="font-variant-ligatures: no-common-ligatures; color: #000000">];</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp; &nbsp; [query </span>orderByDescending<span style="font-variant-ligatures: no-common-ligatures; color: #000000">:</span>kESPhotoPopularPointsKey<span style="font-variant-ligatures: no-common-ligatures; color: #000000">];</span></p>
+	<div>
+		&nbsp;</div>
+	<p>		You see, we only query for photos and videos that aren&#39;t older than seven days, have been liked or commented (updated) within the last 24 hours and have at least a certain numer of popularity points. The popularity points are simple points that are added to the photo/video object when it is commented or liked (1 point for a comment, 3 points for a like). The constant POPULARITY_POINTS_MIN is defined in the&nbsp;<em>Constants.h&nbsp;</em>file and currently has the value 10. This means that only photos that have at least 10 popularity points are queried.&nbsp;</p>
+	<p>		Finally, the result of the query is ordered by descending popularity points.</p>
+	<p>		&nbsp;</p>
+	<h4 id="classes_settings">Settings</h4>
+	<p>		If you tap the settings button in the SideViewController, the&nbsp;<em>ESHomeViewController</em> opens the&nbsp;<em>ESSettingsViewController:</em></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		<span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">if</span> ([stringValueToUse <span style="font-variant-ligatures: no-common-ligatures; color: #3495af">isEqualToString</span>:<span style="font-variant-ligatures: no-common-ligatures; color: #b4261a">@&quot;OpenSettings&quot;</span>])</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		&nbsp; &nbsp; {</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp; &nbsp; &nbsp; &nbsp; </span>dispatch_async<span style="font-variant-ligatures: no-common-ligatures; color: #000000">(</span>dispatch_get_main_queue<span style="font-variant-ligatures: no-common-ligatures; color: #000000">(), ^{</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>ESSettingsViewController<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> *settingsViewController = [[</span>ESSettingsViewController<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span>alloc<span style="font-variant-ligatures: no-common-ligatures; color: #000000">] </span>initWithNibName<span style="font-variant-ligatures: no-common-ligatures; color: #000000">:</span><span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">nil</span><span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span>bundle<span style="font-variant-ligatures: no-common-ligatures; color: #000000">:</span><span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">nil</span><span style="font-variant-ligatures: no-common-ligatures; color: #000000">];</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>UINavigationController<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> *navController = [[</span>UINavigationController<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span>alloc<span style="font-variant-ligatures: no-common-ligatures; color: #000000">] </span>initWithRootViewController<span style="font-variant-ligatures: no-common-ligatures; color: #000000">:settingsViewController];</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [</span><span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">self</span><span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span>presentViewController<span style="font-variant-ligatures: no-common-ligatures; color: #000000">:navController </span>animated<span style="font-variant-ligatures: no-common-ligatures; color: #000000">:</span><span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">YES</span><span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span>completion<span style="font-variant-ligatures: no-common-ligatures; color: #000000">:</span><span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">nil</span><span style="font-variant-ligatures: no-common-ligatures; color: #000000">];</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		&nbsp; &nbsp; &nbsp; &nbsp; });</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		<span style="color: rgb(52, 149, 175);"><span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp; &nbsp; &nbsp; &nbsp; [</span><span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">self</span><span style="font-variant-ligatures: no-common-ligatures; color: #000000">.</span>menuContainerViewController<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span>setMenuState<span style="font-variant-ligatures: no-common-ligatures; color: #000000">:</span>MFSideMenuStateClosed</span><font color="#000000">&nbsp;</font><font color="#3495af">completion</font><span style="color: rgb(0, 0, 0);">:^{}];</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; min-height: 13px;">
+		&nbsp; &nbsp; }</p>
+	<p>		In the&nbsp;<em>ESSettingsViewController,&nbsp;</em>we display a tableview with different sections and cells:</p>
+	<p style="margin-left: 40px;">
+		&bull; <strong>Profile section:</strong> this section contains one cell with the title&nbsp;<em>Security Settings</em> - one the user taps on that cell, we check if he is logged in via Facebook or not, and let him then change his PIN (if Facebook) or his password (if classic login) via the&nbsp;<em>ESChangePINViewController&nbsp;</em>or the&nbsp;<em>ESChangePasswordViewController</em>.</p>
+	<p style="margin-left: 40px;">
+		&bull; <strong>Privacy Policy section:&nbsp;</strong>This section bothers with all the privacy and terms settings of the project. The first cell leads to a link where the terms are (change that link to your own link):&nbsp;</p>
+	<p style="margin: 0px 0px 0px 80px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="font-variant-ligatures: no-common-ligatures; color: #000000">[[</span>UIApplication<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span>sharedApplication<span style="font-variant-ligatures: no-common-ligatures; color: #000000">] </span>openURL<span style="font-variant-ligatures: no-common-ligatures; color: #000000">:[</span>NSURL&nbsp;URLWithString<span style="font-variant-ligatures: no-common-ligatures; color: #000000">:</span><span style="font-variant-ligatures: no-common-ligatures; color: #b4261a">@&quot;https://www.netzwierk.lu/terms&quot;</span><span style="font-variant-ligatures: no-common-ligatures; color: #000000">]];</span></p>
+	<div>
+		&nbsp;</div>
+	<div style="margin-left: 40px;">
+		The second cell is a switch where the user can enable or disable location services in the app.<br>
+		The third cell is a contact cell, where we open a&nbsp;<span style="color: rgb(52, 149, 175); font-family: Menlo; font-size: 11px;">MFMailComposeViewController&nbsp;</span>for the user so that he can contact us. You&#39;d better change the mail text and the mail address to fit your needs:</div>
+	<div style="margin-left: 40px;">
+		&nbsp;</div>
+	<div style="margin-left: 80px;">
+		<p style="margin: 0px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+			<span style="color: rgb(0, 0, 0);">[mailComposer&nbsp;</span>setToRecipients<span style="color: rgb(0, 0, 0);">:[</span>NSArray<span style="color: rgb(0, 0, 0);">&nbsp;</span>arrayWithObjects<span style="color: rgb(0, 0, 0);">:&nbsp;</span><span style="color: rgb(180, 38, 26);">@&quot;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#110;&#101;&#116;&#122;&#119;&#105;&#101;&#114;&#107;&#46;&#108;&#117;&quot;</span><span style="color: rgb(0, 0, 0);">,</span><span style="color: rgb(4, 51, 255);">nil</span><span style="color: rgb(0, 0, 0);">]];</span></p>
+		<p style="margin: 0px; font-size: 11px; font-family: Menlo;">
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [mailComposer&nbsp;<span style="color: rgb(52, 149, 175);">setSubject</span>:[<span style="color: rgb(52, 149, 175);">NSString</span>&nbsp;<span style="color: rgb(52, 149, 175);">stringWithFormat</span>:&nbsp;<span style="color: rgb(180, 38, 26);">@&quot;Netzwierk v%@ Support&quot;</span>,appVersionString]];</p>
+		<p style="margin: 0px; font-size: 11px; font-family: Menlo; color: rgb(180, 38, 26);">
+			<span style="color: rgb(0, 0, 0);">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><span style="color: rgb(52, 149, 175);">NSString</span><span style="color: rgb(0, 0, 0);">&nbsp;*supportText = [</span><span style="color: rgb(52, 149, 175);">NSString</span><span style="color: rgb(0, 0, 0);">&nbsp;</span><span style="color: rgb(52, 149, 175);">stringWithFormat</span><span style="color: rgb(0, 0, 0);">:</span>@&quot;Device: %@ iOS Version: %@ Requester ID: %@ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; _________________ &quot;<span style="color: rgb(0, 0, 0);">,model,iOSVersion,[[</span><span style="color: rgb(52, 149, 175);">PFUser</span><span style="color: rgb(0, 0, 0);">&nbsp;</span><span style="color: rgb(52, 149, 175);">currentUser</span><span style="color: rgb(0, 0, 0);">]</span><span style="color: rgb(52, 149, 175);">objectId</span><span style="color: rgb(0, 0, 0);">]];</span></p>
+		<p style="margin: 0px; font-size: 11px; font-family: Menlo; color: rgb(180, 38, 26);">
+			<span style="color: rgb(0, 0, 0);">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; supportText = [supportText&nbsp;</span><span style="color: rgb(52, 149, 175);">stringByAppendingString</span><span style="color: rgb(0, 0, 0);">:&nbsp;</span>@&quot;Please describe your problem or question. We will answer you within 24 hours. For a flawless treatment of your query, make sure to not delete the above indicated iOS Version and Requester ID. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; _________________&quot;<span style="color: rgb(0, 0, 0);">];</span></p>
+		<p style="margin: 0px; font-size: 11px; font-family: Menlo;">
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [mailComposer&nbsp;<span style="color: rgb(52, 149, 175);">setMessageBody</span>:supportText&nbsp;<span style="color: rgb(52, 149, 175);">isHTML</span>:<span style="color: rgb(4, 51, 255);">NO</span>];</p>
+		<p style="margin: 0px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+			<span style="color: rgb(0, 0, 0);">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; mailComposer.</span>modalTransitionStyle<span style="color: rgb(0, 0, 0);">&nbsp;=&nbsp;</span>UIModalTransitionStyleFlipHorizontal<span style="color: rgb(0, 0, 0);">;</span></p>
+		<p style="margin: 0px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+			<span style="color: rgb(0, 0, 0);">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [</span><span style="color: rgb(4, 51, 255);">self</span><span style="color: rgb(0, 0, 0);">&nbsp;</span>presentViewController<span style="color: rgb(0, 0, 0);">:mailComposer&nbsp;</span>animated<span style="color: rgb(0, 0, 0);">:</span><span style="color: rgb(4, 51, 255);">YES</span><span style="color: rgb(0, 0, 0);">&nbsp;</span>completion<span style="color: rgb(0, 0, 0);">:</span><span style="color: rgb(4, 51, 255);">nil</span><span style="color: rgb(0, 0, 0);">];</span></p>
+	</div>
+	<div style="margin-left: 40px;">
+		&nbsp;</div>
+	<div style="margin-left: 40px;">
+		&bull;&nbsp;<strong>Donate section:</strong> this section leads to an extern link were we have established a donate procedure for those users who want to donate something:</div>
+	<div style="margin-left: 40px;">
+		&nbsp;</div>
+	<div style="margin-left: 80px;">
+		<span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);">[[</span><span style="color: rgb(52, 149, 175); font-family: Menlo; font-size: 11px;">UIApplication</span><span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);">&nbsp;</span><span style="color: rgb(52, 149, 175); font-family: Menlo; font-size: 11px;">sharedApplication</span><span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);">]&nbsp;</span><span style="color: rgb(52, 149, 175); font-family: Menlo; font-size: 11px;">openURL</span><span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);">:[</span><span style="color: rgb(52, 149, 175); font-family: Menlo; font-size: 11px;">NSURL</span><span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);">&nbsp;</span><span style="color: rgb(52, 149, 175); font-family: Menlo; font-size: 11px;">URLWithString</span><span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);">:</span><span style="font-family: Menlo; font-size: 11px; color: rgb(180, 38, 26);">@&quot;https://www.netzwierk.lu/donate&quot;</span><span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);">]];</span></div>
+	<div style="margin-left: 40px;">
+		&nbsp;</div>
+	<div style="margin-left: 40px;">
+		This link should also be changed.</div>
+	<div style="margin-left: 40px;">
+		&nbsp;</div>
+	<div style="margin-left: 40px;">
+		&bull;&nbsp;<strong>Delete account section:&nbsp;</strong>this section contains a cell guiding the user to the&nbsp;<em>ESDeleteAccountViewController&nbsp;</em>or the&nbsp;<em>ESDeleteAccountNonFacebookViewController,</em> depending on wether the user logged in with Facbeook or not. Both of these deletion viewcontrollers have nearly the same behavior and methods - the user simply enters his PIN (Facebook user) or his username and password (classic user) and hits the&nbsp;<em>Delete Account&nbsp;</em>button. He will then be logged out of the social network and his account will be deleted completely. I mean, really, completely. Our terms obligate us to delete every information from a user if he wants to delete the account. Thus you may want to change this behavior, to fit your special needs. In this case, you should have a look at the following method in the respective deletion viewcontroller:</div>
+	<div style="margin-left: 40px;">
+		&nbsp;</div>
+	<div style="margin-left: 80px;">
+		<p style="margin: 0px; font-size: 11px; font-family: Menlo;">
+			- (<span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">void</span>)deleteAccount:(<span style="font-variant-ligatures: no-common-ligatures; color: #3495af">PFUser</span> *)user</p>
+		<p style="margin: 0px; font-size: 11px; font-family: Menlo;">
+			&nbsp;</p>
+	</div>
+	<h4 id="classes_logout">Logout</h4>
+	<p>		Tapping on the logout button in the SideViewController calls this method in the&nbsp;<em>ESHomeViewController:</em></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		- (<span style="color: rgb(4, 51, 255);">void</span>)useNotificationWithString:(<span style="color: rgb(52, 149, 175);">NSNotification</span>&nbsp;*)notification</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		{&nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		<span style="color: rgb(4, 51, 255);">&nbsp; if</span>&nbsp;([stringValueToUse&nbsp;<span style="color: rgb(52, 149, 175);">isEqualToString</span>:<span style="color: rgb(180, 38, 26);">@&quot;LogHimOut&quot;</span>])<br>
+		&nbsp; &nbsp;{</p>
+	<div>
+		<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+			<span style="color: rgb(0, 0, 0);">&nbsp; &nbsp; &nbsp; &nbsp; [</span><span style="color: rgb(4, 51, 255);">self</span><span style="color: rgb(0, 0, 0);">.</span>menuContainerViewController<span style="color: rgb(0, 0, 0);">&nbsp;</span>setMenuState<span style="color: rgb(0, 0, 0);">:</span>MFSideMenuStateClosed<span style="color: rgb(0, 0, 0);">&nbsp;</span>completion<span style="color: rgb(0, 0, 0);">:^{}];</span></p>
+		<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+			<span style="color: rgb(0, 0, 0);">&nbsp; &nbsp; &nbsp; &nbsp; [(</span>AppDelegate<span style="color: rgb(0, 0, 0);">&nbsp;*)[[</span>UIApplication<span style="color: rgb(0, 0, 0);">&nbsp;</span>sharedApplication<span style="color: rgb(0, 0, 0);">]&nbsp;</span>delegate<span style="color: rgb(0, 0, 0);">]&nbsp;</span>logOut<span style="color: rgb(0, 0, 0);">];</span><span style="color: rgb(34, 34, 34);">&nbsp;</span></p>
+		<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+			&nbsp; &nbsp; }</p>
+		<div style="margin-left: 40px;">
+			}</div>
+	</div>
+	<p>		You see, the only thing that essentially happens is that the&nbsp;<em>ESHomeViewController&nbsp;</em>calls a logout method in the&nbsp;<em>AppDelegate:</em></p>
+	<p>		&nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		- (<span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">void</span>)logOut {</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(0, 143, 0);">
+		<span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp; &nbsp; </span>// clear cache</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp; &nbsp; [[</span>ESCache<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span>sharedCache<span style="font-variant-ligatures: no-common-ligatures; color: #000000">] </span>clear<span style="font-variant-ligatures: no-common-ligatures; color: #000000">];</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; min-height: 13px;">
+		&nbsp;&nbsp; &nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(0, 143, 0);">
+		<span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp; &nbsp; </span>// clear NSUserDefaults</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp; &nbsp; [[</span>NSUserDefaults<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span>standardUserDefaults<span style="font-variant-ligatures: no-common-ligatures; color: #000000">] </span>removeObjectForKey<span style="font-variant-ligatures: no-common-ligatures; color: #000000">:</span>kESUserDefaultsCacheFacebookFriendsKey<span style="font-variant-ligatures: no-common-ligatures; color: #000000">];</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp; &nbsp; [[</span>NSUserDefaults<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span>standardUserDefaults<span style="font-variant-ligatures: no-common-ligatures; color: #000000">] </span>removeObjectForKey<span style="font-variant-ligatures: no-common-ligatures; color: #000000">:</span>kESUserDefaultsActivityFeedViewControllerLastRefreshKey<span style="font-variant-ligatures: no-common-ligatures; color: #000000">];</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp; &nbsp; [[</span>NSUserDefaults<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span>standardUserDefaults<span style="font-variant-ligatures: no-common-ligatures; color: #000000">] </span>synchronize<span style="font-variant-ligatures: no-common-ligatures; color: #000000">];</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; min-height: 13px;">
+		&nbsp;&nbsp; &nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(0, 143, 0);">
+		<span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp; &nbsp; </span>// Unsubscribe from push notifications by removing the user association from the current installation.</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp; &nbsp; [[</span>PFInstallation<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span>currentInstallation<span style="font-variant-ligatures: no-common-ligatures; color: #000000">] </span>removeObjectForKey<span style="font-variant-ligatures: no-common-ligatures; color: #000000">:</span>kESInstallationUserKey<span style="font-variant-ligatures: no-common-ligatures; color: #000000">];</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp; &nbsp; [[</span>PFInstallation<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span>currentInstallation<span style="font-variant-ligatures: no-common-ligatures; color: #000000">] </span>saveInBackground<span style="font-variant-ligatures: no-common-ligatures; color: #000000">];</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; min-height: 13px;">
+		&nbsp;&nbsp; &nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(0, 143, 0);">
+		<span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp; &nbsp; </span>// Clear all caches</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp; &nbsp; [</span>PFQuery<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span>clearAllCachedResults<span style="font-variant-ligatures: no-common-ligatures; color: #000000">];</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; min-height: 13px;">
+		&nbsp;&nbsp; &nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(0, 143, 0);">
+		<span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp; &nbsp; </span>// Log out</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp; &nbsp; [</span>PFUser<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span>logOut<span style="font-variant-ligatures: no-common-ligatures; color: #000000">];</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; min-height: 13px;">
+		&nbsp;&nbsp; &nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(0, 143, 0);">
+		<span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp; &nbsp; </span>// clear out cached data, view controllers, etc</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp; &nbsp; [</span><span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">self</span><span style="font-variant-ligatures: no-common-ligatures; color: #000000">.</span>navController<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span>popToRootViewControllerAnimated<span style="font-variant-ligatures: no-common-ligatures; color: #000000">:</span><span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">NO</span><span style="font-variant-ligatures: no-common-ligatures; color: #000000">];</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; min-height: 13px;">
+		&nbsp;&nbsp; &nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp; &nbsp; [</span><span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">self</span><span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span>presentLoginViewController<span style="font-variant-ligatures: no-common-ligatures; color: #000000">];</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		&nbsp; &nbsp; [<span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">self</span>.<span style="font-variant-ligatures: no-common-ligatures; color: #3495af">hud</span> <span style="font-variant-ligatures: no-common-ligatures; color: #3495af">hide</span>:<span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">YES</span>];</p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp; &nbsp; </span><span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">self</span><span style="font-variant-ligatures: no-common-ligatures; color: #000000">.</span>homeViewController<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> = </span><span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">nil</span><span style="font-variant-ligatures: no-common-ligatures; color: #000000">;</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(52, 149, 175);">
+		<span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp; &nbsp; </span><span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">self</span><span style="font-variant-ligatures: no-common-ligatures; color: #000000">.</span>activityViewController<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> = </span><span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">nil</span><span style="font-variant-ligatures: no-common-ligatures; color: #000000">;</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		}</p>
+	<div>
+		&nbsp;</div>
+	<div>
+		So we clear the cache of the user, unsubscribe him from notifications and log him out. After that, we call the loginViewcontroller and present it to the user.&nbsp;</div>
+	<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+		&nbsp;</p>
+</div>
+<p>	&nbsp;</p>
+</section>
+<section id="localization">
+	<div class="page-header"><h3>LOCALIZATION</h3><hr class="notop"></div>
+<p>	Since we originally developped the app for Luxembourg, the whole project is already localised to luxembourgish. Thus, all the important strings have been marked as NSLocalizedStrings, for example this one:</p>
+<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(4, 51, 255);">
+	NSLocalizedString<span style="color: rgb(0, 0, 0);">(</span><span style="color: rgb(180, 38, 26);">@&quot;likes&quot;</span><span style="color: rgb(0, 0, 0);">,&nbsp;</span>nil<span style="color: rgb(0, 0, 0);">)</span></p>
+<p>	If you want to localise the project for other languages, you have not a lot of work to do. Open the project editor by selecting your .xcodeproj from the project navigator and go to the info tab. There you can add new localizations:</p>
+<p>	<img alt="" src="assets/images/image_4.png"  ></p>
+<p>	Now in the&nbsp;<em>SocialNetwork &gt; Supporting Files&nbsp;</em>folder, open the&nbsp;<em>Localizable.strings&nbsp;</em>file and translate all the strings that are in the&nbsp;<em>Localizable.strings (Luxembourgish)&nbsp;</em>file in your newly added&nbsp;<em>Localizable.strings (YOUR_LANGUAGE)&nbsp;</em>file. In case the localization doesn&#39;t appear on your device when running, be sure to actually have set the right language in your device&#39;s settings and clean your project with CMD+SHIFT+K.&nbsp;</p>
+<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo; color: rgb(4, 51, 255);">
+	&nbsp;</p>
+</section>
+<section id="reskinning">
+	<div class="page-header"><h3>RESKINNING</h3><hr class="notop"></div>
+<p>	Most of the pictures you need to reskin before you can submit your app to the AppStore are in the&nbsp;<em>SocialNetwork &gt; Resources&nbsp;</em>folder. All the pictures you find there are actually used in the project, so simply customise them, but try to always respect the old image sizes and names. If you don&#39;t respect the names, you will have to change the lines of code where the image is loaded into code, because the old image that is called there simply doesn&#39;t exist anymore ;-). Not respecting the sizes can result in distorted images.&nbsp;</p>
+<p>	Basically, reskinning the app is really easy, but apart from the images in the&nbsp;<em>Resources</em> folder, you also have to change the&nbsp;<em>LaunchScreen.xib</em> and the Icons. Once you have designed your own icon and produced it in all the necessary sizes, simply exchange all the icons in the&nbsp;<em>Image.xcassets&nbsp;</em>which you will find here&nbsp;<em>SocialNetwork &gt; Supporting Files &gt; Image.xcassets</em>.&nbsp;</p>
+</section>
+<section id="checklist">
+	<div class="page-header"><h3>CHECKLIST</h3><hr class="notop"></div>
+<p>	Here is a short checklist, to be sure you haven&#39;t forgotten anything before uploading the project to the AppStore.</p>
+<p>	&bull; In the&nbsp;Info.plist change the following keys:</p>
+<p style="margin-left: 40px;">
+	<em>&bull;&nbsp;</em>Bundle ID value<br>
+	&bull; Bundle Display Name<br>
+	&bull; Facebook Display Name<br>
+	&bull; FacebookAppID<br>
+	&bull; URL scheme</p>
+<p>	&bull; In the&nbsp;<em>ESConstants.m&nbsp;</em>file, change the kESChatFirebaseCredentialKey to match your firebase link</p>
+<p style="margin: 0px 0px 0px 40px; font-size: 11px; font-family: Menlo;">
+	<span style="font-variant-ligatures: no-common-ligatures; color: #3495af">NSString</span> *<span style="font-variant-ligatures: no-common-ligatures; color: #0433ff">const</span> kESChatFirebaseCredentialKey&nbsp; =&nbsp; <span style="font-variant-ligatures: no-common-ligatures; color: #b4261a">@&quot;https://YOUR_APP.firebaseio.com&quot;</span>;</p>
+<div>
+	<br>
+	&bull; In the&nbsp;<em>AppDelegate.m</em> file, change the AppID and the CientKey to match yours:</div>
+<div style="margin-left: 40px;">
+	<br>
+	<span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);">[</span><span style="font-family: Menlo; font-size: 11px; color: rgb(52, 149, 175);">Parse</span><span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);"> </span><span style="font-family: Menlo; font-size: 11px; color: rgb(52, 149, 175);">setApplicationId</span><span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);">:</span><span style="color: rgb(180, 38, 26); font-family: Menlo; font-size: 11px;">@&quot;APP_ID&quot;</span><span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);"> </span><span style="font-family: Menlo; font-size: 11px; color: rgb(52, 149, 175);">clientKey</span><span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);">:</span><span style="color: rgb(180, 38, 26); font-family: Menlo; font-size: 11px;">@&quot;CLIENT_KEY&quot;</span><span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);">]; &nbsp; &nbsp;</span></div>
+<div>
+	<br>
+	&bull; In the Facebook developer page, add your iOS project to your app</div>
+<p>	&bull; In the Parse databrowser of your app, go to Settings and add your Facebook app to the Authentication section</p>
+<p>	&bull; In the&nbsp;<em>Resources&nbsp;</em>folder, reskin all the images</p>
+<p>	&bull; In the&nbsp;<em>Images.xcassets&nbsp;</em>folder, change all the icons</p>
+<p>	&bull; Reskin the&nbsp;<em>LaunchScreen.xib&nbsp;</em>file</p>
+<p>	&bull; If you want to localize the project, add a new localization and translate all the NSLocalizedStrings</p>
+<p>	&bull; Upload the CloudCode to Parse</p>
+<p>	&bull; Register your app for Parse Push Notifications</p>
+<p>	&nbsp;</p>
+<p>	Another thing you&#39;ll have to do is change the different links:<br>
+	&bull; The terms link, in the UIAlertView clickedButtonAtIndex: method, in the&nbsp;<em>AppDelegate.m&nbsp;</em><strong>and&nbsp;</strong>the&nbsp;<em>ESHomeViewController.m&nbsp;</em>:</p>
+<p style="margin-left: 40px;">
+	<span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);">[[</span><span style="font-family: Menlo; font-size: 11px;">UIApplication</span><span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);">&nbsp;</span><span style="font-family: Menlo; font-size: 11px;">sharedApplication</span><span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);">]&nbsp;</span><span style="font-family: Menlo; font-size: 11px;">openURL</span><span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);">:[</span><span style="font-family: Menlo; font-size: 11px;">NSURL</span><font color="#000000" style="font-family: Menlo; font-size: 11px;">&nbsp;</font><span style="font-family: Menlo; font-size: 11px;">URLWithString</span><span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);">:</span><span style="font-family: Menlo; font-size: 11px; color: rgb(180, 38, 26);">@&quot;https://www.netzwierk.lu/terms&quot;</span><span style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);">]];</span></p>
+<p>	&bull; The donate link in the&nbsp;<em>ESSettingsViewController.m</em> in the tableview:didSelectRowAtIndex: method:</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">
+	<span style="color: rgb(52, 149, 175);"><span style="font-variant-ligatures: no-common-ligatures; color: #000000">&nbsp; &nbsp; &nbsp; &nbsp;[[</span>UIApplication<span style="font-variant-ligatures: no-common-ligatures; color: #000000"> </span>sharedApplication<span style="font-variant-ligatures: no-common-ligatures; color: #000000">] </span>openURL<span style="font-variant-ligatures: no-common-ligatures; color: #000000">:[</span>NSURL</span><font color="#000000">&nbsp;</font><font color="#3495af">URLWithString</font><span style="color: rgb(0, 0, 0);">:</span><span style="color: rgb(180, 38, 26);">@&quot;https://www.netzwierk.lu/donate&quot;</span><span style="color: rgb(0, 0, 0);">]];</span></p>
+<div>
+	&nbsp;</div>
+<p>	<strong>Basically, search for <i>&quot;netzwierk.lu&quot;</i></strong><strong> in the whole project and change all these links to match your own.</strong></p>
+<p style="margin-left: 40px;">
+	&nbsp;</p>
+</section>
+<section id="dependencies">
+	<div class="page-header"><h3>DEPENDENCIES</h3><hr class="notop"></div>
+<p>	As you have seen, this project depends on a certain number of other libraries, frameworks and open source projects.</p>
+<p>	Here is a quick list of the most important ones, mostly under MIT License:</p>
+<p>	&bull; Custom alert views: <a href="https://github.com/dogo/SCLAlertView">SCLAlertView</a>&nbsp;by Diogo Autilio</p>
+<p>	&bull; Interval formatter: <a href="https://github.com/mattt/FormatterKit">FormatterKit</a> by Matt Thomson</p>
+<p>	&bull; Spinning wheel: <a href="https://github.com/jdg/MBProgressHUD">MBProgressHUD</a> by Jonathan George and <a href="https://github.com/relatedcode/ProgressHUD">ProgressHUD</a> by RelatedCode</p>
+<p>	&bull; Image Editor: <a href="https://github.com/yackle/CLImageEditor">CLImageEditor</a>&nbsp;by Sho Yakushiji</p>
+<p>	&bull; A Parse tutorial: <a href="https://parse.com/tutorials/anypic">Anypic</a> by Parse.com</p>
+<p>	&bull; Messenger: <a href="https://github.com/jessesquires/JSQMessagesViewController">JSQMessagesViewController</a> and JSQSystemSoundPlayer by Jesse Squires, and also some parts and ideas of <a href="https://github.com/relatedcode/NotificationChat">NotificationChat</a> by RelatedCode (these guys have done an incredibly good work, you should have a look at them: Jesse Squires has a donate button on his website and RelatedCode is selling a premium version of NotificationChat you should check out)</p>
+<p>	&bull; Audio recorder for the Messenger: <a href="https://github.com/hackiftekhar/IQAudioRecorderController">IQAudioRecorderController</a> by Mohd Iftekhar Qurashi</p>
+<p>	&bull; A side menu: <a href="https://github.com/mutualmobile/MMDrawerController">MMDrawerController</a>&nbsp;by Mutual Mobile</p>
+<p>	&bull; A Networking library: <a href="https://github.com/AFNetworking/AFNetworking">AFNetworking</a> by AFNetworking</p>
+<p>	These are the most important ones, and they have all done some incredible good work! I&#39;d like to thank them all, and also the ones that have not been named here, but are listed in the project itself. Open sourcing source code to help other developers build better products is a great move. Thanks.</p>
+</section>
+<section id="license">
+	<div class="page-header"><h3>LICENSE</h3><hr class="notop"></div>
+<p>	All the screenshots in this documentation are from mid 2015.</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	<span style="color: rgb(73, 73, 73); font-family: Verdana, sans-serif; line-height: 20.671998977661133px;">THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</span><br style="color: rgb(73, 73, 73); font-family: Verdana, sans-serif; line-height: 20.671998977661133px;">
+	<span style="color: rgb(73, 73, 73); font-family: Verdana, sans-serif; line-height: 20.671998977661133px;">IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</span><br style="color: rgb(73, 73, 73); font-family: Verdana, sans-serif; line-height: 20.671998977661133px;">
+	<span style="color: rgb(73, 73, 73); font-family: Verdana, sans-serif; line-height: 20.671998977661133px;">FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE</span><br style="color: rgb(73, 73, 73); font-family: Verdana, sans-serif; line-height: 20.671998977661133px;">
+	<span style="color: rgb(73, 73, 73); font-family: Verdana, sans-serif; line-height: 20.671998977661133px;">AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER</span><br style="color: rgb(73, 73, 73); font-family: Verdana, sans-serif; line-height: 20.671998977661133px;">
+	<span style="color: rgb(73, 73, 73); font-family: Verdana, sans-serif; line-height: 20.671998977661133px;">LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,</span><br style="color: rgb(73, 73, 73); font-family: Verdana, sans-serif; line-height: 20.671998977661133px;">
+	<span style="color: rgb(73, 73, 73); font-family: Verdana, sans-serif; line-height: 20.671998977661133px;">OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN</span><br style="color: rgb(73, 73, 73); font-family: Verdana, sans-serif; line-height: 20.671998977661133px;">
+	<span style="color: rgb(73, 73, 73); font-family: Verdana, sans-serif; line-height: 20.671998977661133px;">THE SOFTWARE.</span></p>
+<p>	THIS LICENSE GRANTS THE BUYER AN ONGOING, NON-EXCLUSIVE, WORLDWIDE LICENSE TO MAKE USE THE PROVIDED PROJECT. THE BUYER IS LICENSED TO PRODUCE ONE SINGLE END-PRODUCT FOR HIMSELF OR FOR A CLIENT. IF THE BUYER WANTS TO SELL THE END-PRODUCT OR WANTS TO INCLUDE FUNCTIONALITIES TO GENERATE REVENUE IN THE PROJECT, HE HAS TO BUY THE EXTENDED LICENSE. THE NORMAL LICENSE DOES NOT PROVIDE THE RIGHT TO SELL THE END-PRODUCT. THE BUYER IS NOT ALLOWED TO REDISTRIBUTE THE SOURCE FILES OF THE PROJECT.</p>
+<p>	THIS LICENSE CAN BE TERMINATED IF THE BUYER BREACHES IT. THE AUTHOR, ERIC SCHANET, RETAINS OWNERSHIP BUT GRANTS THE BUYER THE LICENSE ON THESE TERMS.</p>
+<p>	&nbsp;</p>
+</section>
+
+	</div>
+</body>
+</html>

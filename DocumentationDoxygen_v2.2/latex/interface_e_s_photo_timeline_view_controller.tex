@@ -1,0 +1,221 @@
+\hypertarget{interface_e_s_photo_timeline_view_controller}{}\section{E\+S\+Photo\+Timeline\+View\+Controller Class Reference}
+\label{interface_e_s_photo_timeline_view_controller}\index{E\+S\+Photo\+Timeline\+View\+Controller@{E\+S\+Photo\+Timeline\+View\+Controller}}
+Inheritance diagram for E\+S\+Photo\+Timeline\+View\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.772277cm]{interface_e_s_photo_timeline_view_controller}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_e_s_photo_header_view}{E\+S\+Photo\+Header\+View} $\ast$) -\/ \hyperlink{interface_e_s_photo_timeline_view_controller_a7fb71efdeb9e2fc876ac6efd1c8cd672}{dequeue\+Reusable\+Section\+Header\+View}
+\item 
+(\hyperlink{interface_e_s_photo_footer_view}{E\+S\+Photo\+Footer\+View} $\ast$) -\/ \hyperlink{interface_e_s_photo_timeline_view_controller_aea3af8706e136c64c40d3f621c3c582d}{dequeue\+Reusable\+Section\+Footer\+View}
+\item 
+(N\+S\+Index\+Path $\ast$) -\/ \hyperlink{interface_e_s_photo_timeline_view_controller_a497b3068fc0ae04d96dcecf3d8df2bc1}{index\+Path\+For\+Object\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_photo_timeline_view_controller_ae718c082cafda11e43706dbc5a16aae4}{dummy\+Tap\+For\+Video\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_photo_timeline_view_controller_a49bd117a5cbed7962dadf15f2e705be7}{user\+Did\+Like\+Or\+Unlike\+Photo\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_photo_timeline_view_controller_a61b6812d2cd0e0341460bc0c9bee6f95}{user\+Did\+Comment\+On\+Photo\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_photo_timeline_view_controller_a9cdee2b5688cd0244694950dba86be54}{user\+Did\+Delete\+Photo\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_photo_timeline_view_controller_ab45ec528b1671dc7bd046873b1a33eb7}{user\+Did\+Publish\+Photo\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_photo_timeline_view_controller_a43762f8846bc52847c49a698ea1fb544}{user\+Following\+Changed\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_photo_timeline_view_controller_a4f7135649cd7aca14506a9849bc14260}{did\+Tap\+On\+Photo\+Action\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_photo_timeline_view_controller_a1bb75368271e98ffe060907a77234046}{post\+Notification\+With\+String\+:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+U\+I\+Activity\+Indicator\+View $\ast$ \hyperlink{interface_e_s_photo_timeline_view_controller_ad10d81b63a4d77ee719e666f18ef9b0a}{activity\+Indicator}
+\item 
+B\+O\+O\+L \hyperlink{interface_e_s_photo_timeline_view_controller_a9b1ebe8df6266603edf00e80b2e1fd0c}{should\+Reload\+On\+Appear}
+\item 
+N\+S\+Mutable\+Set $\ast$ \hyperlink{interface_e_s_photo_timeline_view_controller_a854c0e9181fc4c66580e58ee8df9929f}{reusable\+Section\+Header\+Views}
+\item 
+N\+S\+Mutable\+Set $\ast$ \hyperlink{interface_e_s_photo_timeline_view_controller_a58444bc49def717ffe42bb3b39b7db04}{reusable\+Section\+Footer\+Views}
+\item 
+N\+S\+Mutable\+Dictionary $\ast$ \hyperlink{interface_e_s_photo_timeline_view_controller_a50a3992446f399c0bdbd7d03888e75ee}{outstanding\+Section\+Header\+Queries}
+\item 
+N\+S\+Mutable\+Dictionary $\ast$ \hyperlink{interface_e_s_photo_timeline_view_controller_a9fdca4ea7fd64a895ef967d29895a1a8}{outstanding\+Section\+Footer\+Queries}
+\item 
+N\+S\+Mutable\+Dictionary $\ast$ \hyperlink{interface_e_s_photo_timeline_view_controller_a83f2bdda79d2b985b905bca4759af1d6}{outstanding\+Follow\+Queries}
+\item 
+N\+S\+Mutable\+Dictionary $\ast$ \hyperlink{interface_e_s_photo_timeline_view_controller_a62b8fec88731eda955500b97756643d5}{outstanding\+Count\+Queries}
+\item 
+U\+I\+Scroll\+View\+Indicator\+Style \hyperlink{interface_e_s_photo_timeline_view_controller_a7f2b7d975c9b073383bd348bb31d4505}{indicator\+Style}
+\item 
+U\+I\+Tap\+Gesture\+Recognizer $\ast$ \hyperlink{interface_e_s_photo_timeline_view_controller_a10c056efa7e26d8f4275aa67d6fc9b0b}{tap\+Once}
+\item 
+U\+I\+Tap\+Gesture\+Recognizer $\ast$ \hyperlink{interface_e_s_photo_timeline_view_controller_a173f7f4c7ded326bc033ca82fb5bd98c}{tap\+Twice}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_e_s_photo_timeline_view_controller_aea3af8706e136c64c40d3f621c3c582d}{}\index{E\+S\+Photo\+Timeline\+View\+Controller@{E\+S\+Photo\+Timeline\+View\+Controller}!dequeue\+Reusable\+Section\+Footer\+View@{dequeue\+Reusable\+Section\+Footer\+View}}
+\index{dequeue\+Reusable\+Section\+Footer\+View@{dequeue\+Reusable\+Section\+Footer\+View}!E\+S\+Photo\+Timeline\+View\+Controller@{E\+S\+Photo\+Timeline\+View\+Controller}}
+\subsubsection[{dequeue\+Reusable\+Section\+Footer\+View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf E\+S\+Photo\+Footer\+View} $\ast$) dequeue\+Reusable\+Section\+Footer\+View 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_e_s_photo_timeline_view_controller_aea3af8706e136c64c40d3f621c3c582d}
+Dequeueing a section footer that is out of view and can be reused.
+
+\begin{DoxyReturn}{Returns}
+footer that is out of view 
+\end{DoxyReturn}
+\hypertarget{interface_e_s_photo_timeline_view_controller_a7fb71efdeb9e2fc876ac6efd1c8cd672}{}\index{E\+S\+Photo\+Timeline\+View\+Controller@{E\+S\+Photo\+Timeline\+View\+Controller}!dequeue\+Reusable\+Section\+Header\+View@{dequeue\+Reusable\+Section\+Header\+View}}
+\index{dequeue\+Reusable\+Section\+Header\+View@{dequeue\+Reusable\+Section\+Header\+View}!E\+S\+Photo\+Timeline\+View\+Controller@{E\+S\+Photo\+Timeline\+View\+Controller}}
+\subsubsection[{dequeue\+Reusable\+Section\+Header\+View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf E\+S\+Photo\+Header\+View} $\ast$) dequeue\+Reusable\+Section\+Header\+View 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_e_s_photo_timeline_view_controller_a7fb71efdeb9e2fc876ac6efd1c8cd672}
+Dequeueing a section header that is out of view and can be reused.
+
+\begin{DoxyReturn}{Returns}
+header that is out of view 
+\end{DoxyReturn}
+\hypertarget{interface_e_s_photo_timeline_view_controller_a4f7135649cd7aca14506a9849bc14260}{}\index{E\+S\+Photo\+Timeline\+View\+Controller@{E\+S\+Photo\+Timeline\+View\+Controller}!did\+Tap\+On\+Photo\+Action\+:@{did\+Tap\+On\+Photo\+Action\+:}}
+\index{did\+Tap\+On\+Photo\+Action\+:@{did\+Tap\+On\+Photo\+Action\+:}!E\+S\+Photo\+Timeline\+View\+Controller@{E\+S\+Photo\+Timeline\+View\+Controller}}
+\subsubsection[{did\+Tap\+On\+Photo\+Action\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) did\+Tap\+On\+Photo\+Action\+: 
+\begin{DoxyParamCaption}
+\item[{(U\+I\+Button $\ast$)}]{sender}
+\end{DoxyParamCaption}
+}\label{interface_e_s_photo_timeline_view_controller_a4f7135649cd7aca14506a9849bc14260}
+Open the photo details viewcontroller as the users taps on a photo
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & id of the photo button used to open the correct detail viewcontroller \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_e_s_photo_timeline_view_controller_ae718c082cafda11e43706dbc5a16aae4}{}\index{E\+S\+Photo\+Timeline\+View\+Controller@{E\+S\+Photo\+Timeline\+View\+Controller}!dummy\+Tap\+For\+Video\+:@{dummy\+Tap\+For\+Video\+:}}
+\index{dummy\+Tap\+For\+Video\+:@{dummy\+Tap\+For\+Video\+:}!E\+S\+Photo\+Timeline\+View\+Controller@{E\+S\+Photo\+Timeline\+View\+Controller}}
+\subsubsection[{dummy\+Tap\+For\+Video\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) dummy\+Tap\+For\+Video\+: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}\label{interface_e_s_photo_timeline_view_controller_ae718c082cafda11e43706dbc5a16aae4}
+Dummy method used to play a video. We need to change some things before actually calling the tableview delegate method.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & id of the tapped video button \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_e_s_photo_timeline_view_controller_a497b3068fc0ae04d96dcecf3d8df2bc1}{}\index{E\+S\+Photo\+Timeline\+View\+Controller@{E\+S\+Photo\+Timeline\+View\+Controller}!index\+Path\+For\+Object\+:@{index\+Path\+For\+Object\+:}}
+\index{index\+Path\+For\+Object\+:@{index\+Path\+For\+Object\+:}!E\+S\+Photo\+Timeline\+View\+Controller@{E\+S\+Photo\+Timeline\+View\+Controller}}
+\subsubsection[{index\+Path\+For\+Object\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Index\+Path $\ast$) index\+Path\+For\+Object\+: 
+\begin{DoxyParamCaption}
+\item[{(P\+F\+Object $\ast$)}]{target\+Object}
+\end{DoxyParamCaption}
+}\label{interface_e_s_photo_timeline_view_controller_a497b3068fc0ae04d96dcecf3d8df2bc1}
+We want to implement a section based timeline, thus we need to override this method to return the correct index\+Path (esp. the correct section).
+
+
+\begin{DoxyParams}{Parameters}
+{\em target\+Object} & the targeted object in an array of P\+F\+Objects\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+new index\+Path allowing us to create a section based timeline because the row is always set to 0 
+\end{DoxyReturn}
+\hypertarget{interface_e_s_photo_timeline_view_controller_a1bb75368271e98ffe060907a77234046}{}\index{E\+S\+Photo\+Timeline\+View\+Controller@{E\+S\+Photo\+Timeline\+View\+Controller}!post\+Notification\+With\+String\+:@{post\+Notification\+With\+String\+:}}
+\index{post\+Notification\+With\+String\+:@{post\+Notification\+With\+String\+:}!E\+S\+Photo\+Timeline\+View\+Controller@{E\+S\+Photo\+Timeline\+View\+Controller}}
+\subsubsection[{post\+Notification\+With\+String\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) post\+Notification\+With\+String\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{notif}
+\end{DoxyParamCaption}
+}\label{interface_e_s_photo_timeline_view_controller_a1bb75368271e98ffe060907a77234046}
+Posting notification to the notification center in order to communicate with other viewcontrollers
+
+
+\begin{DoxyParams}{Parameters}
+{\em orientation} & the actual notification string \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_e_s_photo_timeline_view_controller_a61b6812d2cd0e0341460bc0c9bee6f95}{}\index{E\+S\+Photo\+Timeline\+View\+Controller@{E\+S\+Photo\+Timeline\+View\+Controller}!user\+Did\+Comment\+On\+Photo\+:@{user\+Did\+Comment\+On\+Photo\+:}}
+\index{user\+Did\+Comment\+On\+Photo\+:@{user\+Did\+Comment\+On\+Photo\+:}!E\+S\+Photo\+Timeline\+View\+Controller@{E\+S\+Photo\+Timeline\+View\+Controller}}
+\subsubsection[{user\+Did\+Comment\+On\+Photo\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) user\+Did\+Comment\+On\+Photo\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Notification $\ast$)}]{note}
+\end{DoxyParamCaption}
+}\label{interface_e_s_photo_timeline_view_controller_a61b6812d2cd0e0341460bc0c9bee6f95}
+User has commented on a photo, thus the tableview should be updated. \hypertarget{interface_e_s_photo_timeline_view_controller_a9cdee2b5688cd0244694950dba86be54}{}\index{E\+S\+Photo\+Timeline\+View\+Controller@{E\+S\+Photo\+Timeline\+View\+Controller}!user\+Did\+Delete\+Photo\+:@{user\+Did\+Delete\+Photo\+:}}
+\index{user\+Did\+Delete\+Photo\+:@{user\+Did\+Delete\+Photo\+:}!E\+S\+Photo\+Timeline\+View\+Controller@{E\+S\+Photo\+Timeline\+View\+Controller}}
+\subsubsection[{user\+Did\+Delete\+Photo\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) user\+Did\+Delete\+Photo\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Notification $\ast$)}]{note}
+\end{DoxyParamCaption}
+}\label{interface_e_s_photo_timeline_view_controller_a9cdee2b5688cd0244694950dba86be54}
+User deleted a photo, thus the tableview should be updated. \hypertarget{interface_e_s_photo_timeline_view_controller_a49bd117a5cbed7962dadf15f2e705be7}{}\index{E\+S\+Photo\+Timeline\+View\+Controller@{E\+S\+Photo\+Timeline\+View\+Controller}!user\+Did\+Like\+Or\+Unlike\+Photo\+:@{user\+Did\+Like\+Or\+Unlike\+Photo\+:}}
+\index{user\+Did\+Like\+Or\+Unlike\+Photo\+:@{user\+Did\+Like\+Or\+Unlike\+Photo\+:}!E\+S\+Photo\+Timeline\+View\+Controller@{E\+S\+Photo\+Timeline\+View\+Controller}}
+\subsubsection[{user\+Did\+Like\+Or\+Unlike\+Photo\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) user\+Did\+Like\+Or\+Unlike\+Photo\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Notification $\ast$)}]{note}
+\end{DoxyParamCaption}
+}\label{interface_e_s_photo_timeline_view_controller_a49bd117a5cbed7962dadf15f2e705be7}
+User has liked or unliked a photo, thus the tableview should be updated. \hypertarget{interface_e_s_photo_timeline_view_controller_ab45ec528b1671dc7bd046873b1a33eb7}{}\index{E\+S\+Photo\+Timeline\+View\+Controller@{E\+S\+Photo\+Timeline\+View\+Controller}!user\+Did\+Publish\+Photo\+:@{user\+Did\+Publish\+Photo\+:}}
+\index{user\+Did\+Publish\+Photo\+:@{user\+Did\+Publish\+Photo\+:}!E\+S\+Photo\+Timeline\+View\+Controller@{E\+S\+Photo\+Timeline\+View\+Controller}}
+\subsubsection[{user\+Did\+Publish\+Photo\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) user\+Did\+Publish\+Photo\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Notification $\ast$)}]{note}
+\end{DoxyParamCaption}
+}\label{interface_e_s_photo_timeline_view_controller_ab45ec528b1671dc7bd046873b1a33eb7}
+User did publish a photo, thus the tableview should be updated. \hypertarget{interface_e_s_photo_timeline_view_controller_a43762f8846bc52847c49a698ea1fb544}{}\index{E\+S\+Photo\+Timeline\+View\+Controller@{E\+S\+Photo\+Timeline\+View\+Controller}!user\+Following\+Changed\+:@{user\+Following\+Changed\+:}}
+\index{user\+Following\+Changed\+:@{user\+Following\+Changed\+:}!E\+S\+Photo\+Timeline\+View\+Controller@{E\+S\+Photo\+Timeline\+View\+Controller}}
+\subsubsection[{user\+Following\+Changed\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) user\+Following\+Changed\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Notification $\ast$)}]{note}
+\end{DoxyParamCaption}
+}\label{interface_e_s_photo_timeline_view_controller_a43762f8846bc52847c49a698ea1fb544}
+Following status change, thus the tableview should be updated 
+
+\subsection{Property Documentation}
+\hypertarget{interface_e_s_photo_timeline_view_controller_ad10d81b63a4d77ee719e666f18ef9b0a}{}\index{E\+S\+Photo\+Timeline\+View\+Controller@{E\+S\+Photo\+Timeline\+View\+Controller}!activity\+Indicator@{activity\+Indicator}}
+\index{activity\+Indicator@{activity\+Indicator}!E\+S\+Photo\+Timeline\+View\+Controller@{E\+S\+Photo\+Timeline\+View\+Controller}}
+\subsubsection[{activity\+Indicator}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Activity\+Indicator\+View$\ast$) activity\+Indicator\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}\label{interface_e_s_photo_timeline_view_controller_ad10d81b63a4d77ee719e666f18ef9b0a}
+Spinner wheel indicating if we\textquotesingle{}re loading something or not. \hypertarget{interface_e_s_photo_timeline_view_controller_a7f2b7d975c9b073383bd348bb31d4505}{}\index{E\+S\+Photo\+Timeline\+View\+Controller@{E\+S\+Photo\+Timeline\+View\+Controller}!indicator\+Style@{indicator\+Style}}
+\index{indicator\+Style@{indicator\+Style}!E\+S\+Photo\+Timeline\+View\+Controller@{E\+S\+Photo\+Timeline\+View\+Controller}}
+\subsubsection[{indicator\+Style}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Scroll\+View\+Indicator\+Style) indicator\+Style\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_e_s_photo_timeline_view_controller_a7f2b7d975c9b073383bd348bb31d4505}
+The style of the scroll indicator on the right side of the view \hypertarget{interface_e_s_photo_timeline_view_controller_a62b8fec88731eda955500b97756643d5}{}\index{E\+S\+Photo\+Timeline\+View\+Controller@{E\+S\+Photo\+Timeline\+View\+Controller}!outstanding\+Count\+Queries@{outstanding\+Count\+Queries}}
+\index{outstanding\+Count\+Queries@{outstanding\+Count\+Queries}!E\+S\+Photo\+Timeline\+View\+Controller@{E\+S\+Photo\+Timeline\+View\+Controller}}
+\subsubsection[{outstanding\+Count\+Queries}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Mutable\+Dictionary$\ast$) outstanding\+Count\+Queries\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_photo_timeline_view_controller_a62b8fec88731eda955500b97756643d5}
+Mutable dictionary of photo count queries still outstanding. \hypertarget{interface_e_s_photo_timeline_view_controller_a83f2bdda79d2b985b905bca4759af1d6}{}\index{E\+S\+Photo\+Timeline\+View\+Controller@{E\+S\+Photo\+Timeline\+View\+Controller}!outstanding\+Follow\+Queries@{outstanding\+Follow\+Queries}}
+\index{outstanding\+Follow\+Queries@{outstanding\+Follow\+Queries}!E\+S\+Photo\+Timeline\+View\+Controller@{E\+S\+Photo\+Timeline\+View\+Controller}}
+\subsubsection[{outstanding\+Follow\+Queries}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Mutable\+Dictionary$\ast$) outstanding\+Follow\+Queries\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_photo_timeline_view_controller_a83f2bdda79d2b985b905bca4759af1d6}
+Mutable dictionary of followerqueries stil outstanding. \hypertarget{interface_e_s_photo_timeline_view_controller_a9fdca4ea7fd64a895ef967d29895a1a8}{}\index{E\+S\+Photo\+Timeline\+View\+Controller@{E\+S\+Photo\+Timeline\+View\+Controller}!outstanding\+Section\+Footer\+Queries@{outstanding\+Section\+Footer\+Queries}}
+\index{outstanding\+Section\+Footer\+Queries@{outstanding\+Section\+Footer\+Queries}!E\+S\+Photo\+Timeline\+View\+Controller@{E\+S\+Photo\+Timeline\+View\+Controller}}
+\subsubsection[{outstanding\+Section\+Footer\+Queries}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Mutable\+Dictionary$\ast$) outstanding\+Section\+Footer\+Queries\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_photo_timeline_view_controller_a9fdca4ea7fd64a895ef967d29895a1a8}
+Mutable dictionary of section footer queries that are still outstanding. \hypertarget{interface_e_s_photo_timeline_view_controller_a50a3992446f399c0bdbd7d03888e75ee}{}\index{E\+S\+Photo\+Timeline\+View\+Controller@{E\+S\+Photo\+Timeline\+View\+Controller}!outstanding\+Section\+Header\+Queries@{outstanding\+Section\+Header\+Queries}}
+\index{outstanding\+Section\+Header\+Queries@{outstanding\+Section\+Header\+Queries}!E\+S\+Photo\+Timeline\+View\+Controller@{E\+S\+Photo\+Timeline\+View\+Controller}}
+\subsubsection[{outstanding\+Section\+Header\+Queries}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Mutable\+Dictionary$\ast$) outstanding\+Section\+Header\+Queries\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_photo_timeline_view_controller_a50a3992446f399c0bdbd7d03888e75ee}
+Mutable dictionary of section header queries that are still outstanding. \hypertarget{interface_e_s_photo_timeline_view_controller_a58444bc49def717ffe42bb3b39b7db04}{}\index{E\+S\+Photo\+Timeline\+View\+Controller@{E\+S\+Photo\+Timeline\+View\+Controller}!reusable\+Section\+Footer\+Views@{reusable\+Section\+Footer\+Views}}
+\index{reusable\+Section\+Footer\+Views@{reusable\+Section\+Footer\+Views}!E\+S\+Photo\+Timeline\+View\+Controller@{E\+S\+Photo\+Timeline\+View\+Controller}}
+\subsubsection[{reusable\+Section\+Footer\+Views}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Mutable\+Set$\ast$) reusable\+Section\+Footer\+Views\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_photo_timeline_view_controller_a58444bc49def717ffe42bb3b39b7db04}
+Mutable set of reusable section footers. We want to reuse them once they\textquotesingle{}re out of view and not create a unnecessary huge number of them. \hypertarget{interface_e_s_photo_timeline_view_controller_a854c0e9181fc4c66580e58ee8df9929f}{}\index{E\+S\+Photo\+Timeline\+View\+Controller@{E\+S\+Photo\+Timeline\+View\+Controller}!reusable\+Section\+Header\+Views@{reusable\+Section\+Header\+Views}}
+\index{reusable\+Section\+Header\+Views@{reusable\+Section\+Header\+Views}!E\+S\+Photo\+Timeline\+View\+Controller@{E\+S\+Photo\+Timeline\+View\+Controller}}
+\subsubsection[{reusable\+Section\+Header\+Views}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Mutable\+Set$\ast$) reusable\+Section\+Header\+Views\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_photo_timeline_view_controller_a854c0e9181fc4c66580e58ee8df9929f}
+Mutable set of reusable section headers. We want to reuse them once they\textquotesingle{}re out of view and not create a unnecessary huge number of them. \hypertarget{interface_e_s_photo_timeline_view_controller_a9b1ebe8df6266603edf00e80b2e1fd0c}{}\index{E\+S\+Photo\+Timeline\+View\+Controller@{E\+S\+Photo\+Timeline\+View\+Controller}!should\+Reload\+On\+Appear@{should\+Reload\+On\+Appear}}
+\index{should\+Reload\+On\+Appear@{should\+Reload\+On\+Appear}!E\+S\+Photo\+Timeline\+View\+Controller@{E\+S\+Photo\+Timeline\+View\+Controller}}
+\subsubsection[{should\+Reload\+On\+Appear}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) should\+Reload\+On\+Appear\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_e_s_photo_timeline_view_controller_a9b1ebe8df6266603edf00e80b2e1fd0c}
+Defining if the timeline should be reloaded on appear. \hypertarget{interface_e_s_photo_timeline_view_controller_a10c056efa7e26d8f4275aa67d6fc9b0b}{}\index{E\+S\+Photo\+Timeline\+View\+Controller@{E\+S\+Photo\+Timeline\+View\+Controller}!tap\+Once@{tap\+Once}}
+\index{tap\+Once@{tap\+Once}!E\+S\+Photo\+Timeline\+View\+Controller@{E\+S\+Photo\+Timeline\+View\+Controller}}
+\subsubsection[{tap\+Once}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Tap\+Gesture\+Recognizer$\ast$) tap\+Once\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_photo_timeline_view_controller_a10c056efa7e26d8f4275aa67d6fc9b0b}
+Gesture recognizer used to recognize a single tap on a photo. \hypertarget{interface_e_s_photo_timeline_view_controller_a173f7f4c7ded326bc033ca82fb5bd98c}{}\index{E\+S\+Photo\+Timeline\+View\+Controller@{E\+S\+Photo\+Timeline\+View\+Controller}!tap\+Twice@{tap\+Twice}}
+\index{tap\+Twice@{tap\+Twice}!E\+S\+Photo\+Timeline\+View\+Controller@{E\+S\+Photo\+Timeline\+View\+Controller}}
+\subsubsection[{tap\+Twice}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Tap\+Gesture\+Recognizer$\ast$) tap\+Twice\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_photo_timeline_view_controller_a173f7f4c7ded326bc033ca82fb5bd98c}
+Gesture recognizer used to recognize a double tap on a photo. Note\+: an instagram-\/like double tap like could be implemented here. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Controllers/\+Home/E\+S\+Photo\+Timeline\+View\+Controller.\+h\item 
+Controllers/\+Home/E\+S\+Photo\+Timeline\+View\+Controller.\+m\end{DoxyCompactItemize}

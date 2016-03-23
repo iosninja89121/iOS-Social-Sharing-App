@@ -1,0 +1,67 @@
+\hypertarget{interface_k_i_label}{}\section{K\+I\+Label Class Reference}
+\label{interface_k_i_label}\index{K\+I\+Label@{K\+I\+Label}}
+Inheritance diagram for K\+I\+Label\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_k_i_label}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(N\+S\+Dictionary $\ast$) -\/ \hyperlink{interface_k_i_label_a5267accca558230ee72c4300f59b4d12}{get\+Link\+At\+Location\+:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+B\+O\+O\+L \hyperlink{interface_k_i_label_a3960ba72e6056ed488fbee19bf444a11}{automatic\+Link\+Detection\+Enabled}
+\item 
+K\+I\+Link\+Detection\+Types \hyperlink{interface_k_i_label_a0430592250bca24449465bc33abc6c5c}{link\+Detection\+Types}
+\item 
+U\+I\+Color $\ast$ \hyperlink{interface_k_i_label_a772174afd3598ed42c8f2e65b3d2803f}{selected\+Link\+Background\+Colour}
+\item 
+K\+I\+Link\+Tap\+Handler \hyperlink{interface_k_i_label_afe21f3eadca6a1aeca6081f4a075cbd9}{link\+Tap\+Handler}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_k_i_label_a5267accca558230ee72c4300f59b4d12}{}\index{K\+I\+Label@{K\+I\+Label}!get\+Link\+At\+Location\+:@{get\+Link\+At\+Location\+:}}
+\index{get\+Link\+At\+Location\+:@{get\+Link\+At\+Location\+:}!K\+I\+Label@{K\+I\+Label}}
+\subsubsection[{get\+Link\+At\+Location\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Dictionary $\ast$) get\+Link\+At\+Location\+: 
+\begin{DoxyParamCaption}
+\item[{(C\+G\+Point)}]{location}
+\end{DoxyParamCaption}
+}\label{interface_k_i_label_a5267accca558230ee72c4300f59b4d12}
+Returns a dictionary of data about the link that it at the location. Returns nil if there is no link. A link dictionary contains the following keys\+: "link\+Type\char`\"{} a T\+D\+Link\+Type that identifies the type of link
+ @\char`\"{}range\char`\"{} the range of the link within the label text
+ @\char`\"{}link" the link text. This could be an U\+R\+L, handle or hashtag depending on the link\+Type value
+
+
+\begin{DoxyParams}{Parameters}
+{\em location} & location of the link\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+dictionary of the about the link at the location 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_k_i_label_a3960ba72e6056ed488fbee19bf444a11}{}\index{K\+I\+Label@{K\+I\+Label}!automatic\+Link\+Detection\+Enabled@{automatic\+Link\+Detection\+Enabled}}
+\index{automatic\+Link\+Detection\+Enabled@{automatic\+Link\+Detection\+Enabled}!K\+I\+Label@{K\+I\+Label}}
+\subsubsection[{automatic\+Link\+Detection\+Enabled}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) automatic\+Link\+Detection\+Enabled\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_k_i_label_a3960ba72e6056ed488fbee19bf444a11}
+Automatic detection of links, hashtags and usernames. When this is enabled links are coloured using the views tint\+Color property. \hypertarget{interface_k_i_label_a0430592250bca24449465bc33abc6c5c}{}\index{K\+I\+Label@{K\+I\+Label}!link\+Detection\+Types@{link\+Detection\+Types}}
+\index{link\+Detection\+Types@{link\+Detection\+Types}!K\+I\+Label@{K\+I\+Label}}
+\subsubsection[{link\+Detection\+Types}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (K\+I\+Link\+Detection\+Types) link\+Detection\+Types\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_k_i_label_a0430592250bca24449465bc33abc6c5c}
+The link types that are detected \hypertarget{interface_k_i_label_afe21f3eadca6a1aeca6081f4a075cbd9}{}\index{K\+I\+Label@{K\+I\+Label}!link\+Tap\+Handler@{link\+Tap\+Handler}}
+\index{link\+Tap\+Handler@{link\+Tap\+Handler}!K\+I\+Label@{K\+I\+Label}}
+\subsubsection[{link\+Tap\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (K\+I\+Link\+Tap\+Handler) link\+Tap\+Handler\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_k_i_label_afe21f3eadca6a1aeca6081f4a075cbd9}
+Get or set a block that is called when a link is touched \hypertarget{interface_k_i_label_a772174afd3598ed42c8f2e65b3d2803f}{}\index{K\+I\+Label@{K\+I\+Label}!selected\+Link\+Background\+Colour@{selected\+Link\+Background\+Colour}}
+\index{selected\+Link\+Background\+Colour@{selected\+Link\+Background\+Colour}!K\+I\+Label@{K\+I\+Label}}
+\subsubsection[{selected\+Link\+Background\+Colour}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Color$\ast$) selected\+Link\+Background\+Colour\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_k_i_label_a772174afd3598ed42c8f2e65b3d2803f}
+Colour used to hilight selected link background 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Views/\+U\+I\+Table\+View\+Cells/K\+I\+Label.\+h\item 
+Views/\+U\+I\+Table\+View\+Cells/K\+I\+Label.\+m\end{DoxyCompactItemize}

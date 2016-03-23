@@ -1,0 +1,388 @@
+\hypertarget{interface_e_s_cache}{}\section{E\+S\+Cache Class Reference}
+\label{interface_e_s_cache}\index{E\+S\+Cache@{E\+S\+Cache}}
+Inheritance diagram for E\+S\+Cache\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_e_s_cache}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_e_s_cache_acc5d2a11a8849b19f2a0b09c8db5ae43}{clear}
+\item 
+(void) -\/ \hyperlink{interface_e_s_cache_aedeac7dcf9ab638c4d1ed0ebdc364dbf}{set\+Attributes\+For\+Photo\+:likers\+:commenters\+:liked\+By\+Current\+User\+:}
+\item 
+(N\+S\+Dictionary $\ast$) -\/ \hyperlink{interface_e_s_cache_adeb147e73d8c5f042fc8aff44b909119}{attributes\+For\+Photo\+:}
+\item 
+(N\+S\+Number $\ast$) -\/ \hyperlink{interface_e_s_cache_a884075d68dfce4d6a1dd86616c8f8af9}{like\+Count\+For\+Photo\+:}
+\item 
+(N\+S\+Number $\ast$) -\/ \hyperlink{interface_e_s_cache_adee030a3e423def2e12dacfc07791346}{comment\+Count\+For\+Photo\+:}
+\item 
+(N\+S\+Array $\ast$) -\/ \hyperlink{interface_e_s_cache_a32d9bbbdcd77cc2cd9be0b30e047e094}{likers\+For\+Photo\+:}
+\item 
+(N\+S\+Array $\ast$) -\/ \hyperlink{interface_e_s_cache_a4d2346185ff5a25ef5603ff46258af30}{commenters\+For\+Photo\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_cache_a36e754c16df687f35aa68fa3428507b9}{set\+Photo\+Is\+Liked\+By\+Current\+User\+:liked\+:}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_e_s_cache_a5cd7cdbc0d866fc04b428ea1f4217833}{is\+Photo\+Liked\+By\+Current\+User\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_cache_a737b99e5339a929b4d7c91d559abdb33}{increment\+Liker\+Count\+For\+Photo\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_cache_a5dc045b1e6ae70bc26ea5a397f387dd2}{decrement\+Liker\+Count\+For\+Photo\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_cache_ae83682d1599a6c050257fb1a2fda5748}{increment\+Comment\+Count\+For\+Photo\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_cache_a96a9d46a75eb3e7a8953f69c38b587e3}{decrement\+Comment\+Count\+For\+Photo\+:}
+\item 
+(N\+S\+Dictionary $\ast$) -\/ \hyperlink{interface_e_s_cache_a65e2ffdce06c4785ef53d806388012c6}{attributes\+For\+User\+:}
+\item 
+(N\+S\+Number $\ast$) -\/ \hyperlink{interface_e_s_cache_aa035efef41d1e75798531190c0c70721}{photo\+Count\+For\+User\+:}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_e_s_cache_a8e903f49b5458967d47990aa0b81e4ca}{follow\+Status\+For\+User\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_cache_a79474112504a854de0839c45c909127e}{set\+Photo\+Count\+:user\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_cache_a0dcd636f9010717601ab24bad871df6f}{set\+Follow\+Status\+:user\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_cache_a13ecd77b0b3743a9262130b8e119b066}{set\+Facebook\+Friends\+:}
+\item 
+(N\+S\+Array $\ast$) -\/ \hyperlink{interface_e_s_cache_a8aab20e1c2cbc96159ded187d9d8f0a3}{facebook\+Friends}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_e_s_cache_a5ec28539d0dca391c133c66e085c1fa3}{shared\+Cache}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_e_s_cache_adeb147e73d8c5f042fc8aff44b909119}{}\index{E\+S\+Cache@{E\+S\+Cache}!attributes\+For\+Photo\+:@{attributes\+For\+Photo\+:}}
+\index{attributes\+For\+Photo\+:@{attributes\+For\+Photo\+:}!E\+S\+Cache@{E\+S\+Cache}}
+\subsubsection[{attributes\+For\+Photo\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Dictionary $\ast$) attributes\+For\+Photo\+: 
+\begin{DoxyParamCaption}
+\item[{(P\+F\+Object $\ast$)}]{photo}
+\end{DoxyParamCaption}
+}\label{interface_e_s_cache_adeb147e73d8c5f042fc8aff44b909119}
+Get the attributes for a specific photo.
+
+
+\begin{DoxyParams}{Parameters}
+{\em photo} & P\+F\+Object of the photo\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+dictionary of the attributes 
+\end{DoxyReturn}
+\hypertarget{interface_e_s_cache_a65e2ffdce06c4785ef53d806388012c6}{}\index{E\+S\+Cache@{E\+S\+Cache}!attributes\+For\+User\+:@{attributes\+For\+User\+:}}
+\index{attributes\+For\+User\+:@{attributes\+For\+User\+:}!E\+S\+Cache@{E\+S\+Cache}}
+\subsubsection[{attributes\+For\+User\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Dictionary $\ast$) attributes\+For\+User\+: 
+\begin{DoxyParamCaption}
+\item[{(P\+F\+User $\ast$)}]{user}
+\end{DoxyParamCaption}
+}\label{interface_e_s_cache_a65e2ffdce06c4785ef53d806388012c6}
+Get the attributes for a certain user.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & P\+F\+User of the user we want the attributes from\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+dictionary of the attributes 
+\end{DoxyReturn}
+\hypertarget{interface_e_s_cache_acc5d2a11a8849b19f2a0b09c8db5ae43}{}\index{E\+S\+Cache@{E\+S\+Cache}!clear@{clear}}
+\index{clear@{clear}!E\+S\+Cache@{E\+S\+Cache}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) clear 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_e_s_cache_acc5d2a11a8849b19f2a0b09c8db5ae43}
+Clear the cache \hypertarget{interface_e_s_cache_adee030a3e423def2e12dacfc07791346}{}\index{E\+S\+Cache@{E\+S\+Cache}!comment\+Count\+For\+Photo\+:@{comment\+Count\+For\+Photo\+:}}
+\index{comment\+Count\+For\+Photo\+:@{comment\+Count\+For\+Photo\+:}!E\+S\+Cache@{E\+S\+Cache}}
+\subsubsection[{comment\+Count\+For\+Photo\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Number $\ast$) comment\+Count\+For\+Photo\+: 
+\begin{DoxyParamCaption}
+\item[{(P\+F\+Object $\ast$)}]{photo}
+\end{DoxyParamCaption}
+}\label{interface_e_s_cache_adee030a3e423def2e12dacfc07791346}
+Get the comment count for a photo.
+
+
+\begin{DoxyParams}{Parameters}
+{\em photo} & P\+F\+Object of the photo\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number of comments 
+\end{DoxyReturn}
+\hypertarget{interface_e_s_cache_a4d2346185ff5a25ef5603ff46258af30}{}\index{E\+S\+Cache@{E\+S\+Cache}!commenters\+For\+Photo\+:@{commenters\+For\+Photo\+:}}
+\index{commenters\+For\+Photo\+:@{commenters\+For\+Photo\+:}!E\+S\+Cache@{E\+S\+Cache}}
+\subsubsection[{commenters\+For\+Photo\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Array $\ast$) commenters\+For\+Photo\+: 
+\begin{DoxyParamCaption}
+\item[{(P\+F\+Object $\ast$)}]{photo}
+\end{DoxyParamCaption}
+}\label{interface_e_s_cache_a4d2346185ff5a25ef5603ff46258af30}
+Get the users that have commented on a photo
+
+
+\begin{DoxyParams}{Parameters}
+{\em photo} & P\+F\+Object of the photo\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array of users that commented on the photo 
+\end{DoxyReturn}
+\hypertarget{interface_e_s_cache_a96a9d46a75eb3e7a8953f69c38b587e3}{}\index{E\+S\+Cache@{E\+S\+Cache}!decrement\+Comment\+Count\+For\+Photo\+:@{decrement\+Comment\+Count\+For\+Photo\+:}}
+\index{decrement\+Comment\+Count\+For\+Photo\+:@{decrement\+Comment\+Count\+For\+Photo\+:}!E\+S\+Cache@{E\+S\+Cache}}
+\subsubsection[{decrement\+Comment\+Count\+For\+Photo\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) decrement\+Comment\+Count\+For\+Photo\+: 
+\begin{DoxyParamCaption}
+\item[{(P\+F\+Object $\ast$)}]{photo}
+\end{DoxyParamCaption}
+}\label{interface_e_s_cache_a96a9d46a75eb3e7a8953f69c38b587e3}
+Decrement the comment count for a photo.
+
+
+\begin{DoxyParams}{Parameters}
+{\em photo} & P\+F\+Object of the photo \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_e_s_cache_a5dc045b1e6ae70bc26ea5a397f387dd2}{}\index{E\+S\+Cache@{E\+S\+Cache}!decrement\+Liker\+Count\+For\+Photo\+:@{decrement\+Liker\+Count\+For\+Photo\+:}}
+\index{decrement\+Liker\+Count\+For\+Photo\+:@{decrement\+Liker\+Count\+For\+Photo\+:}!E\+S\+Cache@{E\+S\+Cache}}
+\subsubsection[{decrement\+Liker\+Count\+For\+Photo\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) decrement\+Liker\+Count\+For\+Photo\+: 
+\begin{DoxyParamCaption}
+\item[{(P\+F\+Object $\ast$)}]{photo}
+\end{DoxyParamCaption}
+}\label{interface_e_s_cache_a5dc045b1e6ae70bc26ea5a397f387dd2}
+Decrement the like count for a photo.
+
+
+\begin{DoxyParams}{Parameters}
+{\em photo} & P\+F\+Object of the photo \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_e_s_cache_a8aab20e1c2cbc96159ded187d9d8f0a3}{}\index{E\+S\+Cache@{E\+S\+Cache}!facebook\+Friends@{facebook\+Friends}}
+\index{facebook\+Friends@{facebook\+Friends}!E\+S\+Cache@{E\+S\+Cache}}
+\subsubsection[{facebook\+Friends}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Array $\ast$) facebook\+Friends 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_e_s_cache_a8aab20e1c2cbc96159ded187d9d8f0a3}
+Get the Facebook friends.
+
+\begin{DoxyReturn}{Returns}
+array of Facebook friends 
+\end{DoxyReturn}
+\hypertarget{interface_e_s_cache_a8e903f49b5458967d47990aa0b81e4ca}{}\index{E\+S\+Cache@{E\+S\+Cache}!follow\+Status\+For\+User\+:@{follow\+Status\+For\+User\+:}}
+\index{follow\+Status\+For\+User\+:@{follow\+Status\+For\+User\+:}!E\+S\+Cache@{E\+S\+Cache}}
+\subsubsection[{follow\+Status\+For\+User\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) follow\+Status\+For\+User\+: 
+\begin{DoxyParamCaption}
+\item[{(P\+F\+User $\ast$)}]{user}
+\end{DoxyParamCaption}
+}\label{interface_e_s_cache_a8e903f49b5458967d47990aa0b81e4ca}
+Check the followstatus for a certain user
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & P\+F\+User of the respective user\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean of the follow status 
+\end{DoxyReturn}
+\hypertarget{interface_e_s_cache_ae83682d1599a6c050257fb1a2fda5748}{}\index{E\+S\+Cache@{E\+S\+Cache}!increment\+Comment\+Count\+For\+Photo\+:@{increment\+Comment\+Count\+For\+Photo\+:}}
+\index{increment\+Comment\+Count\+For\+Photo\+:@{increment\+Comment\+Count\+For\+Photo\+:}!E\+S\+Cache@{E\+S\+Cache}}
+\subsubsection[{increment\+Comment\+Count\+For\+Photo\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) increment\+Comment\+Count\+For\+Photo\+: 
+\begin{DoxyParamCaption}
+\item[{(P\+F\+Object $\ast$)}]{photo}
+\end{DoxyParamCaption}
+}\label{interface_e_s_cache_ae83682d1599a6c050257fb1a2fda5748}
+Increment the comment count for a photo.
+
+
+\begin{DoxyParams}{Parameters}
+{\em photo} & P\+F\+Object of the photo \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_e_s_cache_a737b99e5339a929b4d7c91d559abdb33}{}\index{E\+S\+Cache@{E\+S\+Cache}!increment\+Liker\+Count\+For\+Photo\+:@{increment\+Liker\+Count\+For\+Photo\+:}}
+\index{increment\+Liker\+Count\+For\+Photo\+:@{increment\+Liker\+Count\+For\+Photo\+:}!E\+S\+Cache@{E\+S\+Cache}}
+\subsubsection[{increment\+Liker\+Count\+For\+Photo\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) increment\+Liker\+Count\+For\+Photo\+: 
+\begin{DoxyParamCaption}
+\item[{(P\+F\+Object $\ast$)}]{photo}
+\end{DoxyParamCaption}
+}\label{interface_e_s_cache_a737b99e5339a929b4d7c91d559abdb33}
+Increment the like count for a photo.
+
+
+\begin{DoxyParams}{Parameters}
+{\em photo} & P\+F\+Object of the photo \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_e_s_cache_a5cd7cdbc0d866fc04b428ea1f4217833}{}\index{E\+S\+Cache@{E\+S\+Cache}!is\+Photo\+Liked\+By\+Current\+User\+:@{is\+Photo\+Liked\+By\+Current\+User\+:}}
+\index{is\+Photo\+Liked\+By\+Current\+User\+:@{is\+Photo\+Liked\+By\+Current\+User\+:}!E\+S\+Cache@{E\+S\+Cache}}
+\subsubsection[{is\+Photo\+Liked\+By\+Current\+User\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) is\+Photo\+Liked\+By\+Current\+User\+: 
+\begin{DoxyParamCaption}
+\item[{(P\+F\+Object $\ast$)}]{photo}
+\end{DoxyParamCaption}
+}\label{interface_e_s_cache_a5cd7cdbc0d866fc04b428ea1f4217833}
+Decide if the photo is liked by the current user or not.
+
+
+\begin{DoxyParams}{Parameters}
+{\em photo} & P\+F\+Object of the photo\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean of the like state 
+\end{DoxyReturn}
+\hypertarget{interface_e_s_cache_a884075d68dfce4d6a1dd86616c8f8af9}{}\index{E\+S\+Cache@{E\+S\+Cache}!like\+Count\+For\+Photo\+:@{like\+Count\+For\+Photo\+:}}
+\index{like\+Count\+For\+Photo\+:@{like\+Count\+For\+Photo\+:}!E\+S\+Cache@{E\+S\+Cache}}
+\subsubsection[{like\+Count\+For\+Photo\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Number $\ast$) like\+Count\+For\+Photo\+: 
+\begin{DoxyParamCaption}
+\item[{(P\+F\+Object $\ast$)}]{photo}
+\end{DoxyParamCaption}
+}\label{interface_e_s_cache_a884075d68dfce4d6a1dd86616c8f8af9}
+Get the like count for a photo.
+
+
+\begin{DoxyParams}{Parameters}
+{\em photo} & P\+F\+Object of the photo\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number of likes 
+\end{DoxyReturn}
+\hypertarget{interface_e_s_cache_a32d9bbbdcd77cc2cd9be0b30e047e094}{}\index{E\+S\+Cache@{E\+S\+Cache}!likers\+For\+Photo\+:@{likers\+For\+Photo\+:}}
+\index{likers\+For\+Photo\+:@{likers\+For\+Photo\+:}!E\+S\+Cache@{E\+S\+Cache}}
+\subsubsection[{likers\+For\+Photo\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Array $\ast$) likers\+For\+Photo\+: 
+\begin{DoxyParamCaption}
+\item[{(P\+F\+Object $\ast$)}]{photo}
+\end{DoxyParamCaption}
+}\label{interface_e_s_cache_a32d9bbbdcd77cc2cd9be0b30e047e094}
+Get the users that have liked a photo
+
+
+\begin{DoxyParams}{Parameters}
+{\em photo} & P\+F\+Object of the photo\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array of users that liked the photo 
+\end{DoxyReturn}
+\hypertarget{interface_e_s_cache_aa035efef41d1e75798531190c0c70721}{}\index{E\+S\+Cache@{E\+S\+Cache}!photo\+Count\+For\+User\+:@{photo\+Count\+For\+User\+:}}
+\index{photo\+Count\+For\+User\+:@{photo\+Count\+For\+User\+:}!E\+S\+Cache@{E\+S\+Cache}}
+\subsubsection[{photo\+Count\+For\+User\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Number $\ast$) photo\+Count\+For\+User\+: 
+\begin{DoxyParamCaption}
+\item[{(P\+F\+User $\ast$)}]{user}
+\end{DoxyParamCaption}
+}\label{interface_e_s_cache_aa035efef41d1e75798531190c0c70721}
+Count the number of photos a certain user has uploaded.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & P\+F\+User of the respective user\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number of uploaded photos 
+\end{DoxyReturn}
+\hypertarget{interface_e_s_cache_aedeac7dcf9ab638c4d1ed0ebdc364dbf}{}\index{E\+S\+Cache@{E\+S\+Cache}!set\+Attributes\+For\+Photo\+:likers\+:commenters\+:liked\+By\+Current\+User\+:@{set\+Attributes\+For\+Photo\+:likers\+:commenters\+:liked\+By\+Current\+User\+:}}
+\index{set\+Attributes\+For\+Photo\+:likers\+:commenters\+:liked\+By\+Current\+User\+:@{set\+Attributes\+For\+Photo\+:likers\+:commenters\+:liked\+By\+Current\+User\+:}!E\+S\+Cache@{E\+S\+Cache}}
+\subsubsection[{set\+Attributes\+For\+Photo\+:likers\+:commenters\+:liked\+By\+Current\+User\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\+Attributes\+For\+Photo\+: 
+\begin{DoxyParamCaption}
+\item[{(P\+F\+Object $\ast$)}]{photo}
+\item[{likers:(N\+S\+Array $\ast$)}]{likers}
+\item[{commenters:(N\+S\+Array $\ast$)}]{commenters}
+\item[{likedByCurrentUser:(B\+O\+O\+L)}]{liked\+By\+Current\+User}
+\end{DoxyParamCaption}
+}\label{interface_e_s_cache_aedeac7dcf9ab638c4d1ed0ebdc364dbf}
+Setting attributes for a specific photo
+
+
+\begin{DoxyParams}{Parameters}
+{\em photo} & P\+F\+Object of the photo \\
+\hline
+{\em likers} & array of likers \\
+\hline
+{\em commenters} & array of commenters \\
+\hline
+{\em liked\+By\+Current\+User} & is the photo liked by the current user? \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_e_s_cache_a13ecd77b0b3743a9262130b8e119b066}{}\index{E\+S\+Cache@{E\+S\+Cache}!set\+Facebook\+Friends\+:@{set\+Facebook\+Friends\+:}}
+\index{set\+Facebook\+Friends\+:@{set\+Facebook\+Friends\+:}!E\+S\+Cache@{E\+S\+Cache}}
+\subsubsection[{set\+Facebook\+Friends\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\+Facebook\+Friends\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Array $\ast$)}]{friends}
+\end{DoxyParamCaption}
+}\label{interface_e_s_cache_a13ecd77b0b3743a9262130b8e119b066}
+Set the Facebook friends for a user.
+
+
+\begin{DoxyParams}{Parameters}
+{\em friends} & array of Facebook friends \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_e_s_cache_a0dcd636f9010717601ab24bad871df6f}{}\index{E\+S\+Cache@{E\+S\+Cache}!set\+Follow\+Status\+:user\+:@{set\+Follow\+Status\+:user\+:}}
+\index{set\+Follow\+Status\+:user\+:@{set\+Follow\+Status\+:user\+:}!E\+S\+Cache@{E\+S\+Cache}}
+\subsubsection[{set\+Follow\+Status\+:user\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\+Follow\+Status\+: 
+\begin{DoxyParamCaption}
+\item[{(B\+O\+O\+L)}]{following}
+\item[{user:(P\+F\+User $\ast$)}]{user}
+\end{DoxyParamCaption}
+}\label{interface_e_s_cache_a0dcd636f9010717601ab24bad871df6f}
+Set the follow status for a certain user
+
+
+\begin{DoxyParams}{Parameters}
+{\em following} & boolean of the follow status we should set \\
+\hline
+{\em user} & P\+F\+User of the user \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_e_s_cache_a79474112504a854de0839c45c909127e}{}\index{E\+S\+Cache@{E\+S\+Cache}!set\+Photo\+Count\+:user\+:@{set\+Photo\+Count\+:user\+:}}
+\index{set\+Photo\+Count\+:user\+:@{set\+Photo\+Count\+:user\+:}!E\+S\+Cache@{E\+S\+Cache}}
+\subsubsection[{set\+Photo\+Count\+:user\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\+Photo\+Count\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Number $\ast$)}]{count}
+\item[{user:(P\+F\+User $\ast$)}]{user}
+\end{DoxyParamCaption}
+}\label{interface_e_s_cache_a79474112504a854de0839c45c909127e}
+Set the photo count for a user
+
+
+\begin{DoxyParams}{Parameters}
+{\em count} & number of uploaded photos \\
+\hline
+{\em user} & P\+F\+User of the user \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_e_s_cache_a36e754c16df687f35aa68fa3428507b9}{}\index{E\+S\+Cache@{E\+S\+Cache}!set\+Photo\+Is\+Liked\+By\+Current\+User\+:liked\+:@{set\+Photo\+Is\+Liked\+By\+Current\+User\+:liked\+:}}
+\index{set\+Photo\+Is\+Liked\+By\+Current\+User\+:liked\+:@{set\+Photo\+Is\+Liked\+By\+Current\+User\+:liked\+:}!E\+S\+Cache@{E\+S\+Cache}}
+\subsubsection[{set\+Photo\+Is\+Liked\+By\+Current\+User\+:liked\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\+Photo\+Is\+Liked\+By\+Current\+User\+: 
+\begin{DoxyParamCaption}
+\item[{(P\+F\+Object $\ast$)}]{photo}
+\item[{liked:(B\+O\+O\+L)}]{liked}
+\end{DoxyParamCaption}
+}\label{interface_e_s_cache_a36e754c16df687f35aa68fa3428507b9}
+Set the like state for a certain photo and the current user.
+
+
+\begin{DoxyParams}{Parameters}
+{\em photo} & P\+F\+Object of the photo \\
+\hline
+{\em liked} & boolean of the like state \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_e_s_cache_a5ec28539d0dca391c133c66e085c1fa3}{}\index{E\+S\+Cache@{E\+S\+Cache}!shared\+Cache@{shared\+Cache}}
+\index{shared\+Cache@{shared\+Cache}!E\+S\+Cache@{E\+S\+Cache}}
+\subsubsection[{shared\+Cache}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) shared\+Cache 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_e_s_cache_a5ec28539d0dca391c133c66e085c1fa3}
+shared cache id 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Supporting Files/E\+S\+Cache.\+h\item 
+Supporting Files/E\+S\+Cache.\+m\end{DoxyCompactItemize}

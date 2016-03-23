@@ -1,0 +1,173 @@
+\hypertarget{interface_e_s_video_detail_view_controller}{}\section{E\+S\+Video\+Detail\+View\+Controller Class Reference}
+\label{interface_e_s_video_detail_view_controller}\index{E\+S\+Video\+Detail\+View\+Controller@{E\+S\+Video\+Detail\+View\+Controller}}
+
+
+{\ttfamily \#import $<$E\+S\+Video\+Detail\+View\+Controller.\+h$>$}
+
+Inheritance diagram for E\+S\+Video\+Detail\+View\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.161826cm]{interface_e_s_video_detail_view_controller}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_e_s_video_detail_view_controller_a0cc5ce1efbead194f654a2713bbe0246}{init\+With\+Photo\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_video_detail_view_controller_ac238ed02fc23e01553dbe206b6a526fb}{action\+Button\+Action\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_video_detail_view_controller_a2f69187831a684574a6eeb36deb602cd}{handle\+Comment\+Timeout\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_video_detail_view_controller_a56ed09f80407f4699b7da1b7eda9083b}{should\+Present\+Account\+View\+For\+User\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_video_detail_view_controller_a05f424273ef250dc682f5af201e39fba}{back\+Button\+Action\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_video_detail_view_controller_aa9f6108466216b5960b91cfebc849c3e}{user\+Liked\+Or\+Unliked\+Photo\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_video_detail_view_controller_a2f73ba9dcd28e6351c5c633bf8f22858}{load\+Likers}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_e_s_video_detail_view_controller_a5c153261e86658b9e7b7d3e68ee65e77}{current\+User\+Owns\+Photo}
+\item 
+(void) -\/ \hyperlink{interface_e_s_video_detail_view_controller_a2d0d60f9602ae576b6e43b2a2b2edde0}{should\+Delete\+Video}
+\item 
+(void) -\/ \hyperlink{interface_e_s_video_detail_view_controller_a7a26fb1401773d7b2bfd08459aa0ee0f}{should\+Report\+Video}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+Index\+Path $\ast$ \hyperlink{interface_e_s_video_detail_view_controller_af78401fcbda8010ec3894d40a97c2393}{saved\+Index\+Path}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+U\+I\+Text\+Field $\ast$ \hyperlink{interface_e_s_video_detail_view_controller_ae1fd28cd1174563626ee4f372973e26c}{comment\+Text\+Field}
+\item 
+\hyperlink{interface_e_s_video_details_header_view}{E\+S\+Video\+Details\+Header\+View} $\ast$ \hyperlink{interface_e_s_video_detail_view_controller_a3553bcf1403fea69179d17e30f864333}{header\+View}
+\item 
+B\+O\+O\+L \hyperlink{interface_e_s_video_detail_view_controller_a042ded94d23d82fd4e732c607c308d95}{likers\+Query\+In\+Progress}
+\item 
+P\+F\+Object $\ast$ \hyperlink{interface_e_s_video_detail_view_controller_a932d0b5ee570f18801ca0b9e324b23fe}{video}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface of the Video\+Dettail\+View\+Controller, used to show a video and his likes and comments. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_e_s_video_detail_view_controller_ac238ed02fc23e01553dbe206b6a526fb}{}\index{E\+S\+Video\+Detail\+View\+Controller@{E\+S\+Video\+Detail\+View\+Controller}!action\+Button\+Action\+:@{action\+Button\+Action\+:}}
+\index{action\+Button\+Action\+:@{action\+Button\+Action\+:}!E\+S\+Video\+Detail\+View\+Controller@{E\+S\+Video\+Detail\+View\+Controller}}
+\subsubsection[{action\+Button\+Action\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) action\+Button\+Action\+: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}\label{interface_e_s_video_detail_view_controller_ac238ed02fc23e01553dbe206b6a526fb}
+Right\+Bar\+Button has been tapped, showing a U\+I\+Action\+Sheet where the user can choose wether he wants to report or share the photo. \hypertarget{interface_e_s_video_detail_view_controller_a05f424273ef250dc682f5af201e39fba}{}\index{E\+S\+Video\+Detail\+View\+Controller@{E\+S\+Video\+Detail\+View\+Controller}!back\+Button\+Action\+:@{back\+Button\+Action\+:}}
+\index{back\+Button\+Action\+:@{back\+Button\+Action\+:}!E\+S\+Video\+Detail\+View\+Controller@{E\+S\+Video\+Detail\+View\+Controller}}
+\subsubsection[{back\+Button\+Action\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) back\+Button\+Action\+: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}\label{interface_e_s_video_detail_view_controller_a05f424273ef250dc682f5af201e39fba}
+User wants to dismiss the photodetails viewcontroller, thus we dismiss it. \hypertarget{interface_e_s_video_detail_view_controller_a5c153261e86658b9e7b7d3e68ee65e77}{}\index{E\+S\+Video\+Detail\+View\+Controller@{E\+S\+Video\+Detail\+View\+Controller}!current\+User\+Owns\+Photo@{current\+User\+Owns\+Photo}}
+\index{current\+User\+Owns\+Photo@{current\+User\+Owns\+Photo}!E\+S\+Video\+Detail\+View\+Controller@{E\+S\+Video\+Detail\+View\+Controller}}
+\subsubsection[{current\+User\+Owns\+Photo}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) current\+User\+Owns\+Photo 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_e_s_video_detail_view_controller_a5c153261e86658b9e7b7d3e68ee65e77}
+Decides wether the current user owns the displayed photo or not.
+
+\begin{DoxyReturn}{Returns}
+Y\+E\+S if the current user owns the photo, N\+O else. 
+\end{DoxyReturn}
+\hypertarget{interface_e_s_video_detail_view_controller_a2f69187831a684574a6eeb36deb602cd}{}\index{E\+S\+Video\+Detail\+View\+Controller@{E\+S\+Video\+Detail\+View\+Controller}!handle\+Comment\+Timeout\+:@{handle\+Comment\+Timeout\+:}}
+\index{handle\+Comment\+Timeout\+:@{handle\+Comment\+Timeout\+:}!E\+S\+Video\+Detail\+View\+Controller@{E\+S\+Video\+Detail\+View\+Controller}}
+\subsubsection[{handle\+Comment\+Timeout\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) handle\+Comment\+Timeout\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Timer $\ast$)}]{a\+Timer}
+\end{DoxyParamCaption}
+}\label{interface_e_s_video_detail_view_controller_a2f69187831a684574a6eeb36deb602cd}
+After 8 seconds of inactivity, the comment isn\textquotesingle{}t posted anymore because the connection failed or produced a timeout. We try to post it as soon as there is a stable connection again. \hypertarget{interface_e_s_video_detail_view_controller_a0cc5ce1efbead194f654a2713bbe0246}{}\index{E\+S\+Video\+Detail\+View\+Controller@{E\+S\+Video\+Detail\+View\+Controller}!init\+With\+Photo\+:@{init\+With\+Photo\+:}}
+\index{init\+With\+Photo\+:@{init\+With\+Photo\+:}!E\+S\+Video\+Detail\+View\+Controller@{E\+S\+Video\+Detail\+View\+Controller}}
+\subsubsection[{init\+With\+Photo\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\+With\+Photo\+: 
+\begin{DoxyParamCaption}
+\item[{(P\+F\+Object$\ast$)}]{a\+Video}
+\end{DoxyParamCaption}
+}\label{interface_e_s_video_detail_view_controller_a0cc5ce1efbead194f654a2713bbe0246}
+Custom init method
+
+
+\begin{DoxyParams}{Parameters}
+{\em a\+Photo} & the actual photo that we\textquotesingle{}ll display in the viewcontroller. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_e_s_video_detail_view_controller_a2f73ba9dcd28e6351c5c633bf8f22858}{}\index{E\+S\+Video\+Detail\+View\+Controller@{E\+S\+Video\+Detail\+View\+Controller}!load\+Likers@{load\+Likers}}
+\index{load\+Likers@{load\+Likers}!E\+S\+Video\+Detail\+View\+Controller@{E\+S\+Video\+Detail\+View\+Controller}}
+\subsubsection[{load\+Likers}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) load\+Likers 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_e_s_video_detail_view_controller_a2f73ba9dcd28e6351c5c633bf8f22858}
+Load all the users that have liked the photo and display their profile pictures in the likebar. \hypertarget{interface_e_s_video_detail_view_controller_a2d0d60f9602ae576b6e43b2a2b2edde0}{}\index{E\+S\+Video\+Detail\+View\+Controller@{E\+S\+Video\+Detail\+View\+Controller}!should\+Delete\+Video@{should\+Delete\+Video}}
+\index{should\+Delete\+Video@{should\+Delete\+Video}!E\+S\+Video\+Detail\+View\+Controller@{E\+S\+Video\+Detail\+View\+Controller}}
+\subsubsection[{should\+Delete\+Video}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) should\+Delete\+Video 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_e_s_video_detail_view_controller_a2d0d60f9602ae576b6e43b2a2b2edde0}
+User owns the photo and wants to delete it, and that\textquotesingle{}s what we do for him. \hypertarget{interface_e_s_video_detail_view_controller_a56ed09f80407f4699b7da1b7eda9083b}{}\index{E\+S\+Video\+Detail\+View\+Controller@{E\+S\+Video\+Detail\+View\+Controller}!should\+Present\+Account\+View\+For\+User\+:@{should\+Present\+Account\+View\+For\+User\+:}}
+\index{should\+Present\+Account\+View\+For\+User\+:@{should\+Present\+Account\+View\+For\+User\+:}!E\+S\+Video\+Detail\+View\+Controller@{E\+S\+Video\+Detail\+View\+Controller}}
+\subsubsection[{should\+Present\+Account\+View\+For\+User\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) should\+Present\+Account\+View\+For\+User\+: 
+\begin{DoxyParamCaption}
+\item[{(P\+F\+User $\ast$)}]{user}
+\end{DoxyParamCaption}
+}\label{interface_e_s_video_detail_view_controller_a56ed09f80407f4699b7da1b7eda9083b}
+A username of profile picture has been tapped, thus we should present the profile page of that respective user.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & P\+F\+User of the user whose name or profile picture has been tapped \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_e_s_video_detail_view_controller_a7a26fb1401773d7b2bfd08459aa0ee0f}{}\index{E\+S\+Video\+Detail\+View\+Controller@{E\+S\+Video\+Detail\+View\+Controller}!should\+Report\+Video@{should\+Report\+Video}}
+\index{should\+Report\+Video@{should\+Report\+Video}!E\+S\+Video\+Detail\+View\+Controller@{E\+S\+Video\+Detail\+View\+Controller}}
+\subsubsection[{should\+Report\+Video}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) should\+Report\+Video 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_e_s_video_detail_view_controller_a7a26fb1401773d7b2bfd08459aa0ee0f}
+The user does not own the photo and wants to report it, and that\textquotesingle{}s what we do for him. \hypertarget{interface_e_s_video_detail_view_controller_aa9f6108466216b5960b91cfebc849c3e}{}\index{E\+S\+Video\+Detail\+View\+Controller@{E\+S\+Video\+Detail\+View\+Controller}!user\+Liked\+Or\+Unliked\+Photo\+:@{user\+Liked\+Or\+Unliked\+Photo\+:}}
+\index{user\+Liked\+Or\+Unliked\+Photo\+:@{user\+Liked\+Or\+Unliked\+Photo\+:}!E\+S\+Video\+Detail\+View\+Controller@{E\+S\+Video\+Detail\+View\+Controller}}
+\subsubsection[{user\+Liked\+Or\+Unliked\+Photo\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) user\+Liked\+Or\+Unliked\+Photo\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Notification $\ast$)}]{note}
+\end{DoxyParamCaption}
+}\label{interface_e_s_video_detail_view_controller_aa9f6108466216b5960b91cfebc849c3e}
+The user has liked or unliked the photo, thus we should reload the likebar and display or remove his profile picture from it. 
+
+\subsection{Member Data Documentation}
+\hypertarget{interface_e_s_video_detail_view_controller_af78401fcbda8010ec3894d40a97c2393}{}\index{E\+S\+Video\+Detail\+View\+Controller@{E\+S\+Video\+Detail\+View\+Controller}!saved\+Index\+Path@{saved\+Index\+Path}}
+\index{saved\+Index\+Path@{saved\+Index\+Path}!E\+S\+Video\+Detail\+View\+Controller@{E\+S\+Video\+Detail\+View\+Controller}}
+\subsubsection[{saved\+Index\+Path}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Index\+Path$\ast$) saved\+Index\+Path\hspace{0.3cm}{\ttfamily [protected]}}\label{interface_e_s_video_detail_view_controller_af78401fcbda8010ec3894d40a97c2393}
+When the user wants to delete one of his comments, we have to call several methods and have to remember which comment (at which index) should be deleted. 
+
+\subsection{Property Documentation}
+\hypertarget{interface_e_s_video_detail_view_controller_ae1fd28cd1174563626ee4f372973e26c}{}\index{E\+S\+Video\+Detail\+View\+Controller@{E\+S\+Video\+Detail\+View\+Controller}!comment\+Text\+Field@{comment\+Text\+Field}}
+\index{comment\+Text\+Field@{comment\+Text\+Field}!E\+S\+Video\+Detail\+View\+Controller@{E\+S\+Video\+Detail\+View\+Controller}}
+\subsubsection[{comment\+Text\+Field}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Text\+Field$\ast$) comment\+Text\+Field\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_video_detail_view_controller_ae1fd28cd1174563626ee4f372973e26c}
+U\+I\+Text\+Field that lets the user enter his comment. \hypertarget{interface_e_s_video_detail_view_controller_a3553bcf1403fea69179d17e30f864333}{}\index{E\+S\+Video\+Detail\+View\+Controller@{E\+S\+Video\+Detail\+View\+Controller}!header\+View@{header\+View}}
+\index{header\+View@{header\+View}!E\+S\+Video\+Detail\+View\+Controller@{E\+S\+Video\+Detail\+View\+Controller}}
+\subsubsection[{header\+View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf E\+S\+Video\+Details\+Header\+View}$\ast$) header\+View\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_video_detail_view_controller_a3553bcf1403fea69179d17e30f864333}
+Header view containing the photo as well as the photo header with the profile picture and the name of the user who uploaded the photo. \hypertarget{interface_e_s_video_detail_view_controller_a042ded94d23d82fd4e732c607c308d95}{}\index{E\+S\+Video\+Detail\+View\+Controller@{E\+S\+Video\+Detail\+View\+Controller}!likers\+Query\+In\+Progress@{likers\+Query\+In\+Progress}}
+\index{likers\+Query\+In\+Progress@{likers\+Query\+In\+Progress}!E\+S\+Video\+Detail\+View\+Controller@{E\+S\+Video\+Detail\+View\+Controller}}
+\subsubsection[{likers\+Query\+In\+Progress}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) likers\+Query\+In\+Progress\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_e_s_video_detail_view_controller_a042ded94d23d82fd4e732c607c308d95}
+Y\+E\+S when we are currently querying the likers of the photo, N\+O if not. We need to keep track of this in order to save time and resources. \hypertarget{interface_e_s_video_detail_view_controller_a932d0b5ee570f18801ca0b9e324b23fe}{}\index{E\+S\+Video\+Detail\+View\+Controller@{E\+S\+Video\+Detail\+View\+Controller}!video@{video}}
+\index{video@{video}!E\+S\+Video\+Detail\+View\+Controller@{E\+S\+Video\+Detail\+View\+Controller}}
+\subsubsection[{video}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (P\+F\+Object$\ast$) video\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_video_detail_view_controller_a932d0b5ee570f18801ca0b9e324b23fe}
+P\+F\+Object of the photo the viewcontroller is all about. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Controllers/\+Detail/E\+S\+Video\+Detail\+View\+Controller.\+h\item 
+Controllers/\+Detail/E\+S\+Video\+Detail\+View\+Controller.\+m\end{DoxyCompactItemize}

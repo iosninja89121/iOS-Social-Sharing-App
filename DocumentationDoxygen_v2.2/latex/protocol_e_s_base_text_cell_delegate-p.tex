@@ -1,0 +1,60 @@
+\hypertarget{protocol_e_s_base_text_cell_delegate-p}{}\section{$<$E\+S\+Base\+Text\+Cell\+Delegate$>$ Protocol Reference}
+\label{protocol_e_s_base_text_cell_delegate-p}\index{$<$\+E\+S\+Base\+Text\+Cell\+Delegate$>$@{$<$\+E\+S\+Base\+Text\+Cell\+Delegate$>$}}
+
+
+{\ttfamily \#import $<$E\+S\+Base\+Text\+Cell.\+h$>$}
+
+Inheritance diagram for $<$E\+S\+Base\+Text\+Cell\+Delegate$>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.947368cm]{protocol_e_s_base_text_cell_delegate-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{protocol_e_s_base_text_cell_delegate-p_aee8fd887e7e49fc83deaf8a47c2f2747}{cell\+:did\+Tap\+User\+Button\+:}
+\item 
+(void) -\/ \hyperlink{protocol_e_s_base_text_cell_delegate-p_aad0606bd4e03924cbf486c97d3fe8f01}{cell\+:did\+Tap\+Reply\+Button\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The protocol defines methods a delegate of a \hyperlink{interface_e_s_base_text_cell}{E\+S\+Base\+Text\+Cell} should implement. 
+
+\subsection{Method Documentation}
+\hypertarget{protocol_e_s_base_text_cell_delegate-p_aad0606bd4e03924cbf486c97d3fe8f01}{}\index{E\+S\+Base\+Text\+Cell\+Delegate-\/p@{E\+S\+Base\+Text\+Cell\+Delegate-\/p}!cell\+:did\+Tap\+Reply\+Button\+:@{cell\+:did\+Tap\+Reply\+Button\+:}}
+\index{cell\+:did\+Tap\+Reply\+Button\+:@{cell\+:did\+Tap\+Reply\+Button\+:}!E\+S\+Base\+Text\+Cell\+Delegate-\/p@{E\+S\+Base\+Text\+Cell\+Delegate-\/p}}
+\subsubsection[{cell\+:did\+Tap\+Reply\+Button\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) cell\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf E\+S\+Base\+Text\+Cell} $\ast$)}]{cell\+View}
+\item[{didTapReplyButton:(P\+F\+User $\ast$)}]{a\+User}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_e_s_base_text_cell_delegate-p_aad0606bd4e03924cbf486c97d3fe8f01}
+Sent to the delegate when a reply button is tapped
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell\+View} & actual cellview \\
+\hline
+{\em a\+User} & the P\+F\+User of the user that was tapped \\
+\hline
+\end{DoxyParams}
+\hypertarget{protocol_e_s_base_text_cell_delegate-p_aee8fd887e7e49fc83deaf8a47c2f2747}{}\index{E\+S\+Base\+Text\+Cell\+Delegate-\/p@{E\+S\+Base\+Text\+Cell\+Delegate-\/p}!cell\+:did\+Tap\+User\+Button\+:@{cell\+:did\+Tap\+User\+Button\+:}}
+\index{cell\+:did\+Tap\+User\+Button\+:@{cell\+:did\+Tap\+User\+Button\+:}!E\+S\+Base\+Text\+Cell\+Delegate-\/p@{E\+S\+Base\+Text\+Cell\+Delegate-\/p}}
+\subsubsection[{cell\+:did\+Tap\+User\+Button\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) cell\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf E\+S\+Base\+Text\+Cell} $\ast$)}]{cell\+View}
+\item[{didTapUserButton:(P\+F\+User $\ast$)}]{a\+User}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_e_s_base_text_cell_delegate-p_aee8fd887e7e49fc83deaf8a47c2f2747}
+Sent to the delegate when a user button is tapped 
+\begin{DoxyParams}{Parameters}
+{\em a\+User} & the P\+F\+User of the user that was tapped \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Views/\+U\+I\+Table\+View\+Cells/E\+S\+Base\+Text\+Cell.\+h\end{DoxyCompactItemize}

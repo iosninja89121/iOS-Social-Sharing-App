@@ -1,0 +1,10 @@
+{
+  "applications": {
+    "Social Network": {
+      "applicationId": "dk6SeFe6vRDKOghKJseDVCmeXVfcN9zpvnzmlFWe"
+    },
+    "_default": {
+      "link": "Social Network"
+    }
+  }
+}

@@ -1,0 +1,88 @@
+\hypertarget{interface_e_s_activity_feed_view_controller}{}\section{E\+S\+Activity\+Feed\+View\+Controller Class Reference}
+\label{interface_e_s_activity_feed_view_controller}\index{E\+S\+Activity\+Feed\+View\+Controller@{E\+S\+Activity\+Feed\+View\+Controller}}
+
+
+{\ttfamily \#import $<$E\+S\+Activity\+Feed\+View\+Controller.\+h$>$}
+
+Inheritance diagram for E\+S\+Activity\+Feed\+View\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_e_s_activity_feed_view_controller}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_e_s_activity_feed_view_controller_a7b19a15da0e2758bf3209e35325d1ba6}{settings\+Button\+Action\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_activity_feed_view_controller_a2774900f117abbf7b7a6fd4d844de5e3}{invite\+Friends\+Button\+Action\+:}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(N\+S\+String $\ast$) + \hyperlink{interface_e_s_activity_feed_view_controller_a891b463944ccb25359e5aefb9b6589f4}{string\+For\+Activity\+Type\+:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_e_s_settings_action_sheet_delegate}{E\+S\+Settings\+Action\+Sheet\+Delegate} $\ast$ \hyperlink{interface_e_s_activity_feed_view_controller_a4bb937986f4f6806a71200cd3f8ba7e5}{settings\+Action\+Sheet\+Delegate}
+\item 
+N\+S\+Date $\ast$ \hyperlink{interface_e_s_activity_feed_view_controller_ab30b81f8f8ad9fc0ece4b0bc385ef96e}{last\+Refresh}
+\item 
+U\+I\+View $\ast$ \hyperlink{interface_e_s_activity_feed_view_controller_aa8e9edffa720c942cd9f6707881fe212}{blank\+Timeline\+View}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface of the \hyperlink{interface_e_s_activity_feed_view_controller}{E\+S\+Activity\+Feed\+View\+Controller} 
+
+\subsection{Method Documentation}
+\hypertarget{interface_e_s_activity_feed_view_controller_a2774900f117abbf7b7a6fd4d844de5e3}{}\index{E\+S\+Activity\+Feed\+View\+Controller@{E\+S\+Activity\+Feed\+View\+Controller}!invite\+Friends\+Button\+Action\+:@{invite\+Friends\+Button\+Action\+:}}
+\index{invite\+Friends\+Button\+Action\+:@{invite\+Friends\+Button\+Action\+:}!E\+S\+Activity\+Feed\+View\+Controller@{E\+S\+Activity\+Feed\+View\+Controller}}
+\subsubsection[{invite\+Friends\+Button\+Action\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) invite\+Friends\+Button\+Action\+: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}\label{interface_e_s_activity_feed_view_controller_a2774900f117abbf7b7a6fd4d844de5e3}
+The invite friends cell has been tapped, thus we open the Invite\+Friends\+View\+Controller. \hypertarget{interface_e_s_activity_feed_view_controller_a7b19a15da0e2758bf3209e35325d1ba6}{}\index{E\+S\+Activity\+Feed\+View\+Controller@{E\+S\+Activity\+Feed\+View\+Controller}!settings\+Button\+Action\+:@{settings\+Button\+Action\+:}}
+\index{settings\+Button\+Action\+:@{settings\+Button\+Action\+:}!E\+S\+Activity\+Feed\+View\+Controller@{E\+S\+Activity\+Feed\+View\+Controller}}
+\subsubsection[{settings\+Button\+Action\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) settings\+Button\+Action\+: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}\label{interface_e_s_activity_feed_view_controller_a7b19a15da0e2758bf3209e35325d1ba6}
+The settings button has been tapped, thus we open the sideviewcontroller. \hypertarget{interface_e_s_activity_feed_view_controller_a891b463944ccb25359e5aefb9b6589f4}{}\index{E\+S\+Activity\+Feed\+View\+Controller@{E\+S\+Activity\+Feed\+View\+Controller}!string\+For\+Activity\+Type\+:@{string\+For\+Activity\+Type\+:}}
+\index{string\+For\+Activity\+Type\+:@{string\+For\+Activity\+Type\+:}!E\+S\+Activity\+Feed\+View\+Controller@{E\+S\+Activity\+Feed\+View\+Controller}}
+\subsubsection[{string\+For\+Activity\+Type\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (N\+S\+String $\ast$) string\+For\+Activity\+Type\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{activity\+Type}
+\end{DoxyParamCaption}
+}\label{interface_e_s_activity_feed_view_controller_a891b463944ccb25359e5aefb9b6589f4}
+There are different types of activities, and every type has to get an own description and text. We assign a type to each activity and everytime we need to differentiate the activities, we look at that exact key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em activity\+Type} & type of the activity (like, comment, mention, ...)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string containing the text we put in the activity cell 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_e_s_activity_feed_view_controller_aa8e9edffa720c942cd9f6707881fe212}{}\index{E\+S\+Activity\+Feed\+View\+Controller@{E\+S\+Activity\+Feed\+View\+Controller}!blank\+Timeline\+View@{blank\+Timeline\+View}}
+\index{blank\+Timeline\+View@{blank\+Timeline\+View}!E\+S\+Activity\+Feed\+View\+Controller@{E\+S\+Activity\+Feed\+View\+Controller}}
+\subsubsection[{blank\+Timeline\+View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+View$\ast$) blank\+Timeline\+View\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_activity_feed_view_controller_aa8e9edffa720c942cd9f6707881fe212}
+U\+I\+View that is displayed when no Activity is available. \hypertarget{interface_e_s_activity_feed_view_controller_ab30b81f8f8ad9fc0ece4b0bc385ef96e}{}\index{E\+S\+Activity\+Feed\+View\+Controller@{E\+S\+Activity\+Feed\+View\+Controller}!last\+Refresh@{last\+Refresh}}
+\index{last\+Refresh@{last\+Refresh}!E\+S\+Activity\+Feed\+View\+Controller@{E\+S\+Activity\+Feed\+View\+Controller}}
+\subsubsection[{last\+Refresh}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Date$\ast$) last\+Refresh\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_activity_feed_view_controller_ab30b81f8f8ad9fc0ece4b0bc385ef96e}
+Date telling us when we last refreshed the activity feed. \hypertarget{interface_e_s_activity_feed_view_controller_a4bb937986f4f6806a71200cd3f8ba7e5}{}\index{E\+S\+Activity\+Feed\+View\+Controller@{E\+S\+Activity\+Feed\+View\+Controller}!settings\+Action\+Sheet\+Delegate@{settings\+Action\+Sheet\+Delegate}}
+\index{settings\+Action\+Sheet\+Delegate@{settings\+Action\+Sheet\+Delegate}!E\+S\+Activity\+Feed\+View\+Controller@{E\+S\+Activity\+Feed\+View\+Controller}}
+\subsubsection[{settings\+Action\+Sheet\+Delegate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf E\+S\+Settings\+Action\+Sheet\+Delegate}$\ast$) settings\+Action\+Sheet\+Delegate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_activity_feed_view_controller_a4bb937986f4f6806a71200cd3f8ba7e5}
+Assigning the \hyperlink{interface_e_s_settings_action_sheet_delegate}{E\+S\+Settings\+Action\+Sheet\+Delegate}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Controllers/\+Activity/E\+S\+Activity\+Feed\+View\+Controller.\+h\item 
+Controllers/\+Activity/E\+S\+Activity\+Feed\+View\+Controller.\+m\end{DoxyCompactItemize}

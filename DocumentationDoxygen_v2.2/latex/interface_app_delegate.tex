@@ -1,0 +1,164 @@
+\hypertarget{interface_app_delegate}{}\section{App\+Delegate Class Reference}
+\label{interface_app_delegate}\index{App\+Delegate@{App\+Delegate}}
+Inheritance diagram for App\+Delegate\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.714286cm]{interface_app_delegate}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_app_delegate_a0f02167a81f470e6880ff4d013858185}{setup\+Appearance}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_app_delegate_addfe396cf66b8027d5f139899e83aa39}{handle\+Action\+U\+R\+L\+:}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_app_delegate_aae653124268ab1a49e77ebb5cc351622}{is\+Parse\+Reachable}
+\item 
+(void) -\/ \hyperlink{interface_app_delegate_a0774d64f571fc3d6e3550f43bd368d84}{present\+Tab\+Bar\+Controller}
+\item 
+(void) -\/ \hyperlink{interface_app_delegate_a6153d1fcc9687bb08a22c466e54ccd02}{log\+Out}
+\item 
+(U\+I\+Image $\ast$) -\/ \hyperlink{interface_app_delegate_a25527300e92de3209b82cf90db47b4d7}{image\+From\+Color\+:for\+Size\+:with\+Corner\+Radius\+:}
+\item 
+(void) -\/ \hyperlink{interface_app_delegate_ad29898ea3741330f380051e00b18a68f}{would\+You\+Please\+Change\+The\+Design\+:}
+\item 
+\hypertarget{interface_app_delegate_af596e992ce5310e8ad0c126f22476e8d}{}(U\+I\+Image $\ast$) -\/ {\bfseries image\+Named\+:with\+Color\+:}\label{interface_app_delegate_af596e992ce5310e8ad0c126f22476e8d}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+Mutable\+Data $\ast$ \hyperlink{interface_app_delegate_ae3f9e31861537f349282d429a83a5f7a}{\+\_\+data}
+\item 
+B\+O\+O\+L \hyperlink{interface_app_delegate_ab5357e16bdef7cd69162d349a438addd}{first\+Launch}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+U\+I\+Window $\ast$ \hyperlink{interface_app_delegate_acf48ac24125e688cac1a85445cd7fac2}{window}
+\item 
+\hyperlink{interface_e_s_tab_bar_controller}{E\+S\+Tab\+Bar\+Controller} $\ast$ \hyperlink{interface_app_delegate_aceb81bd51dcec8876bf7794fe8aba74f}{tab\+Bar\+Controller}
+\item 
+U\+I\+Navigation\+Controller $\ast$ \hyperlink{interface_app_delegate_aa193a8a903d646e7f4df993eacdb2c95}{nav\+Controller}
+\item 
+M\+F\+Side\+Menu\+Container\+View\+Controller $\ast$ \hyperlink{interface_app_delegate_a22a3aaa12e2cf780b4bdfd498b5e0163}{container}
+\item 
+int \hyperlink{interface_app_delegate_a5def8217f43263a9cc1a6580263de05a}{network\+Status}
+\item 
+C\+L\+Location\+Manager $\ast$ \hyperlink{interface_app_delegate_a761a4fca92616724f55df0d8829df7c9}{location\+Manager}
+\item 
+C\+L\+Location\+Coordinate2\+D \hyperlink{interface_app_delegate_a9fd0ff1892f8d79580c105c42cb1edfb}{coordinate}
+\item 
+U\+I\+Image\+View $\ast$ \hyperlink{interface_app_delegate_a0585eced954c9e81d64a18a1372f904b}{camera\+Button}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_app_delegate_addfe396cf66b8027d5f139899e83aa39}{}\index{App\+Delegate@{App\+Delegate}!handle\+Action\+U\+R\+L\+:@{handle\+Action\+U\+R\+L\+:}}
+\index{handle\+Action\+U\+R\+L\+:@{handle\+Action\+U\+R\+L\+:}!App\+Delegate@{App\+Delegate}}
+\subsubsection[{handle\+Action\+U\+R\+L\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) handle\+Action\+U\+R\+L\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+U\+R\+L $\ast$)}]{url}
+\end{DoxyParamCaption}
+}\label{interface_app_delegate_addfe396cf66b8027d5f139899e83aa39}
+Used to get the user back to the app when logging in through facebook \hypertarget{interface_app_delegate_a25527300e92de3209b82cf90db47b4d7}{}\index{App\+Delegate@{App\+Delegate}!image\+From\+Color\+:for\+Size\+:with\+Corner\+Radius\+:@{image\+From\+Color\+:for\+Size\+:with\+Corner\+Radius\+:}}
+\index{image\+From\+Color\+:for\+Size\+:with\+Corner\+Radius\+:@{image\+From\+Color\+:for\+Size\+:with\+Corner\+Radius\+:}!App\+Delegate@{App\+Delegate}}
+\subsubsection[{image\+From\+Color\+:for\+Size\+:with\+Corner\+Radius\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Image $\ast$) image\+From\+Color\+: 
+\begin{DoxyParamCaption}
+\item[{(U\+I\+Color $\ast$)}]{color}
+\item[{forSize:(C\+G\+Size)}]{size}
+\item[{withCornerRadius:(C\+G\+Float)}]{radius}
+\end{DoxyParamCaption}
+}\label{interface_app_delegate_a25527300e92de3209b82cf90db47b4d7}
+Creates and returns an image from a given color
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & color of the image \\
+\hline
+{\em size} & size of the image \\
+\hline
+{\em radius} & cornerradius of the image\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the created image 
+\end{DoxyReturn}
+\hypertarget{interface_app_delegate_aae653124268ab1a49e77ebb5cc351622}{}\index{App\+Delegate@{App\+Delegate}!is\+Parse\+Reachable@{is\+Parse\+Reachable}}
+\index{is\+Parse\+Reachable@{is\+Parse\+Reachable}!App\+Delegate@{App\+Delegate}}
+\subsubsection[{is\+Parse\+Reachable}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) is\+Parse\+Reachable 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_app_delegate_aae653124268ab1a49e77ebb5cc351622}
+Boolean checking if the Parse services are currently available \hypertarget{interface_app_delegate_a6153d1fcc9687bb08a22c466e54ccd02}{}\index{App\+Delegate@{App\+Delegate}!log\+Out@{log\+Out}}
+\index{log\+Out@{log\+Out}!App\+Delegate@{App\+Delegate}}
+\subsubsection[{log\+Out}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) log\+Out 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_app_delegate_a6153d1fcc9687bb08a22c466e54ccd02}
+Logging a user out an showing the welcomviewcontroller. \hypertarget{interface_app_delegate_a0774d64f571fc3d6e3550f43bd368d84}{}\index{App\+Delegate@{App\+Delegate}!present\+Tab\+Bar\+Controller@{present\+Tab\+Bar\+Controller}}
+\index{present\+Tab\+Bar\+Controller@{present\+Tab\+Bar\+Controller}!App\+Delegate@{App\+Delegate}}
+\subsubsection[{present\+Tab\+Bar\+Controller}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) present\+Tab\+Bar\+Controller 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_app_delegate_a0774d64f571fc3d6e3550f43bd368d84}
+Inits and presents the tabbarcontroller, the main controller of the app. \hypertarget{interface_app_delegate_a0f02167a81f470e6880ff4d013858185}{}\index{App\+Delegate@{App\+Delegate}!setup\+Appearance@{setup\+Appearance}}
+\index{setup\+Appearance@{setup\+Appearance}!App\+Delegate@{App\+Delegate}}
+\subsubsection[{setup\+Appearance}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) setup\+Appearance 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_app_delegate_a0f02167a81f470e6880ff4d013858185}
+Sets the main appearance of the app \hypertarget{interface_app_delegate_ad29898ea3741330f380051e00b18a68f}{}\index{App\+Delegate@{App\+Delegate}!would\+You\+Please\+Change\+The\+Design\+:@{would\+You\+Please\+Change\+The\+Design\+:}}
+\index{would\+You\+Please\+Change\+The\+Design\+:@{would\+You\+Please\+Change\+The\+Design\+:}!App\+Delegate@{App\+Delegate}}
+\subsubsection[{would\+You\+Please\+Change\+The\+Design\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) would\+You\+Please\+Change\+The\+Design\+: 
+\begin{DoxyParamCaption}
+\item[{(U\+I\+Color $\ast$)}]{color}
+\end{DoxyParamCaption}
+}\label{interface_app_delegate_ad29898ea3741330f380051e00b18a68f}
+The design of the profile page navbar has been changed, now save the respective color. 
+
+\subsection{Member Data Documentation}
+\hypertarget{interface_app_delegate_ae3f9e31861537f349282d429a83a5f7a}{}\index{App\+Delegate@{App\+Delegate}!\+\_\+data@{\+\_\+data}}
+\index{\+\_\+data@{\+\_\+data}!App\+Delegate@{App\+Delegate}}
+\subsubsection[{\+\_\+data}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Mutable\+Data$\ast$) \+\_\+data\hspace{0.3cm}{\ttfamily [protected]}}\label{interface_app_delegate_ae3f9e31861537f349282d429a83a5f7a}
+Data of the Facebook Profile Picture \hypertarget{interface_app_delegate_ab5357e16bdef7cd69162d349a438addd}{}\index{App\+Delegate@{App\+Delegate}!first\+Launch@{first\+Launch}}
+\index{first\+Launch@{first\+Launch}!App\+Delegate@{App\+Delegate}}
+\subsubsection[{first\+Launch}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) first\+Launch\hspace{0.3cm}{\ttfamily [protected]}}\label{interface_app_delegate_ab5357e16bdef7cd69162d349a438addd}
+Whether or not this a first launch 
+
+\subsection{Property Documentation}
+\hypertarget{interface_app_delegate_a0585eced954c9e81d64a18a1372f904b}{}\index{App\+Delegate@{App\+Delegate}!camera\+Button@{camera\+Button}}
+\index{camera\+Button@{camera\+Button}!App\+Delegate@{App\+Delegate}}
+\subsubsection[{camera\+Button}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Image\+View$\ast$) camera\+Button\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_app_delegate_a0585eced954c9e81d64a18a1372f904b}
+The big blue camera button in the tabbar \hypertarget{interface_app_delegate_a22a3aaa12e2cf780b4bdfd498b5e0163}{}\index{App\+Delegate@{App\+Delegate}!container@{container}}
+\index{container@{container}!App\+Delegate@{App\+Delegate}}
+\subsubsection[{container}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (M\+F\+Side\+Menu\+Container\+View\+Controller$\ast$) container\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_app_delegate_a22a3aaa12e2cf780b4bdfd498b5e0163}
+Containing the tabbarcontroller and a sidebarcontroller \hypertarget{interface_app_delegate_a9fd0ff1892f8d79580c105c42cb1edfb}{}\index{App\+Delegate@{App\+Delegate}!coordinate@{coordinate}}
+\index{coordinate@{coordinate}!App\+Delegate@{App\+Delegate}}
+\subsubsection[{coordinate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\+L\+Location\+Coordinate2\+D) coordinate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_app_delegate_a9fd0ff1892f8d79580c105c42cb1edfb}
+Coordinates of the user \hypertarget{interface_app_delegate_a761a4fca92616724f55df0d8829df7c9}{}\index{App\+Delegate@{App\+Delegate}!location\+Manager@{location\+Manager}}
+\index{location\+Manager@{location\+Manager}!App\+Delegate@{App\+Delegate}}
+\subsubsection[{location\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\+L\+Location\+Manager$\ast$) location\+Manager\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_app_delegate_a761a4fca92616724f55df0d8829df7c9}
+Location manager for location services \hypertarget{interface_app_delegate_aa193a8a903d646e7f4df993eacdb2c95}{}\index{App\+Delegate@{App\+Delegate}!nav\+Controller@{nav\+Controller}}
+\index{nav\+Controller@{nav\+Controller}!App\+Delegate@{App\+Delegate}}
+\subsubsection[{nav\+Controller}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Navigation\+Controller$\ast$) nav\+Controller\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_app_delegate_aa193a8a903d646e7f4df993eacdb2c95}
+A navigationcontroller used to push new viewcontrollers \hypertarget{interface_app_delegate_a5def8217f43263a9cc1a6580263de05a}{}\index{App\+Delegate@{App\+Delegate}!network\+Status@{network\+Status}}
+\index{network\+Status@{network\+Status}!App\+Delegate@{App\+Delegate}}
+\subsubsection[{network\+Status}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int) network\+Status\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_app_delegate_a5def8217f43263a9cc1a6580263de05a}
+Is there an internet connection or not? \hypertarget{interface_app_delegate_aceb81bd51dcec8876bf7794fe8aba74f}{}\index{App\+Delegate@{App\+Delegate}!tab\+Bar\+Controller@{tab\+Bar\+Controller}}
+\index{tab\+Bar\+Controller@{tab\+Bar\+Controller}!App\+Delegate@{App\+Delegate}}
+\subsubsection[{tab\+Bar\+Controller}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf E\+S\+Tab\+Bar\+Controller}$\ast$) tab\+Bar\+Controller\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_app_delegate_aceb81bd51dcec8876bf7794fe8aba74f}
+The tabbarcontroller containing all the other controllers. \hypertarget{interface_app_delegate_acf48ac24125e688cac1a85445cd7fac2}{}\index{App\+Delegate@{App\+Delegate}!window@{window}}
+\index{window@{window}!App\+Delegate@{App\+Delegate}}
+\subsubsection[{window}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Window$\ast$) window\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_app_delegate_acf48ac24125e688cac1a85445cd7fac2}
+The window of the main controller 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+App\+Delegate.\+h\item 
+App\+Delegate.\+m\end{DoxyCompactItemize}

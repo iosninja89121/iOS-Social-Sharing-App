@@ -1,0 +1,202 @@
+\hypertarget{interface_e_s_messenger_view}{}\section{E\+S\+Messenger\+View Class Reference}
+\label{interface_e_s_messenger_view}\index{E\+S\+Messenger\+View@{E\+S\+Messenger\+View}}
+Inheritance diagram for E\+S\+Messenger\+View\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.171548cm]{interface_e_s_messenger_view}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_e_s_messenger_view_a20949dd05e02e5d8f57c7425cc7cd188}{init\+With\+:and\+Name\+:}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_e_s_messenger_view_a455e132b8747f85a1d8deac1a68a4f24}{add\+New\+Message\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_messenger_view_a4d7787efab802a88a679a9bfe7cfee04}{update\+Message\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_messenger_view_a029364852259871644d4dc868e3eebcb}{load\+User\+Profile\+Picture\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_messenger_view_a39888ee6f75bc085702e2cf1dab53c76}{send\+Message\+:with\+Picture\+:with\+Video\+:and\+With\+Audio\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_messenger_view_ab08e11c5fca909ecd876651ff5491fc9}{eventually\+Save\+Message\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_messenger_view_a8b91a1196d4f8c614696b9334918829c}{update\+Firebase\+Message\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_messenger_view_a469661b88cf9b21e8d03adfbd80f859c}{user\+Block\+Action}
+\item 
+(void) -\/ \hyperlink{interface_e_s_messenger_view_a1eaa6a89f233335eaa55563ed0f518fd}{should\+Stop\+Typing\+Indicator}
+\item 
+(void) -\/ \hyperlink{interface_e_s_messenger_view_a0e46ee68f6a3523270b9133bc0bc1341}{did\+Press\+Send\+Button\+:with\+Message\+Text\+:sender\+Id\+:sender\+Display\+Name\+:date\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_messenger_view_a13ba4513938bfdbd75f380485e4a6b98}{did\+Press\+Accessory\+Button\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_e_s_messenger_view_a455e132b8747f85a1d8deac1a68a4f24}{}\index{E\+S\+Messenger\+View@{E\+S\+Messenger\+View}!add\+New\+Message\+:@{add\+New\+Message\+:}}
+\index{add\+New\+Message\+:@{add\+New\+Message\+:}!E\+S\+Messenger\+View@{E\+S\+Messenger\+View}}
+\subsubsection[{add\+New\+Message\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) add\+New\+Message\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Dictionary $\ast$)}]{messenger\+Item}
+\end{DoxyParamCaption}
+}\label{interface_e_s_messenger_view_a455e132b8747f85a1d8deac1a68a4f24}
+Creating new message with an optional media\+Item.
+
+
+\begin{DoxyParams}{Parameters}
+{\em messenger\+Item} & the dictionary of the message \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_e_s_messenger_view_a13ba4513938bfdbd75f380485e4a6b98}{}\index{E\+S\+Messenger\+View@{E\+S\+Messenger\+View}!did\+Press\+Accessory\+Button\+:@{did\+Press\+Accessory\+Button\+:}}
+\index{did\+Press\+Accessory\+Button\+:@{did\+Press\+Accessory\+Button\+:}!E\+S\+Messenger\+View@{E\+S\+Messenger\+View}}
+\subsubsection[{did\+Press\+Accessory\+Button\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) did\+Press\+Accessory\+Button\+: 
+\begin{DoxyParamCaption}
+\item[{(U\+I\+Button $\ast$)}]{sender}
+\end{DoxyParamCaption}
+}\label{interface_e_s_messenger_view_a13ba4513938bfdbd75f380485e4a6b98}
+The user has pressed the accessorybutton, thus open a U\+I\+Action\+Sheet where the user can decide what he wants to send \hypertarget{interface_e_s_messenger_view_a0e46ee68f6a3523270b9133bc0bc1341}{}\index{E\+S\+Messenger\+View@{E\+S\+Messenger\+View}!did\+Press\+Send\+Button\+:with\+Message\+Text\+:sender\+Id\+:sender\+Display\+Name\+:date\+:@{did\+Press\+Send\+Button\+:with\+Message\+Text\+:sender\+Id\+:sender\+Display\+Name\+:date\+:}}
+\index{did\+Press\+Send\+Button\+:with\+Message\+Text\+:sender\+Id\+:sender\+Display\+Name\+:date\+:@{did\+Press\+Send\+Button\+:with\+Message\+Text\+:sender\+Id\+:sender\+Display\+Name\+:date\+:}!E\+S\+Messenger\+View@{E\+S\+Messenger\+View}}
+\subsubsection[{did\+Press\+Send\+Button\+:with\+Message\+Text\+:sender\+Id\+:sender\+Display\+Name\+:date\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) did\+Press\+Send\+Button\+: 
+\begin{DoxyParamCaption}
+\item[{(U\+I\+Button $\ast$)}]{button}
+\item[{withMessageText:(N\+S\+String $\ast$)}]{text}
+\item[{senderId:(N\+S\+String $\ast$)}]{sender\+Id}
+\item[{senderDisplayName:(N\+S\+String $\ast$)}]{name}
+\item[{date:(N\+S\+Date $\ast$)}]{date}
+\end{DoxyParamCaption}
+}\label{interface_e_s_messenger_view_a0e46ee68f6a3523270b9133bc0bc1341}
+User has pressed the send button. We gather the information of the message item and call the send\+Message method.
+
+
+\begin{DoxyParams}{Parameters}
+{\em button} & the button that has been tapped \\
+\hline
+{\em text} & text of the message \\
+\hline
+{\em sender\+Id} & object\+Id of the P\+F\+User that sent the message \\
+\hline
+{\em name} & name of the P\+F\+User that sent the message \\
+\hline
+{\em date} & when the message has been sent \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_e_s_messenger_view_ab08e11c5fca909ecd876651ff5491fc9}{}\index{E\+S\+Messenger\+View@{E\+S\+Messenger\+View}!eventually\+Save\+Message\+:@{eventually\+Save\+Message\+:}}
+\index{eventually\+Save\+Message\+:@{eventually\+Save\+Message\+:}!E\+S\+Messenger\+View@{E\+S\+Messenger\+View}}
+\subsubsection[{eventually\+Save\+Message\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) eventually\+Save\+Message\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Mutable\+Dictionary $\ast$)}]{messenger\+Item}
+\end{DoxyParamCaption}
+}\label{interface_e_s_messenger_view_ab08e11c5fca909ecd876651ff5491fc9}
+Save the message so that we don\textquotesingle{}t loose it anymore.
+
+
+\begin{DoxyParams}{Parameters}
+{\em messenger\+Item} & mutable dictionary of the message \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_e_s_messenger_view_a20949dd05e02e5d8f57c7425cc7cd188}{}\index{E\+S\+Messenger\+View@{E\+S\+Messenger\+View}!init\+With\+:and\+Name\+:@{init\+With\+:and\+Name\+:}}
+\index{init\+With\+:and\+Name\+:@{init\+With\+:and\+Name\+:}!E\+S\+Messenger\+View@{E\+S\+Messenger\+View}}
+\subsubsection[{init\+With\+:and\+Name\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\+With\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{\+\_\+group\+Id}
+\item[{andName:(N\+S\+String $\ast$)}]{\+\_\+username}
+\end{DoxyParamCaption}
+}\label{interface_e_s_messenger_view_a20949dd05e02e5d8f57c7425cc7cd188}
+Custom init method because we need to pass some parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+group\+Id} & the id of the conversation \\
+\hline
+{\em \+\_\+username} & the title that will be displayed in the navbar\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+id 
+\end{DoxyReturn}
+\hypertarget{interface_e_s_messenger_view_a029364852259871644d4dc868e3eebcb}{}\index{E\+S\+Messenger\+View@{E\+S\+Messenger\+View}!load\+User\+Profile\+Picture\+:@{load\+User\+Profile\+Picture\+:}}
+\index{load\+User\+Profile\+Picture\+:@{load\+User\+Profile\+Picture\+:}!E\+S\+Messenger\+View@{E\+S\+Messenger\+View}}
+\subsubsection[{load\+User\+Profile\+Picture\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) load\+User\+Profile\+Picture\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{sender\+Id}
+\end{DoxyParamCaption}
+}\label{interface_e_s_messenger_view_a029364852259871644d4dc868e3eebcb}
+Load the profile picture of the user.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender\+Id} & id of the user \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_e_s_messenger_view_a39888ee6f75bc085702e2cf1dab53c76}{}\index{E\+S\+Messenger\+View@{E\+S\+Messenger\+View}!send\+Message\+:with\+Picture\+:with\+Video\+:and\+With\+Audio\+:@{send\+Message\+:with\+Picture\+:with\+Video\+:and\+With\+Audio\+:}}
+\index{send\+Message\+:with\+Picture\+:with\+Video\+:and\+With\+Audio\+:@{send\+Message\+:with\+Picture\+:with\+Video\+:and\+With\+Audio\+:}!E\+S\+Messenger\+View@{E\+S\+Messenger\+View}}
+\subsubsection[{send\+Message\+:with\+Picture\+:with\+Video\+:and\+With\+Audio\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) send\+Message\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{text}
+\item[{withPicture:(U\+I\+Image $\ast$)}]{picture}
+\item[{withVideo:(N\+S\+U\+R\+L $\ast$)}]{video}
+\item[{andWithAudio:(N\+S\+String $\ast$)}]{audio}
+\end{DoxyParamCaption}
+}\label{interface_e_s_messenger_view_a39888ee6f75bc085702e2cf1dab53c76}
+Send a new message with its content.
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & text of the message \\
+\hline
+{\em picture} & picture of the message \\
+\hline
+{\em video} & video of the message \\
+\hline
+{\em audio} & audio message \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_e_s_messenger_view_a1eaa6a89f233335eaa55563ed0f518fd}{}\index{E\+S\+Messenger\+View@{E\+S\+Messenger\+View}!should\+Stop\+Typing\+Indicator@{should\+Stop\+Typing\+Indicator}}
+\index{should\+Stop\+Typing\+Indicator@{should\+Stop\+Typing\+Indicator}!E\+S\+Messenger\+View@{E\+S\+Messenger\+View}}
+\subsubsection[{should\+Stop\+Typing\+Indicator}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) should\+Stop\+Typing\+Indicator 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_e_s_messenger_view_a1eaa6a89f233335eaa55563ed0f518fd}
+The other user has stopped typing, thus hide the typing indicator again. \hypertarget{interface_e_s_messenger_view_a8b91a1196d4f8c614696b9334918829c}{}\index{E\+S\+Messenger\+View@{E\+S\+Messenger\+View}!update\+Firebase\+Message\+:@{update\+Firebase\+Message\+:}}
+\index{update\+Firebase\+Message\+:@{update\+Firebase\+Message\+:}!E\+S\+Messenger\+View@{E\+S\+Messenger\+View}}
+\subsubsection[{update\+Firebase\+Message\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) update\+Firebase\+Message\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Dictionary $\ast$)}]{messenger\+Item}
+\end{DoxyParamCaption}
+}\label{interface_e_s_messenger_view_a8b91a1196d4f8c614696b9334918829c}
+Update the Firebase because there is a new message.
+
+
+\begin{DoxyParams}{Parameters}
+{\em messenger\+Item} & dictionary of the message \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_e_s_messenger_view_a4d7787efab802a88a679a9bfe7cfee04}{}\index{E\+S\+Messenger\+View@{E\+S\+Messenger\+View}!update\+Message\+:@{update\+Message\+:}}
+\index{update\+Message\+:@{update\+Message\+:}!E\+S\+Messenger\+View@{E\+S\+Messenger\+View}}
+\subsubsection[{update\+Message\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) update\+Message\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Dictionary $\ast$)}]{messenger\+Item}
+\end{DoxyParamCaption}
+}\label{interface_e_s_messenger_view_a4d7787efab802a88a679a9bfe7cfee04}
+Update the message\+View and tell it about the new message.
+
+
+\begin{DoxyParams}{Parameters}
+{\em messenger\+Item} & dictionary of the messenger item \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_e_s_messenger_view_a469661b88cf9b21e8d03adfbd80f859c}{}\index{E\+S\+Messenger\+View@{E\+S\+Messenger\+View}!user\+Block\+Action@{user\+Block\+Action}}
+\index{user\+Block\+Action@{user\+Block\+Action}!E\+S\+Messenger\+View@{E\+S\+Messenger\+View}}
+\subsubsection[{user\+Block\+Action}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) user\+Block\+Action 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_e_s_messenger_view_a469661b88cf9b21e8d03adfbd80f859c}
+Block a user that infringes our terms of use. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Controllers/\+Chat/E\+S\+Messenger\+View.\+h\item 
+Controllers/\+Chat/E\+S\+Messenger\+View.\+m\end{DoxyCompactItemize}

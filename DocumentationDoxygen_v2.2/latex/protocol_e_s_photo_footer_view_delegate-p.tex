@@ -1,0 +1,80 @@
+\hypertarget{protocol_e_s_photo_footer_view_delegate-p}{}\section{$<$E\+S\+Photo\+Footer\+View\+Delegate$>$ Protocol Reference}
+\label{protocol_e_s_photo_footer_view_delegate-p}\index{$<$\+E\+S\+Photo\+Footer\+View\+Delegate$>$@{$<$\+E\+S\+Photo\+Footer\+View\+Delegate$>$}}
+
+
+{\ttfamily \#import $<$E\+S\+Photo\+Footer\+View.\+h$>$}
+
+Inheritance diagram for $<$E\+S\+Photo\+Footer\+View\+Delegate$>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.828571cm]{protocol_e_s_photo_footer_view_delegate-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{protocol_e_s_photo_footer_view_delegate-p_a69fc1180ccf1dd0b8939dccede2cfe8d}{photo\+Footer\+View\+:did\+Tap\+Like\+Photo\+Button\+:photo\+:}
+\item 
+(void) -\/ \hyperlink{protocol_e_s_photo_footer_view_delegate-p_afd507cefc5e691232a53322911945187}{photo\+Footer\+View\+:did\+Tap\+Comment\+On\+Photo\+Button\+:photo\+:}
+\item 
+(void) -\/ \hyperlink{protocol_e_s_photo_footer_view_delegate-p_ad8dda9f60e8647b3ec1dde000814b291}{photo\+Footer\+View\+:did\+Tap\+Share\+Photo\+Button\+:photo\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The protocol defines methods a delegate of a \hyperlink{interface_e_s_photo_footer_view}{E\+S\+Photo\+Footer\+View} should implement. All methods of the protocol are optional. 
+
+\subsection{Method Documentation}
+\hypertarget{protocol_e_s_photo_footer_view_delegate-p_afd507cefc5e691232a53322911945187}{}\index{E\+S\+Photo\+Footer\+View\+Delegate-\/p@{E\+S\+Photo\+Footer\+View\+Delegate-\/p}!photo\+Footer\+View\+:did\+Tap\+Comment\+On\+Photo\+Button\+:photo\+:@{photo\+Footer\+View\+:did\+Tap\+Comment\+On\+Photo\+Button\+:photo\+:}}
+\index{photo\+Footer\+View\+:did\+Tap\+Comment\+On\+Photo\+Button\+:photo\+:@{photo\+Footer\+View\+:did\+Tap\+Comment\+On\+Photo\+Button\+:photo\+:}!E\+S\+Photo\+Footer\+View\+Delegate-\/p@{E\+S\+Photo\+Footer\+View\+Delegate-\/p}}
+\subsubsection[{photo\+Footer\+View\+:did\+Tap\+Comment\+On\+Photo\+Button\+:photo\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) photo\+Footer\+View\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf E\+S\+Photo\+Footer\+View} $\ast$)}]{photo\+Footer\+View}
+\item[{didTapCommentOnPhotoButton:(U\+I\+Button $\ast$)}]{button}
+\item[{photo:(P\+F\+Object $\ast$)}]{photo}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_e_s_photo_footer_view_delegate-p_afd507cefc5e691232a53322911945187}
+Sent to the delegate when the comment on photo button is tapped 
+\begin{DoxyParams}{Parameters}
+{\em photo} & the P\+F\+Object for the photo that will be commented on \\
+\hline
+\end{DoxyParams}
+\hypertarget{protocol_e_s_photo_footer_view_delegate-p_a69fc1180ccf1dd0b8939dccede2cfe8d}{}\index{E\+S\+Photo\+Footer\+View\+Delegate-\/p@{E\+S\+Photo\+Footer\+View\+Delegate-\/p}!photo\+Footer\+View\+:did\+Tap\+Like\+Photo\+Button\+:photo\+:@{photo\+Footer\+View\+:did\+Tap\+Like\+Photo\+Button\+:photo\+:}}
+\index{photo\+Footer\+View\+:did\+Tap\+Like\+Photo\+Button\+:photo\+:@{photo\+Footer\+View\+:did\+Tap\+Like\+Photo\+Button\+:photo\+:}!E\+S\+Photo\+Footer\+View\+Delegate-\/p@{E\+S\+Photo\+Footer\+View\+Delegate-\/p}}
+\subsubsection[{photo\+Footer\+View\+:did\+Tap\+Like\+Photo\+Button\+:photo\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) photo\+Footer\+View\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf E\+S\+Photo\+Footer\+View} $\ast$)}]{photo\+Footer\+View}
+\item[{didTapLikePhotoButton:(U\+I\+Button $\ast$)}]{button}
+\item[{photo:(P\+F\+Object $\ast$)}]{photo}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_e_s_photo_footer_view_delegate-p_a69fc1180ccf1dd0b8939dccede2cfe8d}
+Sent to the delegate when the like photo button is tapped 
+\begin{DoxyParams}{Parameters}
+{\em photo} & the P\+F\+Object for the photo that is being liked or disliked \\
+\hline
+\end{DoxyParams}
+\hypertarget{protocol_e_s_photo_footer_view_delegate-p_ad8dda9f60e8647b3ec1dde000814b291}{}\index{E\+S\+Photo\+Footer\+View\+Delegate-\/p@{E\+S\+Photo\+Footer\+View\+Delegate-\/p}!photo\+Footer\+View\+:did\+Tap\+Share\+Photo\+Button\+:photo\+:@{photo\+Footer\+View\+:did\+Tap\+Share\+Photo\+Button\+:photo\+:}}
+\index{photo\+Footer\+View\+:did\+Tap\+Share\+Photo\+Button\+:photo\+:@{photo\+Footer\+View\+:did\+Tap\+Share\+Photo\+Button\+:photo\+:}!E\+S\+Photo\+Footer\+View\+Delegate-\/p@{E\+S\+Photo\+Footer\+View\+Delegate-\/p}}
+\subsubsection[{photo\+Footer\+View\+:did\+Tap\+Share\+Photo\+Button\+:photo\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) photo\+Footer\+View\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf E\+S\+Photo\+Footer\+View} $\ast$)}]{photo\+Footer\+View}
+\item[{didTapSharePhotoButton:(U\+I\+Button $\ast$)}]{button}
+\item[{photo:(P\+F\+Object $\ast$)}]{photo}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_e_s_photo_footer_view_delegate-p_ad8dda9f60e8647b3ec1dde000814b291}
+Sent to the delegate when the share button is tapped
+
+
+\begin{DoxyParams}{Parameters}
+{\em photo\+Footer\+View} & the photo\+Footer\+View where the like button is in \\
+\hline
+{\em button} & the actual like button \\
+\hline
+{\em photo} & the photo the user wants to share \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Views/\+Timeline\+Views/E\+S\+Photo\+Footer\+View.\+h\end{DoxyCompactItemize}

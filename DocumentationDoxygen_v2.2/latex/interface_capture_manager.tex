@@ -1,0 +1,89 @@
+\hypertarget{interface_capture_manager}{}\section{Capture\+Manager Class Reference}
+\label{interface_capture_manager}\index{Capture\+Manager@{Capture\+Manager}}
+Inheritance diagram for Capture\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_capture_manager}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_capture_manager_a4eb8c7a4aefc4a1eaea10a5deb43dce2}{}(B\+O\+O\+L) -\/ {\bfseries setup\+Session}\label{interface_capture_manager_a4eb8c7a4aefc4a1eaea10a5deb43dce2}
+
+\item 
+\hypertarget{interface_capture_manager_a48a5d05e187d6c4e0f0f06eaffb034dc}{}(void) -\/ {\bfseries start\+Recording}\label{interface_capture_manager_a48a5d05e187d6c4e0f0f06eaffb034dc}
+
+\item 
+\hypertarget{interface_capture_manager_af0b4f8bddde4d18fc53e604eaef3e7df}{}(void) -\/ {\bfseries stop\+Recording}\label{interface_capture_manager_af0b4f8bddde4d18fc53e604eaef3e7df}
+
+\item 
+\hypertarget{interface_capture_manager_a7694f7e1639770571ed89075335cc902}{}(void) -\/ {\bfseries save\+Video\+With\+Completion\+Block\+:}\label{interface_capture_manager_a7694f7e1639770571ed89075335cc902}
+
+\item 
+\hypertarget{interface_capture_manager_a1e859e9b458406275fb4ed7cffdacfb5}{}(N\+S\+U\+Integer) -\/ {\bfseries camera\+Count}\label{interface_capture_manager_a1e859e9b458406275fb4ed7cffdacfb5}
+
+\item 
+\hypertarget{interface_capture_manager_aea0e89955f6b0dfe80c98fabcf430455}{}(N\+S\+U\+Integer) -\/ {\bfseries mic\+Count}\label{interface_capture_manager_aea0e89955f6b0dfe80c98fabcf430455}
+
+\item 
+\hypertarget{interface_capture_manager_a8395e9ae07c1d731491dc247fa350ea7}{}(void) -\/ {\bfseries auto\+Focus\+At\+Point\+:}\label{interface_capture_manager_a8395e9ae07c1d731491dc247fa350ea7}
+
+\item 
+\hypertarget{interface_capture_manager_ac568ec74930a33bde143121329c11fc3}{}(void) -\/ {\bfseries continuous\+Focus\+At\+Point\+:}\label{interface_capture_manager_ac568ec74930a33bde143121329c11fc3}
+
+\item 
+\hypertarget{interface_capture_manager_a3f19de7378a660feb3253b398d5f5f3c}{}(void) -\/ {\bfseries switch\+Camera}\label{interface_capture_manager_a3f19de7378a660feb3253b398d5f5f3c}
+
+\item 
+\hypertarget{interface_capture_manager_aba8b1ac413986b6ac88d1888e0b4b418}{}(void) -\/ {\bfseries delete\+Last\+Asset}\label{interface_capture_manager_aba8b1ac413986b6ac88d1888e0b4b418}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_capture_manager_ac6de5be1f89333713644adb10398d701}{}A\+V\+Capture\+Session $\ast$ {\bfseries session}\label{interface_capture_manager_ac6de5be1f89333713644adb10398d701}
+
+\item 
+\hypertarget{interface_capture_manager_a89196b28420d4df27e62b92a03dc7b75}{}A\+V\+Capture\+Video\+Orientation {\bfseries orientation}\label{interface_capture_manager_a89196b28420d4df27e62b92a03dc7b75}
+
+\item 
+\hypertarget{interface_capture_manager_a904827e200742354b3872c04d5f5b2e2}{}A\+V\+Capture\+Device\+Input $\ast$ {\bfseries video\+Input}\label{interface_capture_manager_a904827e200742354b3872c04d5f5b2e2}
+
+\item 
+\hypertarget{interface_capture_manager_ad03f6746e8e2c5e3b7d0d69344e07d5b}{}A\+V\+Capture\+Device\+Input $\ast$ {\bfseries audio\+Input}\label{interface_capture_manager_ad03f6746e8e2c5e3b7d0d69344e07d5b}
+
+\item 
+\hypertarget{interface_capture_manager_ada88e03646aa62041766538332ecdcc8}{}A\+V\+Capture\+Still\+Image\+Output $\ast$ {\bfseries still\+Image\+Output}\label{interface_capture_manager_ada88e03646aa62041766538332ecdcc8}
+
+\item 
+\hypertarget{interface_capture_manager_a7b09933d58ee524eadbea29c0830be88}{}\hyperlink{interface_a_v_cam_recorder}{A\+V\+Cam\+Recorder} $\ast$ {\bfseries recorder}\label{interface_capture_manager_a7b09933d58ee524eadbea29c0830be88}
+
+\item 
+\hypertarget{interface_capture_manager_a037159dfdb7db3538db11a246e525182}{}id {\bfseries device\+Connected\+Observer}\label{interface_capture_manager_a037159dfdb7db3538db11a246e525182}
+
+\item 
+\hypertarget{interface_capture_manager_a3cb42456402244a5d55d2d235162da96}{}id {\bfseries device\+Disconnected\+Observer}\label{interface_capture_manager_a3cb42456402244a5d55d2d235162da96}
+
+\item 
+\hypertarget{interface_capture_manager_afcd4d84caa959233374cb42ffccb658f}{}U\+I\+Background\+Task\+Identifier {\bfseries background\+Recording\+I\+D}\label{interface_capture_manager_afcd4d84caa959233374cb42ffccb658f}
+
+\item 
+\hypertarget{interface_capture_manager_a0aecfbc7f71a888ad4da48bda7c7304f}{}id$<$ \hyperlink{protocol_capture_manager_delegate-p}{Capture\+Manager\+Delegate} $>$ {\bfseries delegate}\label{interface_capture_manager_a0aecfbc7f71a888ad4da48bda7c7304f}
+
+\item 
+\hypertarget{interface_capture_manager_a28141ab77d84319f476323d77e7eb964}{}N\+S\+Mutable\+Array $\ast$ {\bfseries assets}\label{interface_capture_manager_a28141ab77d84319f476323d77e7eb964}
+
+\item 
+\hypertarget{interface_capture_manager_ad59a40caeea68e8c046d17811af4d1d1}{}N\+S\+Timer $\ast$ {\bfseries export\+Progress\+Bar\+Timer}\label{interface_capture_manager_ad59a40caeea68e8c046d17811af4d1d1}
+
+\item 
+\hypertarget{interface_capture_manager_a1e3b450690b471a27a61dbfdad4bc893}{}A\+V\+Asset\+Export\+Session $\ast$ {\bfseries export\+Session}\label{interface_capture_manager_a1e3b450690b471a27a61dbfdad4bc893}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Controllers/\+Video/Capture\+Manager.\+h\item 
+Controllers/\+Video/Capture\+Manager.\+m\end{DoxyCompactItemize}

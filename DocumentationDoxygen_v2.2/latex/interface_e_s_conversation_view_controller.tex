@@ -1,0 +1,108 @@
+\hypertarget{interface_e_s_conversation_view_controller}{}\section{E\+S\+Conversation\+View\+Controller Class Reference}
+\label{interface_e_s_conversation_view_controller}\index{E\+S\+Conversation\+View\+Controller@{E\+S\+Conversation\+View\+Controller}}
+
+
+{\ttfamily \#import $<$E\+S\+Conversation\+View\+Controller.\+h$>$}
+
+Inheritance diagram for E\+S\+Conversation\+View\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.435897cm]{interface_e_s_conversation_view_controller}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_e_s_conversation_view_controller_a7d3363f138dcf314b1d5e81aa5210660}{load\+Chat\+Rooms}
+\item 
+(void) -\/ \hyperlink{interface_e_s_conversation_view_controller_a58bd6b1fcee90fead41341ab1e16df09}{compose\+New\+Message}
+\item 
+(void) -\/ \hyperlink{interface_e_s_conversation_view_controller_ae44bb00dbc1e260b2f198eff8e2b9d4c}{selected\+Recipients\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_conversation_view_controller_acba007bd1eec33c05626b06c93f5b229}{selected\+From\+Contacts\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_conversation_view_controller_a399985edb3a561c881c4396dbfa70bf5}{update\+Badge\+Tabbar}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+Mutable\+Array $\ast$ \hyperlink{interface_e_s_conversation_view_controller_a208ee9f8929670fa40410428ef7d0382}{conversations}
+\item 
+\hypertarget{interface_e_s_conversation_view_controller_ace8025d6150f30e2340c79e5ec97d34c}{}Firebase $\ast$ {\bfseries firebase}\label{interface_e_s_conversation_view_controller_ace8025d6150f30e2340c79e5ec97d34c}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface of the E\+S\+Conversationviewcontroller 
+
+\subsection{Method Documentation}
+\hypertarget{interface_e_s_conversation_view_controller_a58bd6b1fcee90fead41341ab1e16df09}{}\index{E\+S\+Conversation\+View\+Controller@{E\+S\+Conversation\+View\+Controller}!compose\+New\+Message@{compose\+New\+Message}}
+\index{compose\+New\+Message@{compose\+New\+Message}!E\+S\+Conversation\+View\+Controller@{E\+S\+Conversation\+View\+Controller}}
+\subsubsection[{compose\+New\+Message}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) compose\+New\+Message 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_e_s_conversation_view_controller_a58bd6b1fcee90fead41341ab1e16df09}
+Create a new conversation. \hypertarget{interface_e_s_conversation_view_controller_a7d3363f138dcf314b1d5e81aa5210660}{}\index{E\+S\+Conversation\+View\+Controller@{E\+S\+Conversation\+View\+Controller}!load\+Chat\+Rooms@{load\+Chat\+Rooms}}
+\index{load\+Chat\+Rooms@{load\+Chat\+Rooms}!E\+S\+Conversation\+View\+Controller@{E\+S\+Conversation\+View\+Controller}}
+\subsubsection[{load\+Chat\+Rooms}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) load\+Chat\+Rooms 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_e_s_conversation_view_controller_a7d3363f138dcf314b1d5e81aa5210660}
+Load all the available conversations of the user. \hypertarget{interface_e_s_conversation_view_controller_acba007bd1eec33c05626b06c93f5b229}{}\index{E\+S\+Conversation\+View\+Controller@{E\+S\+Conversation\+View\+Controller}!selected\+From\+Contacts\+:@{selected\+From\+Contacts\+:}}
+\index{selected\+From\+Contacts\+:@{selected\+From\+Contacts\+:}!E\+S\+Conversation\+View\+Controller@{E\+S\+Conversation\+View\+Controller}}
+\subsubsection[{selected\+From\+Contacts\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) selected\+From\+Contacts\+: 
+\begin{DoxyParamCaption}
+\item[{(P\+F\+User $\ast$)}]{second\+User}
+\end{DoxyParamCaption}
+}\label{interface_e_s_conversation_view_controller_acba007bd1eec33c05626b06c93f5b229}
+User has selected an registered user from his contacts.
+
+
+\begin{DoxyParams}{Parameters}
+{\em second\+User} & registered P\+F\+User \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{protocol_e_s_phone_contacts_delegate-p_a40a3fda13c207b7e1d78166b941a8a1b}{$<$\+E\+S\+Phone\+Contacts\+Delegate$>$}.
+
+\hypertarget{interface_e_s_conversation_view_controller_ae44bb00dbc1e260b2f198eff8e2b9d4c}{}\index{E\+S\+Conversation\+View\+Controller@{E\+S\+Conversation\+View\+Controller}!selected\+Recipients\+:@{selected\+Recipients\+:}}
+\index{selected\+Recipients\+:@{selected\+Recipients\+:}!E\+S\+Conversation\+View\+Controller@{E\+S\+Conversation\+View\+Controller}}
+\subsubsection[{selected\+Recipients\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) selected\+Recipients\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Mutable\+Array $\ast$)}]{users}
+\end{DoxyParamCaption}
+}\label{interface_e_s_conversation_view_controller_ae44bb00dbc1e260b2f198eff8e2b9d4c}
+User has selected one or multiple recipients
+
+
+\begin{DoxyParams}{Parameters}
+{\em users} & selected user(s) \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{protocol_e_s_select_contacts_delegate-p_a1fc5aab733fc3b172a45d2198c6f8d18}{$<$\+E\+S\+Select\+Contacts\+Delegate$>$}.
+
+\hypertarget{interface_e_s_conversation_view_controller_a399985edb3a561c881c4396dbfa70bf5}{}\index{E\+S\+Conversation\+View\+Controller@{E\+S\+Conversation\+View\+Controller}!update\+Badge\+Tabbar@{update\+Badge\+Tabbar}}
+\index{update\+Badge\+Tabbar@{update\+Badge\+Tabbar}!E\+S\+Conversation\+View\+Controller@{E\+S\+Conversation\+View\+Controller}}
+\subsubsection[{update\+Badge\+Tabbar}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) update\+Badge\+Tabbar 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_e_s_conversation_view_controller_a399985edb3a561c881c4396dbfa70bf5}
+Update the red badge in the tabbar, indicating how many messages haven\textquotesingle{}t been read. 
+
+\subsection{Member Data Documentation}
+\hypertarget{interface_e_s_conversation_view_controller_a208ee9f8929670fa40410428ef7d0382}{}\index{E\+S\+Conversation\+View\+Controller@{E\+S\+Conversation\+View\+Controller}!conversations@{conversations}}
+\index{conversations@{conversations}!E\+S\+Conversation\+View\+Controller@{E\+S\+Conversation\+View\+Controller}}
+\subsubsection[{conversations}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Mutable\+Array$\ast$) conversations\hspace{0.3cm}{\ttfamily [protected]}}\label{interface_e_s_conversation_view_controller_a208ee9f8929670fa40410428ef7d0382}
+Mutable array containing the conversations of the user. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Controllers/\+Chat/E\+S\+Conversation\+View\+Controller.\+h\item 
+Controllers/\+Chat/E\+S\+Conversation\+View\+Controller.\+m\end{DoxyCompactItemize}

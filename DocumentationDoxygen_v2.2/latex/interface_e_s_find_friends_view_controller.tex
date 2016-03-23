@@ -1,0 +1,162 @@
+\hypertarget{interface_e_s_find_friends_view_controller}{}\section{E\+S\+Find\+Friends\+View\+Controller Class Reference}
+\label{interface_e_s_find_friends_view_controller}\index{E\+S\+Find\+Friends\+View\+Controller@{E\+S\+Find\+Friends\+View\+Controller}}
+
+
+{\ttfamily \#import $<$E\+S\+Find\+Friends\+View\+Controller.\+h$>$}
+
+Inheritance diagram for E\+S\+Find\+Friends\+View\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=8.630136cm]{interface_e_s_find_friends_view_controller}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_e_s_find_friends_view_controller_aea2c5c41670192e263d62a994e07f57b}{filter\+Results\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_find_friends_view_controller_ad37b70be7c5d133618350385269869ec}{back\+Button\+Action\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_find_friends_view_controller_a5f5e255941faf25712a41079cb3e122c}{invite\+Friends\+Button\+Action\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_find_friends_view_controller_a44909124c817f554c420d642cee636f7}{should\+Toggle\+Follow\+Friend\+For\+Cell\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_find_friends_view_controller_ae5a9dfeb2878d93b6021860c9f333f27}{present\+Mail\+Compose\+View\+Controller\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_find_friends_view_controller_ad1fc48a3454aa5f7cb2cb03eb105566c}{present\+Message\+Compose\+View\+Controller\+:}
+\item 
+(N\+S\+Index\+Path $\ast$) -\/ \hyperlink{interface_e_s_find_friends_view_controller_afc745b7afff5719eeb03ea1d04bab005}{\+\_\+index\+Path\+For\+Pagination\+Cell}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+U\+I\+View $\ast$ \hyperlink{interface_e_s_find_friends_view_controller_a910d44183e8342030fc6253585a67f7f}{header\+View}
+\item 
+E\+S\+Find\+Friends\+Follow\+Status \hyperlink{interface_e_s_find_friends_view_controller_a700c7e9689b1905405a2f5ed2fd057a3}{follow\+Status}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_e_s_find_friends_view_controller_a3796dce47eea3df52570486f147ed4c1}{selected\+Email\+Address}
+\item 
+N\+S\+Mutable\+Dictionary $\ast$ \hyperlink{interface_e_s_find_friends_view_controller_ac6a9840d8336accbe6aed4f6c7390a45}{outstanding\+Follow\+Queries}
+\item 
+N\+S\+Mutable\+Dictionary $\ast$ \hyperlink{interface_e_s_find_friends_view_controller_aa59461977ffd677683d737587e035382}{outstanding\+Count\+Queries}
+\item 
+U\+I\+Search\+Bar $\ast$ \hyperlink{interface_e_s_find_friends_view_controller_ac0da7a98d3c42f522f0a07a427b809b2}{search\+Bar}
+\item 
+U\+I\+Search\+Display\+Controller $\ast$ \hyperlink{interface_e_s_find_friends_view_controller_afec3de77bea307e1ed8552c89b93c9ae}{search\+Controller}
+\item 
+N\+S\+Mutable\+Array $\ast$ \hyperlink{interface_e_s_find_friends_view_controller_aba3bb2973883c6a6b78e8bdcfb1f7ed7}{search\+Results}
+\item 
+P\+F\+Query $\ast$ \hyperlink{interface_e_s_find_friends_view_controller_afe05f16e5341cefd3ccc7af7589e25c4}{search\+Query}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface of the \hyperlink{interface_e_s_find_friends_view_controller}{E\+S\+Find\+Friends\+View\+Controller}, used to find new friends and other users. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_e_s_find_friends_view_controller_afc745b7afff5719eeb03ea1d04bab005}{}\index{E\+S\+Find\+Friends\+View\+Controller@{E\+S\+Find\+Friends\+View\+Controller}!\+\_\+index\+Path\+For\+Pagination\+Cell@{\+\_\+index\+Path\+For\+Pagination\+Cell}}
+\index{\+\_\+index\+Path\+For\+Pagination\+Cell@{\+\_\+index\+Path\+For\+Pagination\+Cell}!E\+S\+Find\+Friends\+View\+Controller@{E\+S\+Find\+Friends\+View\+Controller}}
+\subsubsection[{\+\_\+index\+Path\+For\+Pagination\+Cell}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Index\+Path $\ast$) \+\_\+index\+Path\+For\+Pagination\+Cell 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_e_s_find_friends_view_controller_afc745b7afff5719eeb03ea1d04bab005}
+Fixing a bug in the Parse S\+D\+K when calling the Load\+More\+Cell in a section based tableview. \hypertarget{interface_e_s_find_friends_view_controller_ad37b70be7c5d133618350385269869ec}{}\index{E\+S\+Find\+Friends\+View\+Controller@{E\+S\+Find\+Friends\+View\+Controller}!back\+Button\+Action\+:@{back\+Button\+Action\+:}}
+\index{back\+Button\+Action\+:@{back\+Button\+Action\+:}!E\+S\+Find\+Friends\+View\+Controller@{E\+S\+Find\+Friends\+View\+Controller}}
+\subsubsection[{back\+Button\+Action\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) back\+Button\+Action\+: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}\label{interface_e_s_find_friends_view_controller_ad37b70be7c5d133618350385269869ec}
+Dismissing the viewcontroller. \hypertarget{interface_e_s_find_friends_view_controller_aea2c5c41670192e263d62a994e07f57b}{}\index{E\+S\+Find\+Friends\+View\+Controller@{E\+S\+Find\+Friends\+View\+Controller}!filter\+Results\+:@{filter\+Results\+:}}
+\index{filter\+Results\+:@{filter\+Results\+:}!E\+S\+Find\+Friends\+View\+Controller@{E\+S\+Find\+Friends\+View\+Controller}}
+\subsubsection[{filter\+Results\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) filter\+Results\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{search\+Term}
+\end{DoxyParamCaption}
+}\label{interface_e_s_find_friends_view_controller_aea2c5c41670192e263d62a994e07f57b}
+Filtering the results\+: we search for users that contain the search\+Term \hypertarget{interface_e_s_find_friends_view_controller_a5f5e255941faf25712a41079cb3e122c}{}\index{E\+S\+Find\+Friends\+View\+Controller@{E\+S\+Find\+Friends\+View\+Controller}!invite\+Friends\+Button\+Action\+:@{invite\+Friends\+Button\+Action\+:}}
+\index{invite\+Friends\+Button\+Action\+:@{invite\+Friends\+Button\+Action\+:}!E\+S\+Find\+Friends\+View\+Controller@{E\+S\+Find\+Friends\+View\+Controller}}
+\subsubsection[{invite\+Friends\+Button\+Action\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) invite\+Friends\+Button\+Action\+: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}\label{interface_e_s_find_friends_view_controller_a5f5e255941faf25712a41079cb3e122c}
+Invite friends to join the social network. \hypertarget{interface_e_s_find_friends_view_controller_ae5a9dfeb2878d93b6021860c9f333f27}{}\index{E\+S\+Find\+Friends\+View\+Controller@{E\+S\+Find\+Friends\+View\+Controller}!present\+Mail\+Compose\+View\+Controller\+:@{present\+Mail\+Compose\+View\+Controller\+:}}
+\index{present\+Mail\+Compose\+View\+Controller\+:@{present\+Mail\+Compose\+View\+Controller\+:}!E\+S\+Find\+Friends\+View\+Controller@{E\+S\+Find\+Friends\+View\+Controller}}
+\subsubsection[{present\+Mail\+Compose\+View\+Controller\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) present\+Mail\+Compose\+View\+Controller\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{recipient}
+\end{DoxyParamCaption}
+}\label{interface_e_s_find_friends_view_controller_ae5a9dfeb2878d93b6021860c9f333f27}
+Presenting a mail composer with the recipient\textquotesingle{}s email as prefilled address.
+
+
+\begin{DoxyParams}{Parameters}
+{\em recipient} & recipient\textquotesingle{}s email \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_e_s_find_friends_view_controller_ad1fc48a3454aa5f7cb2cb03eb105566c}{}\index{E\+S\+Find\+Friends\+View\+Controller@{E\+S\+Find\+Friends\+View\+Controller}!present\+Message\+Compose\+View\+Controller\+:@{present\+Message\+Compose\+View\+Controller\+:}}
+\index{present\+Message\+Compose\+View\+Controller\+:@{present\+Message\+Compose\+View\+Controller\+:}!E\+S\+Find\+Friends\+View\+Controller@{E\+S\+Find\+Friends\+View\+Controller}}
+\subsubsection[{present\+Message\+Compose\+View\+Controller\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) present\+Message\+Compose\+View\+Controller\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{recipient}
+\end{DoxyParamCaption}
+}\label{interface_e_s_find_friends_view_controller_ad1fc48a3454aa5f7cb2cb03eb105566c}
+Presenting a message composer with the recipient\textquotesingle{}s number.
+
+
+\begin{DoxyParams}{Parameters}
+{\em recipient} & the recipient\textquotesingle{}s number \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_e_s_find_friends_view_controller_a44909124c817f554c420d642cee636f7}{}\index{E\+S\+Find\+Friends\+View\+Controller@{E\+S\+Find\+Friends\+View\+Controller}!should\+Toggle\+Follow\+Friend\+For\+Cell\+:@{should\+Toggle\+Follow\+Friend\+For\+Cell\+:}}
+\index{should\+Toggle\+Follow\+Friend\+For\+Cell\+:@{should\+Toggle\+Follow\+Friend\+For\+Cell\+:}!E\+S\+Find\+Friends\+View\+Controller@{E\+S\+Find\+Friends\+View\+Controller}}
+\subsubsection[{should\+Toggle\+Follow\+Friend\+For\+Cell\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) should\+Toggle\+Follow\+Friend\+For\+Cell\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf E\+S\+Find\+Friends\+Cell}$\ast$)}]{cell}
+\end{DoxyParamCaption}
+}\label{interface_e_s_find_friends_view_controller_a44909124c817f554c420d642cee636f7}
+Toggle the followstatus in the friendcell from following to unfollowing and vice versa.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell} & the cell containing the respective follow button \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_e_s_find_friends_view_controller_a700c7e9689b1905405a2f5ed2fd057a3}{}\index{E\+S\+Find\+Friends\+View\+Controller@{E\+S\+Find\+Friends\+View\+Controller}!follow\+Status@{follow\+Status}}
+\index{follow\+Status@{follow\+Status}!E\+S\+Find\+Friends\+View\+Controller@{E\+S\+Find\+Friends\+View\+Controller}}
+\subsubsection[{follow\+Status}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (E\+S\+Find\+Friends\+Follow\+Status) follow\+Status\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_e_s_find_friends_view_controller_a700c7e9689b1905405a2f5ed2fd057a3}
+Followstatus between the current user and the respective users in the different cells. \hypertarget{interface_e_s_find_friends_view_controller_a910d44183e8342030fc6253585a67f7f}{}\index{E\+S\+Find\+Friends\+View\+Controller@{E\+S\+Find\+Friends\+View\+Controller}!header\+View@{header\+View}}
+\index{header\+View@{header\+View}!E\+S\+Find\+Friends\+View\+Controller@{E\+S\+Find\+Friends\+View\+Controller}}
+\subsubsection[{header\+View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+View$\ast$) header\+View\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_find_friends_view_controller_a910d44183e8342030fc6253585a67f7f}
+Header of the U\+I\+Table\+View \hypertarget{interface_e_s_find_friends_view_controller_aa59461977ffd677683d737587e035382}{}\index{E\+S\+Find\+Friends\+View\+Controller@{E\+S\+Find\+Friends\+View\+Controller}!outstanding\+Count\+Queries@{outstanding\+Count\+Queries}}
+\index{outstanding\+Count\+Queries@{outstanding\+Count\+Queries}!E\+S\+Find\+Friends\+View\+Controller@{E\+S\+Find\+Friends\+View\+Controller}}
+\subsubsection[{outstanding\+Count\+Queries}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Mutable\+Dictionary$\ast$) outstanding\+Count\+Queries\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_find_friends_view_controller_aa59461977ffd677683d737587e035382}
+Mutable dictionary of outstanding photo count queries. \hypertarget{interface_e_s_find_friends_view_controller_ac6a9840d8336accbe6aed4f6c7390a45}{}\index{E\+S\+Find\+Friends\+View\+Controller@{E\+S\+Find\+Friends\+View\+Controller}!outstanding\+Follow\+Queries@{outstanding\+Follow\+Queries}}
+\index{outstanding\+Follow\+Queries@{outstanding\+Follow\+Queries}!E\+S\+Find\+Friends\+View\+Controller@{E\+S\+Find\+Friends\+View\+Controller}}
+\subsubsection[{outstanding\+Follow\+Queries}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Mutable\+Dictionary$\ast$) outstanding\+Follow\+Queries\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_find_friends_view_controller_ac6a9840d8336accbe6aed4f6c7390a45}
+Mutable dictionary of follower queries still outstanding. \hypertarget{interface_e_s_find_friends_view_controller_ac0da7a98d3c42f522f0a07a427b809b2}{}\index{E\+S\+Find\+Friends\+View\+Controller@{E\+S\+Find\+Friends\+View\+Controller}!search\+Bar@{search\+Bar}}
+\index{search\+Bar@{search\+Bar}!E\+S\+Find\+Friends\+View\+Controller@{E\+S\+Find\+Friends\+View\+Controller}}
+\subsubsection[{search\+Bar}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Search\+Bar$\ast$) search\+Bar\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_find_friends_view_controller_ac0da7a98d3c42f522f0a07a427b809b2}
+The searchbar that is displayed at the top of the tableview. \hypertarget{interface_e_s_find_friends_view_controller_afec3de77bea307e1ed8552c89b93c9ae}{}\index{E\+S\+Find\+Friends\+View\+Controller@{E\+S\+Find\+Friends\+View\+Controller}!search\+Controller@{search\+Controller}}
+\index{search\+Controller@{search\+Controller}!E\+S\+Find\+Friends\+View\+Controller@{E\+S\+Find\+Friends\+View\+Controller}}
+\subsubsection[{search\+Controller}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Search\+Display\+Controller$\ast$) search\+Controller\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_find_friends_view_controller_afec3de77bea307e1ed8552c89b93c9ae}
+Search controller used to display the filtered result of users. \hypertarget{interface_e_s_find_friends_view_controller_afe05f16e5341cefd3ccc7af7589e25c4}{}\index{E\+S\+Find\+Friends\+View\+Controller@{E\+S\+Find\+Friends\+View\+Controller}!search\+Query@{search\+Query}}
+\index{search\+Query@{search\+Query}!E\+S\+Find\+Friends\+View\+Controller@{E\+S\+Find\+Friends\+View\+Controller}}
+\subsubsection[{search\+Query}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (P\+F\+Query$\ast$) search\+Query\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_find_friends_view_controller_afe05f16e5341cefd3ccc7af7589e25c4}
+P\+F\+Query gathering the users based on the search keys. \hypertarget{interface_e_s_find_friends_view_controller_aba3bb2973883c6a6b78e8bdcfb1f7ed7}{}\index{E\+S\+Find\+Friends\+View\+Controller@{E\+S\+Find\+Friends\+View\+Controller}!search\+Results@{search\+Results}}
+\index{search\+Results@{search\+Results}!E\+S\+Find\+Friends\+View\+Controller@{E\+S\+Find\+Friends\+View\+Controller}}
+\subsubsection[{search\+Results}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Mutable\+Array$\ast$) search\+Results\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_find_friends_view_controller_aba3bb2973883c6a6b78e8bdcfb1f7ed7}
+The results of the search query. \hypertarget{interface_e_s_find_friends_view_controller_a3796dce47eea3df52570486f147ed4c1}{}\index{E\+S\+Find\+Friends\+View\+Controller@{E\+S\+Find\+Friends\+View\+Controller}!selected\+Email\+Address@{selected\+Email\+Address}}
+\index{selected\+Email\+Address@{selected\+Email\+Address}!E\+S\+Find\+Friends\+View\+Controller@{E\+S\+Find\+Friends\+View\+Controller}}
+\subsubsection[{selected\+Email\+Address}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) selected\+Email\+Address\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_find_friends_view_controller_a3796dce47eea3df52570486f147ed4c1}
+If the user wants to invite another user per mail, we store the recipient\textquotesingle{}s email here. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Controllers/\+Settings/E\+S\+Find\+Friends\+View\+Controller.\+h\item 
+Controllers/\+Settings/E\+S\+Find\+Friends\+View\+Controller.\+m\end{DoxyCompactItemize}

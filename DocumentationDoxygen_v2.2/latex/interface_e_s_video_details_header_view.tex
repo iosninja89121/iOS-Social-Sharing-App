@@ -1,0 +1,152 @@
+\hypertarget{interface_e_s_video_details_header_view}{}\section{E\+S\+Video\+Details\+Header\+View Class Reference}
+\label{interface_e_s_video_details_header_view}\index{E\+S\+Video\+Details\+Header\+View@{E\+S\+Video\+Details\+Header\+View}}
+Inheritance diagram for E\+S\+Video\+Details\+Header\+View\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_e_s_video_details_header_view}
+\end{center}
+\end{figure}
+\subsection*{Properties}
+\begin{Indent}{\bf Managing View Properties}\par
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_e_s_video_details_header_view_a59e59ed2cde5696b2089c04ecd60d773}{}P\+F\+Object $\ast$ \hyperlink{interface_e_s_video_details_header_view_a59e59ed2cde5696b2089c04ecd60d773}{video}\label{interface_e_s_video_details_header_view_a59e59ed2cde5696b2089c04ecd60d773}
+
+\begin{DoxyCompactList}\small\item\em The photo displayed in the view. \end{DoxyCompactList}\item 
+M\+P\+Movie\+Player\+Controller $\ast$ \hyperlink{interface_e_s_video_details_header_view_aa521437ab4e82e8de25acc2dc1781b4d}{movie}
+\item 
+U\+I\+Button $\ast$ \hyperlink{interface_e_s_video_details_header_view_a36d08b79157feb31717e1826aa6f9a70}{play\+Button}
+\item 
+\hypertarget{interface_e_s_video_details_header_view_aff40043360751ebb127760ec6c858230}{}P\+F\+User $\ast$ \hyperlink{interface_e_s_video_details_header_view_aff40043360751ebb127760ec6c858230}{photographer}\label{interface_e_s_video_details_header_view_aff40043360751ebb127760ec6c858230}
+
+\begin{DoxyCompactList}\small\item\em The user that took the photo. \end{DoxyCompactList}\item 
+\hypertarget{interface_e_s_video_details_header_view_a60e76f40e4be511d8fd089451571c458}{}N\+S\+Array $\ast$ \hyperlink{interface_e_s_video_details_header_view_a60e76f40e4be511d8fd089451571c458}{like\+Users}\label{interface_e_s_video_details_header_view_a60e76f40e4be511d8fd089451571c458}
+
+\begin{DoxyCompactList}\small\item\em Array of the users that liked the photo. \end{DoxyCompactList}\item 
+U\+I\+Image\+View $\ast$ \hyperlink{interface_e_s_video_details_header_view_a78141a3899274f6ff83a811c6a33ae8d}{clock\+View}
+\item 
+U\+I\+Image\+View $\ast$ \hyperlink{interface_e_s_video_details_header_view_a63534275bb4db9522139cf0d5f148837}{location\+View}
+\item 
+\hypertarget{interface_e_s_video_details_header_view_aaa7e8e5194677c9545864f4484f3ff6b}{}U\+I\+Button $\ast$ \hyperlink{interface_e_s_video_details_header_view_aaa7e8e5194677c9545864f4484f3ff6b}{like\+Button}\label{interface_e_s_video_details_header_view_aaa7e8e5194677c9545864f4484f3ff6b}
+
+\begin{DoxyCompactList}\small\item\em Heart-\/shaped like button. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Delegate}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_e_s_video_details_header_view_a5d657bc0bbd96fd7bd09359256ebd863}{}id$<$ \hyperlink{protocol_e_s_video_details_header_view_delegate-p}{E\+S\+Video\+Details\+Header\+View\+Delegate} $>$ {\bfseries delegate}\label{interface_e_s_video_details_header_view_a5d657bc0bbd96fd7bd09359256ebd863}
+
+\item 
+(C\+G\+Rect) + \hyperlink{interface_e_s_video_details_header_view_a537f3c80042bfaf75841e23792c0eec8}{rect\+For\+View}
+\item 
+(id) -\/ \hyperlink{interface_e_s_video_details_header_view_ab0b60a090bf48d252d42f45277cbd6c5}{init\+With\+Frame\+:video\+:}
+\item 
+(id) -\/ \hyperlink{interface_e_s_video_details_header_view_ac2f81af1b0e71d321de87dd55effeca1}{init\+With\+Frame\+:video\+:photographer\+:like\+Users\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_video_details_header_view_a47f3ef288494771e80ed9087f757b2f8}{set\+Like\+Button\+State\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_video_details_header_view_a3e3abd9efcd096620960c8b5b2525170}{reload\+Like\+Bar}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_e_s_video_details_header_view_ab0b60a090bf48d252d42f45277cbd6c5}{}\index{E\+S\+Video\+Details\+Header\+View@{E\+S\+Video\+Details\+Header\+View}!init\+With\+Frame\+:video\+:@{init\+With\+Frame\+:video\+:}}
+\index{init\+With\+Frame\+:video\+:@{init\+With\+Frame\+:video\+:}!E\+S\+Video\+Details\+Header\+View@{E\+S\+Video\+Details\+Header\+View}}
+\subsubsection[{init\+With\+Frame\+:video\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\+With\+Frame\+: 
+\begin{DoxyParamCaption}
+\item[{(C\+G\+Rect)}]{frame}
+\item[{video:(P\+F\+Object$\ast$)}]{avideo}
+\end{DoxyParamCaption}
+}\label{interface_e_s_video_details_header_view_ab0b60a090bf48d252d42f45277cbd6c5}
+Init method of the header
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame} & size of the header \\
+\hline
+{\em avideo} & the video we display in the viewcontroller\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+self 
+\end{DoxyReturn}
+\hypertarget{interface_e_s_video_details_header_view_ac2f81af1b0e71d321de87dd55effeca1}{}\index{E\+S\+Video\+Details\+Header\+View@{E\+S\+Video\+Details\+Header\+View}!init\+With\+Frame\+:video\+:photographer\+:like\+Users\+:@{init\+With\+Frame\+:video\+:photographer\+:like\+Users\+:}}
+\index{init\+With\+Frame\+:video\+:photographer\+:like\+Users\+:@{init\+With\+Frame\+:video\+:photographer\+:like\+Users\+:}!E\+S\+Video\+Details\+Header\+View@{E\+S\+Video\+Details\+Header\+View}}
+\subsubsection[{init\+With\+Frame\+:video\+:photographer\+:like\+Users\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\+With\+Frame\+: 
+\begin{DoxyParamCaption}
+\item[{(C\+G\+Rect)}]{frame}
+\item[{video:(P\+F\+Object$\ast$)}]{avideo}
+\item[{photographer:(P\+F\+User$\ast$)}]{a\+Photographer}
+\item[{likeUsers:(N\+S\+Array$\ast$)}]{the\+Like\+Users}
+\end{DoxyParamCaption}
+}\label{interface_e_s_video_details_header_view_ac2f81af1b0e71d321de87dd55effeca1}
+Init method of the header if we have a photographer and a like\+Users array
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame} & Size of the header \\
+\hline
+{\em avideo} & The actual video we display \\
+\hline
+{\em a\+Photographer} & The user that took the video \\
+\hline
+{\em the\+Like\+Users} & Array of users that liked the video\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+self 
+\end{DoxyReturn}
+\hypertarget{interface_e_s_video_details_header_view_a537f3c80042bfaf75841e23792c0eec8}{}\index{E\+S\+Video\+Details\+Header\+View@{E\+S\+Video\+Details\+Header\+View}!rect\+For\+View@{rect\+For\+View}}
+\index{rect\+For\+View@{rect\+For\+View}!E\+S\+Video\+Details\+Header\+View@{E\+S\+Video\+Details\+Header\+View}}
+\subsubsection[{rect\+For\+View}]{\setlength{\rightskip}{0pt plus 5cm}+ (C\+G\+Rect) rect\+For\+View 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_e_s_video_details_header_view_a537f3c80042bfaf75841e23792c0eec8}
+Defining the frame of the headerview
+
+\begin{DoxyReturn}{Returns}
+frame of the header 
+\end{DoxyReturn}
+\hypertarget{interface_e_s_video_details_header_view_a3e3abd9efcd096620960c8b5b2525170}{}\index{E\+S\+Video\+Details\+Header\+View@{E\+S\+Video\+Details\+Header\+View}!reload\+Like\+Bar@{reload\+Like\+Bar}}
+\index{reload\+Like\+Bar@{reload\+Like\+Bar}!E\+S\+Video\+Details\+Header\+View@{E\+S\+Video\+Details\+Header\+View}}
+\subsubsection[{reload\+Like\+Bar}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) reload\+Like\+Bar 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_e_s_video_details_header_view_a3e3abd9efcd096620960c8b5b2525170}
+Reloading the like in order to fetch new ones \hypertarget{interface_e_s_video_details_header_view_a47f3ef288494771e80ed9087f757b2f8}{}\index{E\+S\+Video\+Details\+Header\+View@{E\+S\+Video\+Details\+Header\+View}!set\+Like\+Button\+State\+:@{set\+Like\+Button\+State\+:}}
+\index{set\+Like\+Button\+State\+:@{set\+Like\+Button\+State\+:}!E\+S\+Video\+Details\+Header\+View@{E\+S\+Video\+Details\+Header\+View}}
+\subsubsection[{set\+Like\+Button\+State\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\+Like\+Button\+State\+: 
+\begin{DoxyParamCaption}
+\item[{(B\+O\+O\+L)}]{selected}
+\end{DoxyParamCaption}
+}\label{interface_e_s_video_details_header_view_a47f3ef288494771e80ed9087f757b2f8}
+Set the state of the like button
+
+
+\begin{DoxyParams}{Parameters}
+{\em selected} & Returning Y\+E\+S if the button is set to liked, N\+O otherwise \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_e_s_video_details_header_view_a78141a3899274f6ff83a811c6a33ae8d}{}\index{E\+S\+Video\+Details\+Header\+View@{E\+S\+Video\+Details\+Header\+View}!clock\+View@{clock\+View}}
+\index{clock\+View@{clock\+View}!E\+S\+Video\+Details\+Header\+View@{E\+S\+Video\+Details\+Header\+View}}
+\subsubsection[{clock\+View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Image\+View$\ast$) clock\+View\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_video_details_header_view_a78141a3899274f6ff83a811c6a33ae8d}
+View with a clock image \hypertarget{interface_e_s_video_details_header_view_a63534275bb4db9522139cf0d5f148837}{}\index{E\+S\+Video\+Details\+Header\+View@{E\+S\+Video\+Details\+Header\+View}!location\+View@{location\+View}}
+\index{location\+View@{location\+View}!E\+S\+Video\+Details\+Header\+View@{E\+S\+Video\+Details\+Header\+View}}
+\subsubsection[{location\+View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Image\+View$\ast$) location\+View\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_video_details_header_view_a63534275bb4db9522139cf0d5f148837}
+View with the location in it \hypertarget{interface_e_s_video_details_header_view_aa521437ab4e82e8de25acc2dc1781b4d}{}\index{E\+S\+Video\+Details\+Header\+View@{E\+S\+Video\+Details\+Header\+View}!movie@{movie}}
+\index{movie@{movie}!E\+S\+Video\+Details\+Header\+View@{E\+S\+Video\+Details\+Header\+View}}
+\subsubsection[{movie}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (M\+P\+Movie\+Player\+Controller$\ast$) movie\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_video_details_header_view_aa521437ab4e82e8de25acc2dc1781b4d}
+The Movie\+Player\+Controller in which the video is played \hypertarget{interface_e_s_video_details_header_view_a36d08b79157feb31717e1826aa6f9a70}{}\index{E\+S\+Video\+Details\+Header\+View@{E\+S\+Video\+Details\+Header\+View}!play\+Button@{play\+Button}}
+\index{play\+Button@{play\+Button}!E\+S\+Video\+Details\+Header\+View@{E\+S\+Video\+Details\+Header\+View}}
+\subsubsection[{play\+Button}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Button$\ast$) play\+Button\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_video_details_header_view_a36d08b79157feb31717e1826aa6f9a70}
+Button starting the video 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Views/\+Photo\+Details\+Views/E\+S\+Video\+Details\+Header\+View.\+h\item 
+Views/\+Photo\+Details\+Views/E\+S\+Video\+Details\+Header\+View.\+m\end{DoxyCompactItemize}

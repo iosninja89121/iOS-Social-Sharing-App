@@ -1,0 +1,120 @@
+\hypertarget{interface_e_s_home_view_controller}{}\section{E\+S\+Home\+View\+Controller Class Reference}
+\label{interface_e_s_home_view_controller}\index{E\+S\+Home\+View\+Controller@{E\+S\+Home\+View\+Controller}}
+Inheritance diagram for E\+S\+Home\+View\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.129278cm]{interface_e_s_home_view_controller}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_e_s_home_view_controller_ab6aa4a28d8b6fa9330bda0e0495bd711}{invite\+Friends\+Button\+Action\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_home_view_controller_a61455e5b2a4944bcebb37f5caf3faa4d}{use\+Notification\+With\+String\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_home_view_controller_a239620c2a466be632318a621e868a78a}{logout\+Helper}
+\item 
+(void) -\/ \hyperlink{interface_e_s_home_view_controller_a679471b20d705682619baf51f91b8788}{new\+Hashtag\+Search}
+\item 
+(N\+S\+Index\+Path $\ast$) -\/ \hyperlink{interface_e_s_home_view_controller_a2e200bad2b04827613b11664e30ad977}{\+\_\+index\+Path\+For\+Pagination\+Cell}
+\item 
+(void) -\/ \hyperlink{interface_e_s_home_view_controller_aae46eb258ab19c8ec8e8a0fa21e8ea9e}{easter\+Button\+Tap}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_e_s_home_view_controller_ad405963b89a02d36b7cc0a358d722dc4}{}U\+I\+View $\ast$ {\bfseries root\+View}\label{interface_e_s_home_view_controller_ad405963b89a02d36b7cc0a358d722dc4}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+B\+O\+O\+L \hyperlink{interface_e_s_home_view_controller_a9f322cb2123ecf612e39fe938ec66edc}{first\+Launch}
+\item 
+\hyperlink{interface_e_s_settings_action_sheet_delegate}{E\+S\+Settings\+Action\+Sheet\+Delegate} $\ast$ \hyperlink{interface_e_s_home_view_controller_acc1021c8e2fc133ec780baf31e783bad}{settings\+Action\+Sheet\+Delegate}
+\item 
+U\+I\+View $\ast$ \hyperlink{interface_e_s_home_view_controller_af40a45dafb6881f9dd758bbd54f1b1e9}{blank\+Timeline\+View}
+\item 
+M\+B\+Progress\+H\+U\+D $\ast$ \hyperlink{interface_e_s_home_view_controller_a5eea406162514654d84f14ebfd058792}{hud}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_e_s_home_view_controller_a2e200bad2b04827613b11664e30ad977}{}\index{E\+S\+Home\+View\+Controller@{E\+S\+Home\+View\+Controller}!\+\_\+index\+Path\+For\+Pagination\+Cell@{\+\_\+index\+Path\+For\+Pagination\+Cell}}
+\index{\+\_\+index\+Path\+For\+Pagination\+Cell@{\+\_\+index\+Path\+For\+Pagination\+Cell}!E\+S\+Home\+View\+Controller@{E\+S\+Home\+View\+Controller}}
+\subsubsection[{\+\_\+index\+Path\+For\+Pagination\+Cell}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Index\+Path $\ast$) \+\_\+index\+Path\+For\+Pagination\+Cell 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_e_s_home_view_controller_a2e200bad2b04827613b11664e30ad977}
+Hot fix for a bug in the Parse S\+D\+K causing a crash when we use a section based tableview with the Load\+More\+Cell \hypertarget{interface_e_s_home_view_controller_aae46eb258ab19c8ec8e8a0fa21e8ea9e}{}\index{E\+S\+Home\+View\+Controller@{E\+S\+Home\+View\+Controller}!easter\+Button\+Tap@{easter\+Button\+Tap}}
+\index{easter\+Button\+Tap@{easter\+Button\+Tap}!E\+S\+Home\+View\+Controller@{E\+S\+Home\+View\+Controller}}
+\subsubsection[{easter\+Button\+Tap}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) easter\+Button\+Tap 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_e_s_home_view_controller_aae46eb258ab19c8ec8e8a0fa21e8ea9e}
+Tiny easter egg \hypertarget{interface_e_s_home_view_controller_ab6aa4a28d8b6fa9330bda0e0495bd711}{}\index{E\+S\+Home\+View\+Controller@{E\+S\+Home\+View\+Controller}!invite\+Friends\+Button\+Action\+:@{invite\+Friends\+Button\+Action\+:}}
+\index{invite\+Friends\+Button\+Action\+:@{invite\+Friends\+Button\+Action\+:}!E\+S\+Home\+View\+Controller@{E\+S\+Home\+View\+Controller}}
+\subsubsection[{invite\+Friends\+Button\+Action\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) invite\+Friends\+Button\+Action\+: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}\label{interface_e_s_home_view_controller_ab6aa4a28d8b6fa9330bda0e0495bd711}
+Taking the user to the invite friends page.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & id of the button, we don\textquotesingle{}t need it here in fact. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_e_s_home_view_controller_a239620c2a466be632318a621e868a78a}{}\index{E\+S\+Home\+View\+Controller@{E\+S\+Home\+View\+Controller}!logout\+Helper@{logout\+Helper}}
+\index{logout\+Helper@{logout\+Helper}!E\+S\+Home\+View\+Controller@{E\+S\+Home\+View\+Controller}}
+\subsubsection[{logout\+Helper}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) logout\+Helper 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_e_s_home_view_controller_a239620c2a466be632318a621e868a78a}
+Logout helper method, calling the logout method from the \hyperlink{interface_app_delegate}{App\+Delegate}. \hypertarget{interface_e_s_home_view_controller_a679471b20d705682619baf51f91b8788}{}\index{E\+S\+Home\+View\+Controller@{E\+S\+Home\+View\+Controller}!new\+Hashtag\+Search@{new\+Hashtag\+Search}}
+\index{new\+Hashtag\+Search@{new\+Hashtag\+Search}!E\+S\+Home\+View\+Controller@{E\+S\+Home\+View\+Controller}}
+\subsubsection[{new\+Hashtag\+Search}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) new\+Hashtag\+Search 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_e_s_home_view_controller_a679471b20d705682619baf51f91b8788}
+Called when the right\+Bar\+Button is tapped, the user wants to search his timeline for a specific hashtag. \hypertarget{interface_e_s_home_view_controller_a61455e5b2a4944bcebb37f5caf3faa4d}{}\index{E\+S\+Home\+View\+Controller@{E\+S\+Home\+View\+Controller}!use\+Notification\+With\+String\+:@{use\+Notification\+With\+String\+:}}
+\index{use\+Notification\+With\+String\+:@{use\+Notification\+With\+String\+:}!E\+S\+Home\+View\+Controller@{E\+S\+Home\+View\+Controller}}
+\subsubsection[{use\+Notification\+With\+String\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) use\+Notification\+With\+String\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Notification $\ast$)}]{notification}
+\end{DoxyParamCaption}
+}\label{interface_e_s_home_view_controller_a61455e5b2a4944bcebb37f5caf3faa4d}
+The \hyperlink{interface_e_s_home_view_controller}{E\+S\+Home\+View\+Controller} is target of all the notifications we post to the notification center. This viewcontroller executes all the commands.
+
+
+\begin{DoxyParams}{Parameters}
+{\em notification} & string describing the notification type \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_e_s_home_view_controller_af40a45dafb6881f9dd758bbd54f1b1e9}{}\index{E\+S\+Home\+View\+Controller@{E\+S\+Home\+View\+Controller}!blank\+Timeline\+View@{blank\+Timeline\+View}}
+\index{blank\+Timeline\+View@{blank\+Timeline\+View}!E\+S\+Home\+View\+Controller@{E\+S\+Home\+View\+Controller}}
+\subsubsection[{blank\+Timeline\+View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+View$\ast$) blank\+Timeline\+View\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_home_view_controller_af40a45dafb6881f9dd758bbd54f1b1e9}
+View that is being displayed when the timeline is blank \hypertarget{interface_e_s_home_view_controller_a9f322cb2123ecf612e39fe938ec66edc}{}\index{E\+S\+Home\+View\+Controller@{E\+S\+Home\+View\+Controller}!first\+Launch@{first\+Launch}}
+\index{first\+Launch@{first\+Launch}!E\+S\+Home\+View\+Controller@{E\+S\+Home\+View\+Controller}}
+\subsubsection[{first\+Launch}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) first\+Launch\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_e_s_home_view_controller_a9f322cb2123ecf612e39fe938ec66edc}
+Detecting if this is the first ever launch of the user on this device. \hypertarget{interface_e_s_home_view_controller_a5eea406162514654d84f14ebfd058792}{}\index{E\+S\+Home\+View\+Controller@{E\+S\+Home\+View\+Controller}!hud@{hud}}
+\index{hud@{hud}!E\+S\+Home\+View\+Controller@{E\+S\+Home\+View\+Controller}}
+\subsubsection[{hud}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (M\+B\+Progress\+H\+U\+D$\ast$) hud\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_home_view_controller_a5eea406162514654d84f14ebfd058792}
+Classic progresshud indicating that something is going on. \hypertarget{interface_e_s_home_view_controller_acc1021c8e2fc133ec780baf31e783bad}{}\index{E\+S\+Home\+View\+Controller@{E\+S\+Home\+View\+Controller}!settings\+Action\+Sheet\+Delegate@{settings\+Action\+Sheet\+Delegate}}
+\index{settings\+Action\+Sheet\+Delegate@{settings\+Action\+Sheet\+Delegate}!E\+S\+Home\+View\+Controller@{E\+S\+Home\+View\+Controller}}
+\subsubsection[{settings\+Action\+Sheet\+Delegate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf E\+S\+Settings\+Action\+Sheet\+Delegate}$\ast$) settings\+Action\+Sheet\+Delegate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_home_view_controller_acc1021c8e2fc133ec780baf31e783bad}
+Custom action sheet delegate 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Controllers/\+Home/E\+S\+Home\+View\+Controller.\+h\item 
+Controllers/\+Home/E\+S\+Home\+View\+Controller.\+m\end{DoxyCompactItemize}

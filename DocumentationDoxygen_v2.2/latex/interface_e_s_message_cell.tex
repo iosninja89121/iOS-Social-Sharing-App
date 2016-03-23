@@ -1,0 +1,94 @@
+\hypertarget{interface_e_s_message_cell}{}\section{E\+S\+Message\+Cell Class Reference}
+\label{interface_e_s_message_cell}\index{E\+S\+Message\+Cell@{E\+S\+Message\+Cell}}
+
+
+{\ttfamily \#import $<$E\+S\+Message\+Cell.\+h$>$}
+
+Inheritance diagram for E\+S\+Message\+Cell\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_e_s_message_cell}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_e_s_message_cell_a4e2cb89368404ce1687fa85c052db4c6}{feed\+The\+Cell\+:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+Dictionary $\ast$ \hyperlink{interface_e_s_message_cell_a232fa8c6450078d057e6da54fe61e2e9}{message}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+I\+B\+Outlet P\+F\+Image\+View $\ast$ \hyperlink{interface_e_s_message_cell_a53a672500c98ad2da7c8e28f8b3ba504}{img\+User}
+\item 
+I\+B\+Outlet U\+I\+Label $\ast$ \hyperlink{interface_e_s_message_cell_a232f87059fc5fbb886a38d8fa39a7a57}{description}
+\item 
+I\+B\+Outlet U\+I\+Label $\ast$ \hyperlink{interface_e_s_message_cell_a9b4d3872ccdf1b7a26d788e967f0f49c}{last\+Message}
+\item 
+I\+B\+Outlet U\+I\+Label $\ast$ \hyperlink{interface_e_s_message_cell_a0781f85c3374b88f87c1e5f4a3dd967e}{elapsed}
+\item 
+I\+B\+Outlet U\+I\+Label $\ast$ \hyperlink{interface_e_s_message_cell_aa596cb979f7178f1e259aff80297423b}{read\+Label}
+\item 
+J\+S\+Badge\+View $\ast$ \hyperlink{interface_e_s_message_cell_a77d8c4d9b7600dd0ba5b62bffe8ce597}{badge\+View}
+\item 
+U\+I\+View $\ast$ \hyperlink{interface_e_s_message_cell_a28056ba2c5cbb8ff51a5057ae3f5f437}{dummy\+View}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface of the \hyperlink{interface_e_s_message_cell}{E\+S\+Message\+Cell} 
+
+\subsection{Method Documentation}
+\hypertarget{interface_e_s_message_cell_a4e2cb89368404ce1687fa85c052db4c6}{}\index{E\+S\+Message\+Cell@{E\+S\+Message\+Cell}!feed\+The\+Cell\+:@{feed\+The\+Cell\+:}}
+\index{feed\+The\+Cell\+:@{feed\+The\+Cell\+:}!E\+S\+Message\+Cell@{E\+S\+Message\+Cell}}
+\subsubsection[{feed\+The\+Cell\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) feed\+The\+Cell\+: 
+\begin{DoxyParamCaption}
+\item[{(P\+F\+Object $\ast$)}]{dummy\+\_\+message}
+\end{DoxyParamCaption}
+}\label{interface_e_s_message_cell_a4e2cb89368404ce1687fa85c052db4c6}
+Feeding the cell with the information it needs.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dummy\+\_\+message} & Message object containg the needed information \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{interface_e_s_message_cell_a232fa8c6450078d057e6da54fe61e2e9}{}\index{E\+S\+Message\+Cell@{E\+S\+Message\+Cell}!message@{message}}
+\index{message@{message}!E\+S\+Message\+Cell@{E\+S\+Message\+Cell}}
+\subsubsection[{message}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Dictionary$\ast$) message\hspace{0.3cm}{\ttfamily [protected]}}\label{interface_e_s_message_cell_a232fa8c6450078d057e6da54fe61e2e9}
+Message object, containing the chatroom Id, the users, their profile pictures and the last message. 
+
+\subsection{Property Documentation}
+\hypertarget{interface_e_s_message_cell_a77d8c4d9b7600dd0ba5b62bffe8ce597}{}\index{E\+S\+Message\+Cell@{E\+S\+Message\+Cell}!badge\+View@{badge\+View}}
+\index{badge\+View@{badge\+View}!E\+S\+Message\+Cell@{E\+S\+Message\+Cell}}
+\subsubsection[{badge\+View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (J\+S\+Badge\+View$\ast$) badge\+View\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_message_cell_a77d8c4d9b7600dd0ba5b62bffe8ce597}
+A small badge we add to the profile picture of the user, indicating that there are unread messages. \hypertarget{interface_e_s_message_cell_a232f87059fc5fbb886a38d8fa39a7a57}{}\index{E\+S\+Message\+Cell@{E\+S\+Message\+Cell}!description@{description}}
+\index{description@{description}!E\+S\+Message\+Cell@{E\+S\+Message\+Cell}}
+\subsubsection[{description}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Outlet U\+I\+Label$\ast$) description\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_message_cell_a232f87059fc5fbb886a38d8fa39a7a57}
+Usually the name of the user, could also be a group name if one implemented such a functionality. \hypertarget{interface_e_s_message_cell_a28056ba2c5cbb8ff51a5057ae3f5f437}{}\index{E\+S\+Message\+Cell@{E\+S\+Message\+Cell}!dummy\+View@{dummy\+View}}
+\index{dummy\+View@{dummy\+View}!E\+S\+Message\+Cell@{E\+S\+Message\+Cell}}
+\subsubsection[{dummy\+View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+View$\ast$) dummy\+View\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_message_cell_a28056ba2c5cbb8ff51a5057ae3f5f437}
+A dummyview used to show the badges \hypertarget{interface_e_s_message_cell_a0781f85c3374b88f87c1e5f4a3dd967e}{}\index{E\+S\+Message\+Cell@{E\+S\+Message\+Cell}!elapsed@{elapsed}}
+\index{elapsed@{elapsed}!E\+S\+Message\+Cell@{E\+S\+Message\+Cell}}
+\subsubsection[{elapsed}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Outlet U\+I\+Label$\ast$) elapsed\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_message_cell_a0781f85c3374b88f87c1e5f4a3dd967e}
+Time that has elapsed since the last message. \hypertarget{interface_e_s_message_cell_a53a672500c98ad2da7c8e28f8b3ba504}{}\index{E\+S\+Message\+Cell@{E\+S\+Message\+Cell}!img\+User@{img\+User}}
+\index{img\+User@{img\+User}!E\+S\+Message\+Cell@{E\+S\+Message\+Cell}}
+\subsubsection[{img\+User}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Outlet P\+F\+Image\+View$\ast$) img\+User\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_message_cell_a53a672500c98ad2da7c8e28f8b3ba504}
+Imageview containing the other user\textquotesingle{}s profile picture. \hypertarget{interface_e_s_message_cell_a9b4d3872ccdf1b7a26d788e967f0f49c}{}\index{E\+S\+Message\+Cell@{E\+S\+Message\+Cell}!last\+Message@{last\+Message}}
+\index{last\+Message@{last\+Message}!E\+S\+Message\+Cell@{E\+S\+Message\+Cell}}
+\subsubsection[{last\+Message}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Outlet U\+I\+Label$\ast$) last\+Message\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_message_cell_a9b4d3872ccdf1b7a26d788e967f0f49c}
+The last message that has been sent in the conversation. \hypertarget{interface_e_s_message_cell_aa596cb979f7178f1e259aff80297423b}{}\index{E\+S\+Message\+Cell@{E\+S\+Message\+Cell}!read\+Label@{read\+Label}}
+\index{read\+Label@{read\+Label}!E\+S\+Message\+Cell@{E\+S\+Message\+Cell}}
+\subsubsection[{read\+Label}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Outlet U\+I\+Label$\ast$) read\+Label\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_message_cell_aa596cb979f7178f1e259aff80297423b}
+Small label indicating if the message has been delivered or sent. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Controllers/\+Chat/E\+S\+Message\+Cell.\+h\end{DoxyCompactItemize}

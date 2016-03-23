@@ -1,0 +1,109 @@
+\hypertarget{interface_e_s_select_recipients_view_controller}{}\section{E\+S\+Select\+Recipients\+View\+Controller Class Reference}
+\label{interface_e_s_select_recipients_view_controller}\index{E\+S\+Select\+Recipients\+View\+Controller@{E\+S\+Select\+Recipients\+View\+Controller}}
+Inheritance diagram for E\+S\+Select\+Recipients\+View\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_e_s_select_recipients_view_controller}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_e_s_select_recipients_view_controller_a1a8791b6e96e97aadd20221c104c988c}{load\+Users}
+\item 
+(void) -\/ \hyperlink{interface_e_s_select_recipients_view_controller_a9b8e76df588010eee773cfde94e2dab5}{cancel}
+\item 
+(void) -\/ \hyperlink{interface_e_s_select_recipients_view_controller_a6245a82b2e8a7815616471dfd686ff9f}{done}
+\item 
+(void) -\/ \hyperlink{interface_e_s_select_recipients_view_controller_a63598c5b795b3b794108214039ee54d3}{search\+Users\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_select_recipients_view_controller_a6ecc6f283ff2c51f0bcec7d8da96392c}{search\+Bar\+Cancel}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+Mutable\+Array $\ast$ \hyperlink{interface_e_s_select_recipients_view_controller_adc9c3f4be7ec81c847669f698817f1d6}{users}
+\item 
+N\+S\+Mutable\+Array $\ast$ \hyperlink{interface_e_s_select_recipients_view_controller_aad6d164467aaac5862c10ebd43f0265b}{selection}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+I\+B\+Outlet U\+I\+View $\ast$ \hyperlink{interface_e_s_select_recipients_view_controller_a0e1cd5c8e4a2275f8f85653c07f7b99f}{view\+Header}
+\item 
+I\+B\+Outlet U\+I\+Search\+Bar $\ast$ \hyperlink{interface_e_s_select_recipients_view_controller_a6add06c5397caab62ecd546794743aa8}{search\+Bar}
+\item 
+I\+B\+Outlet id$<$ \hyperlink{protocol_e_s_select_contacts_delegate-p}{E\+S\+Select\+Contacts\+Delegate} $>$ \hyperlink{interface_e_s_select_recipients_view_controller_a64e20d2f4e8937696d87ec0217046b2c}{delegate}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_e_s_select_recipients_view_controller_a9b8e76df588010eee773cfde94e2dab5}{}\index{E\+S\+Select\+Recipients\+View\+Controller@{E\+S\+Select\+Recipients\+View\+Controller}!cancel@{cancel}}
+\index{cancel@{cancel}!E\+S\+Select\+Recipients\+View\+Controller@{E\+S\+Select\+Recipients\+View\+Controller}}
+\subsubsection[{cancel}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) cancel 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_e_s_select_recipients_view_controller_a9b8e76df588010eee773cfde94e2dab5}
+User wants to cancel the selection, thus we dismiss the viewcontroller. \hypertarget{interface_e_s_select_recipients_view_controller_a6245a82b2e8a7815616471dfd686ff9f}{}\index{E\+S\+Select\+Recipients\+View\+Controller@{E\+S\+Select\+Recipients\+View\+Controller}!done@{done}}
+\index{done@{done}!E\+S\+Select\+Recipients\+View\+Controller@{E\+S\+Select\+Recipients\+View\+Controller}}
+\subsubsection[{done}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) done 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_e_s_select_recipients_view_controller_a6245a82b2e8a7815616471dfd686ff9f}
+User is done with his selection, save the users and create a new chatroom. \hypertarget{interface_e_s_select_recipients_view_controller_a1a8791b6e96e97aadd20221c104c988c}{}\index{E\+S\+Select\+Recipients\+View\+Controller@{E\+S\+Select\+Recipients\+View\+Controller}!load\+Users@{load\+Users}}
+\index{load\+Users@{load\+Users}!E\+S\+Select\+Recipients\+View\+Controller@{E\+S\+Select\+Recipients\+View\+Controller}}
+\subsubsection[{load\+Users}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) load\+Users 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_e_s_select_recipients_view_controller_a1a8791b6e96e97aadd20221c104c988c}
+Load all the users and display them \hypertarget{interface_e_s_select_recipients_view_controller_a6ecc6f283ff2c51f0bcec7d8da96392c}{}\index{E\+S\+Select\+Recipients\+View\+Controller@{E\+S\+Select\+Recipients\+View\+Controller}!search\+Bar\+Cancel@{search\+Bar\+Cancel}}
+\index{search\+Bar\+Cancel@{search\+Bar\+Cancel}!E\+S\+Select\+Recipients\+View\+Controller@{E\+S\+Select\+Recipients\+View\+Controller}}
+\subsubsection[{search\+Bar\+Cancel}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) search\+Bar\+Cancel 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_e_s_select_recipients_view_controller_a6ecc6f283ff2c51f0bcec7d8da96392c}
+The search has been cancelled, thus reload all the users and display them again instead of filtering them. \hypertarget{interface_e_s_select_recipients_view_controller_a63598c5b795b3b794108214039ee54d3}{}\index{E\+S\+Select\+Recipients\+View\+Controller@{E\+S\+Select\+Recipients\+View\+Controller}!search\+Users\+:@{search\+Users\+:}}
+\index{search\+Users\+:@{search\+Users\+:}!E\+S\+Select\+Recipients\+View\+Controller@{E\+S\+Select\+Recipients\+View\+Controller}}
+\subsubsection[{search\+Users\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) search\+Users\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{search\+\_\+lower}
+\end{DoxyParamCaption}
+}\label{interface_e_s_select_recipients_view_controller_a63598c5b795b3b794108214039ee54d3}
+Searching for a specific user by filtering their display names.
+
+
+\begin{DoxyParams}{Parameters}
+{\em search\+\_\+lower} & string that is used to perform the search \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{interface_e_s_select_recipients_view_controller_aad6d164467aaac5862c10ebd43f0265b}{}\index{E\+S\+Select\+Recipients\+View\+Controller@{E\+S\+Select\+Recipients\+View\+Controller}!selection@{selection}}
+\index{selection@{selection}!E\+S\+Select\+Recipients\+View\+Controller@{E\+S\+Select\+Recipients\+View\+Controller}}
+\subsubsection[{selection}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Mutable\+Array$\ast$) selection\hspace{0.3cm}{\ttfamily [protected]}}\label{interface_e_s_select_recipients_view_controller_aad6d164467aaac5862c10ebd43f0265b}
+Current selection of recipients. \hypertarget{interface_e_s_select_recipients_view_controller_adc9c3f4be7ec81c847669f698817f1d6}{}\index{E\+S\+Select\+Recipients\+View\+Controller@{E\+S\+Select\+Recipients\+View\+Controller}!users@{users}}
+\index{users@{users}!E\+S\+Select\+Recipients\+View\+Controller@{E\+S\+Select\+Recipients\+View\+Controller}}
+\subsubsection[{users}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Mutable\+Array$\ast$) users\hspace{0.3cm}{\ttfamily [protected]}}\label{interface_e_s_select_recipients_view_controller_adc9c3f4be7ec81c847669f698817f1d6}
+Mutable array of the selected recipients. 
+
+\subsection{Property Documentation}
+\hypertarget{interface_e_s_select_recipients_view_controller_a64e20d2f4e8937696d87ec0217046b2c}{}\index{E\+S\+Select\+Recipients\+View\+Controller@{E\+S\+Select\+Recipients\+View\+Controller}!delegate@{delegate}}
+\index{delegate@{delegate}!E\+S\+Select\+Recipients\+View\+Controller@{E\+S\+Select\+Recipients\+View\+Controller}}
+\subsubsection[{delegate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Outlet id$<${\bf E\+S\+Select\+Contacts\+Delegate}$>$) delegate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_e_s_select_recipients_view_controller_a64e20d2f4e8937696d87ec0217046b2c}
+Delegate of the E\+S\+Selct\+Recipients\+View\+Controller. \hypertarget{interface_e_s_select_recipients_view_controller_a6add06c5397caab62ecd546794743aa8}{}\index{E\+S\+Select\+Recipients\+View\+Controller@{E\+S\+Select\+Recipients\+View\+Controller}!search\+Bar@{search\+Bar}}
+\index{search\+Bar@{search\+Bar}!E\+S\+Select\+Recipients\+View\+Controller@{E\+S\+Select\+Recipients\+View\+Controller}}
+\subsubsection[{search\+Bar}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Outlet U\+I\+Search\+Bar$\ast$) search\+Bar\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_select_recipients_view_controller_a6add06c5397caab62ecd546794743aa8}
+Searchbar that is displayed in the header and used to search for users. \hypertarget{interface_e_s_select_recipients_view_controller_a0e1cd5c8e4a2275f8f85653c07f7b99f}{}\index{E\+S\+Select\+Recipients\+View\+Controller@{E\+S\+Select\+Recipients\+View\+Controller}!view\+Header@{view\+Header}}
+\index{view\+Header@{view\+Header}!E\+S\+Select\+Recipients\+View\+Controller@{E\+S\+Select\+Recipients\+View\+Controller}}
+\subsubsection[{view\+Header}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Outlet U\+I\+View$\ast$) view\+Header\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_select_recipients_view_controller_a0e1cd5c8e4a2275f8f85653c07f7b99f}
+Header of the tableview. We display a searchbar in it. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Controllers/\+Chat/E\+S\+Select\+Recipients\+View\+Controller.\+h\item 
+Controllers/\+Chat/E\+S\+Select\+Recipients\+View\+Controller.\+m\end{DoxyCompactItemize}

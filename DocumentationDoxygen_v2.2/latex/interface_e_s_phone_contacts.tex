@@ -1,0 +1,84 @@
+\hypertarget{interface_e_s_phone_contacts}{}\section{E\+S\+Phone\+Contacts Class Reference}
+\label{interface_e_s_phone_contacts}\index{E\+S\+Phone\+Contacts@{E\+S\+Phone\+Contacts}}
+
+
+{\ttfamily \#import $<$E\+S\+Phone\+Contacts.\+h$>$}
+
+Inheritance diagram for E\+S\+Phone\+Contacts\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.965517cm]{interface_e_s_phone_contacts}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_e_s_phone_contacts_ad6757e8f899a4399c22f2b509c328b2e}{user\+Invite\+Action\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_phone_contacts_a83b16471d5d9e9a192f1611d56b1751f}{done}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+Index\+Path $\ast$ \hyperlink{interface_e_s_phone_contacts_a94b55ed8d3ab31d45bd39cb4ad120e08}{selected\+Index}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+Mutable\+Array $\ast$ \hyperlink{interface_e_s_phone_contacts_a57e8b65c0453b3846f101a0483f25a11}{users1}
+\item 
+N\+S\+Mutable\+Array $\ast$ \hyperlink{interface_e_s_phone_contacts_aaf714ab9942fdca5066c2fc1682be314}{users2}
+\item 
+I\+B\+Outlet id$<$ \hyperlink{protocol_e_s_phone_contacts_delegate-p}{E\+S\+Phone\+Contacts\+Delegate} $>$ \hyperlink{interface_e_s_phone_contacts_a8794cdc4441eb885facd7a4f01e23ad3}{delegate}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface of the \hyperlink{interface_e_s_phone_contacts}{E\+S\+Phone\+Contacts} View\+Controller 
+
+\subsection{Method Documentation}
+\hypertarget{interface_e_s_phone_contacts_a83b16471d5d9e9a192f1611d56b1751f}{}\index{E\+S\+Phone\+Contacts@{E\+S\+Phone\+Contacts}!done@{done}}
+\index{done@{done}!E\+S\+Phone\+Contacts@{E\+S\+Phone\+Contacts}}
+\subsubsection[{done}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) done 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_e_s_phone_contacts_a83b16471d5d9e9a192f1611d56b1751f}
+Once we\textquotesingle{}re done, we can dismiss the phone book by calling this method. \hypertarget{interface_e_s_phone_contacts_ad6757e8f899a4399c22f2b509c328b2e}{}\index{E\+S\+Phone\+Contacts@{E\+S\+Phone\+Contacts}!user\+Invite\+Action\+:@{user\+Invite\+Action\+:}}
+\index{user\+Invite\+Action\+:@{user\+Invite\+Action\+:}!E\+S\+Phone\+Contacts@{E\+S\+Phone\+Contacts}}
+\subsubsection[{user\+Invite\+Action\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) user\+Invite\+Action\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Dictionary $\ast$)}]{user}
+\end{DoxyParamCaption}
+}\label{interface_e_s_phone_contacts_ad6757e8f899a4399c22f2b509c328b2e}
+User is not yet registered, thus we can invite him to sign himself up.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & dictionary containing the information about the user \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{interface_e_s_phone_contacts_a94b55ed8d3ab31d45bd39cb4ad120e08}{}\index{E\+S\+Phone\+Contacts@{E\+S\+Phone\+Contacts}!selected\+Index@{selected\+Index}}
+\index{selected\+Index@{selected\+Index}!E\+S\+Phone\+Contacts@{E\+S\+Phone\+Contacts}}
+\subsubsection[{selected\+Index}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Index\+Path$\ast$) selected\+Index\hspace{0.3cm}{\ttfamily [protected]}}\label{interface_e_s_phone_contacts_a94b55ed8d3ab31d45bd39cb4ad120e08}
+Index of the selected user cell. 
+
+\subsection{Property Documentation}
+\hypertarget{interface_e_s_phone_contacts_a8794cdc4441eb885facd7a4f01e23ad3}{}\index{E\+S\+Phone\+Contacts@{E\+S\+Phone\+Contacts}!delegate@{delegate}}
+\index{delegate@{delegate}!E\+S\+Phone\+Contacts@{E\+S\+Phone\+Contacts}}
+\subsubsection[{delegate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Outlet id$<${\bf E\+S\+Phone\+Contacts\+Delegate}$>$) delegate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_e_s_phone_contacts_a8794cdc4441eb885facd7a4f01e23ad3}
+Delegate of the \hyperlink{interface_e_s_phone_contacts}{E\+S\+Phone\+Contacts} View\+Controller \hypertarget{interface_e_s_phone_contacts_a57e8b65c0453b3846f101a0483f25a11}{}\index{E\+S\+Phone\+Contacts@{E\+S\+Phone\+Contacts}!users1@{users1}}
+\index{users1@{users1}!E\+S\+Phone\+Contacts@{E\+S\+Phone\+Contacts}}
+\subsubsection[{users1}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Mutable\+Array$\ast$) users1\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_phone_contacts_a57e8b65c0453b3846f101a0483f25a11}
+Mutable array of users that are not registered \hypertarget{interface_e_s_phone_contacts_aaf714ab9942fdca5066c2fc1682be314}{}\index{E\+S\+Phone\+Contacts@{E\+S\+Phone\+Contacts}!users2@{users2}}
+\index{users2@{users2}!E\+S\+Phone\+Contacts@{E\+S\+Phone\+Contacts}}
+\subsubsection[{users2}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Mutable\+Array$\ast$) users2\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_phone_contacts_aaf714ab9942fdca5066c2fc1682be314}
+Mutable array of users that are registered to the social network 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Controllers/\+Chat/E\+S\+Phone\+Contacts.\+h\item 
+Controllers/\+Chat/E\+S\+Phone\+Contacts.\+m\end{DoxyCompactItemize}

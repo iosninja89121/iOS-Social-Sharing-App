@@ -1,0 +1,70 @@
+\hypertarget{interface_e_s_photo_header_view}{}\section{E\+S\+Photo\+Header\+View Class Reference}
+\label{interface_e_s_photo_header_view}\index{E\+S\+Photo\+Header\+View@{E\+S\+Photo\+Header\+View}}
+Inheritance diagram for E\+S\+Photo\+Header\+View\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_e_s_photo_header_view}
+\end{center}
+\end{figure}
+\subsection*{Properties}
+\begin{Indent}{\bf Accessing Interaction Elements}\par
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_e_s_photo_header_view_ae570fc628accd1669c0739ee244c464d}{}U\+I\+Button $\ast$ \hyperlink{interface_e_s_photo_header_view_ae570fc628accd1669c0739ee244c464d}{like\+Button}\label{interface_e_s_photo_header_view_ae570fc628accd1669c0739ee244c464d}
+
+\begin{DoxyCompactList}\small\item\em The Like Photo button. \end{DoxyCompactList}\item 
+\hypertarget{interface_e_s_photo_header_view_a85e1588de6b3b7fcd226deea96057b05}{}U\+I\+Button $\ast$ \hyperlink{interface_e_s_photo_header_view_a85e1588de6b3b7fcd226deea96057b05}{comment\+Button}\label{interface_e_s_photo_header_view_a85e1588de6b3b7fcd226deea96057b05}
+
+\begin{DoxyCompactList}\small\item\em The Comment On Photo button. \end{DoxyCompactList}\item 
+\hypertarget{interface_e_s_photo_header_view_a4a3c22bff31db471d8534b605acf64ac}{}U\+I\+Image\+View $\ast$ {\bfseries clock\+View}\label{interface_e_s_photo_header_view_a4a3c22bff31db471d8534b605acf64ac}
+
+\item 
+U\+I\+Image\+View $\ast$ \hyperlink{interface_e_s_photo_header_view_aaf1493f6259e310bc78058308b68e068}{location\+View}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Delegate}\par
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_e_s_photo_header_view_a262de6b1046f4970acec2e80f8bb9cb6}{}id$<$ \hyperlink{protocol_e_s_photo_header_view_delegate-p}{E\+S\+Photo\+Header\+View\+Delegate} $>$ {\bfseries delegate}\label{interface_e_s_photo_header_view_a262de6b1046f4970acec2e80f8bb9cb6}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Creating Photo Header View}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_e_s_photo_header_view_a1655aa2c957c0f44ecc2dbee30482d87}{}P\+F\+Object $\ast$ \hyperlink{interface_e_s_photo_header_view_a1655aa2c957c0f44ecc2dbee30482d87}{photo}\label{interface_e_s_photo_header_view_a1655aa2c957c0f44ecc2dbee30482d87}
+
+\begin{DoxyCompactList}\small\item\em The photo associated with this view. \end{DoxyCompactList}\item 
+\hypertarget{interface_e_s_photo_header_view_a73e85aebbb76064361700eae8f02b068}{}E\+S\+Photo\+Header\+Buttons \hyperlink{interface_e_s_photo_header_view_a73e85aebbb76064361700eae8f02b068}{buttons}\label{interface_e_s_photo_header_view_a73e85aebbb76064361700eae8f02b068}
+
+\begin{DoxyCompactList}\small\item\em The bitmask which specifies the enabled interaction elements in the view. \end{DoxyCompactList}\item 
+(id) -\/ \hyperlink{interface_e_s_photo_header_view_a85b3f1537d00179efef25d8cbc5304e9}{init\+With\+Frame\+:buttons\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_e_s_photo_header_view_a85b3f1537d00179efef25d8cbc5304e9}{}\index{E\+S\+Photo\+Header\+View@{E\+S\+Photo\+Header\+View}!init\+With\+Frame\+:buttons\+:@{init\+With\+Frame\+:buttons\+:}}
+\index{init\+With\+Frame\+:buttons\+:@{init\+With\+Frame\+:buttons\+:}!E\+S\+Photo\+Header\+View@{E\+S\+Photo\+Header\+View}}
+\subsubsection[{init\+With\+Frame\+:buttons\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\+With\+Frame\+: 
+\begin{DoxyParamCaption}
+\item[{(C\+G\+Rect)}]{frame}
+\item[{buttons:(E\+S\+Photo\+Header\+Buttons)}]{other\+Buttons}
+\end{DoxyParamCaption}
+}\label{interface_e_s_photo_header_view_a85b3f1537d00179efef25d8cbc5304e9}
+Initializes the view with the specified interaction elements. 
+\begin{DoxyParams}{Parameters}
+{\em buttons} & A bitmask specifying the interaction elements which are enabled in the view \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_e_s_photo_header_view_aaf1493f6259e310bc78058308b68e068}{}\index{E\+S\+Photo\+Header\+View@{E\+S\+Photo\+Header\+View}!location\+View@{location\+View}}
+\index{location\+View@{location\+View}!E\+S\+Photo\+Header\+View@{E\+S\+Photo\+Header\+View}}
+\subsubsection[{location\+View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Image\+View$\ast$) location\+View\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_e_s_photo_header_view_aaf1493f6259e310bc78058308b68e068}
+Container view of the location where the photo has been taken 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Views/\+Timeline\+Views/E\+S\+Photo\+Header\+View.\+h\item 
+Views/\+Timeline\+Views/E\+S\+Photo\+Header\+View.\+m\end{DoxyCompactItemize}

@@ -1,0 +1,127 @@
+\hypertarget{interface_e_s_photo_details_header_view}{}\section{E\+S\+Photo\+Details\+Header\+View Class Reference}
+\label{interface_e_s_photo_details_header_view}\index{E\+S\+Photo\+Details\+Header\+View@{E\+S\+Photo\+Details\+Header\+View}}
+Inheritance diagram for E\+S\+Photo\+Details\+Header\+View\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_e_s_photo_details_header_view}
+\end{center}
+\end{figure}
+\subsection*{Properties}
+\begin{Indent}{\bf Managing View Properties}\par
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_e_s_photo_details_header_view_ac2c16b6117aa73ec796ee6592b5c8f03}{}P\+F\+Object $\ast$ \hyperlink{interface_e_s_photo_details_header_view_ac2c16b6117aa73ec796ee6592b5c8f03}{photo}\label{interface_e_s_photo_details_header_view_ac2c16b6117aa73ec796ee6592b5c8f03}
+
+\begin{DoxyCompactList}\small\item\em The photo displayed in the view. \end{DoxyCompactList}\item 
+\hypertarget{interface_e_s_photo_details_header_view_a44e8b296334ece30dc2999ad711cf634}{}P\+F\+User $\ast$ \hyperlink{interface_e_s_photo_details_header_view_a44e8b296334ece30dc2999ad711cf634}{photographer}\label{interface_e_s_photo_details_header_view_a44e8b296334ece30dc2999ad711cf634}
+
+\begin{DoxyCompactList}\small\item\em The user that took the photo. \end{DoxyCompactList}\item 
+\hypertarget{interface_e_s_photo_details_header_view_a1bb59690f307441b4e6bab79d3cf9eb2}{}N\+S\+Array $\ast$ \hyperlink{interface_e_s_photo_details_header_view_a1bb59690f307441b4e6bab79d3cf9eb2}{like\+Users}\label{interface_e_s_photo_details_header_view_a1bb59690f307441b4e6bab79d3cf9eb2}
+
+\begin{DoxyCompactList}\small\item\em Array of the users that liked the photo. \end{DoxyCompactList}\item 
+\hypertarget{interface_e_s_photo_details_header_view_a2ca2466963c5211d166fd04f02af8376}{}U\+I\+Button $\ast$ \hyperlink{interface_e_s_photo_details_header_view_a2ca2466963c5211d166fd04f02af8376}{like\+Button}\label{interface_e_s_photo_details_header_view_a2ca2466963c5211d166fd04f02af8376}
+
+\begin{DoxyCompactList}\small\item\em Heart-\/shaped like button. \end{DoxyCompactList}\item 
+U\+I\+Image\+View $\ast$ \hyperlink{interface_e_s_photo_details_header_view_abe93992a8f7c71454b8fce256b5b891e}{clock\+View}
+\item 
+U\+I\+Image\+View $\ast$ \hyperlink{interface_e_s_photo_details_header_view_af478dcf2fa013a647a29a506c48d01e1}{location\+View}
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Delegate}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_e_s_photo_details_header_view_ad110cb87747aaf9ed8591ce512c1703b}{}id$<$ \hyperlink{protocol_e_s_photo_details_header_view_delegate-p}{E\+S\+Photo\+Details\+Header\+View\+Delegate} $>$ {\bfseries delegate}\label{interface_e_s_photo_details_header_view_ad110cb87747aaf9ed8591ce512c1703b}
+
+\item 
+\hypertarget{interface_e_s_photo_details_header_view_a17ac7acf844fc05a350029423a662f5a}{}P\+F\+Image\+View $\ast$ {\bfseries photo\+Image\+View}\label{interface_e_s_photo_details_header_view_a17ac7acf844fc05a350029423a662f5a}
+
+\item 
+\hypertarget{interface_e_s_photo_details_header_view_ac7110c928e81d07d01962bbfdf6c39f0}{}U\+I\+Button $\ast$ {\bfseries photo\+Image\+View\+Button}\label{interface_e_s_photo_details_header_view_ac7110c928e81d07d01962bbfdf6c39f0}
+
+\item 
+\hypertarget{interface_e_s_photo_details_header_view_aba67acce30b8b3d85c328f002d2c98ac}{}\hyperlink{interface_k_i_label}{K\+I\+Label} $\ast$ {\bfseries textlabel}\label{interface_e_s_photo_details_header_view_aba67acce30b8b3d85c328f002d2c98ac}
+
+\item 
+\hypertarget{interface_e_s_photo_details_header_view_a2e67fc3adef611f26fd1ef373ac7f0f1}{}(C\+G\+Rect) + {\bfseries rect\+For\+View}\label{interface_e_s_photo_details_header_view_a2e67fc3adef611f26fd1ef373ac7f0f1}
+
+\item 
+\hypertarget{interface_e_s_photo_details_header_view_a95c6490179de6dd443d465b55f59b1ff}{}(C\+G\+Rect) + {\bfseries rect\+For\+View\+Text\+Post}\label{interface_e_s_photo_details_header_view_a95c6490179de6dd443d465b55f59b1ff}
+
+\item 
+(id) -\/ \hyperlink{interface_e_s_photo_details_header_view_a5937118479372c8e73bb9d99baeb66d3}{init\+With\+Frame\+:photo\+:}
+\item 
+(id) -\/ \hyperlink{interface_e_s_photo_details_header_view_ad10e76324f01bf11128cd4e6677e7a9b}{init\+With\+Frame\+:photo\+:photographer\+:like\+Users\+:}
+\item 
+\hypertarget{interface_e_s_photo_details_header_view_a9389f6c65d925ce62ca97fd67ea069b6}{}(void) -\/ {\bfseries did\+Tap\+Photo\+:}\label{interface_e_s_photo_details_header_view_a9389f6c65d925ce62ca97fd67ea069b6}
+
+\item 
+\hypertarget{interface_e_s_photo_details_header_view_afdf1fbc65e560b2abf4427605c3bde31}{}(void) -\/ {\bfseries set\+Like\+Button\+State\+:}\label{interface_e_s_photo_details_header_view_afdf1fbc65e560b2abf4427605c3bde31}
+
+\item 
+\hypertarget{interface_e_s_photo_details_header_view_ae2ad5b0cdc2e341eb4a4cd9c93b3f043}{}(void) -\/ {\bfseries reload\+Like\+Bar}\label{interface_e_s_photo_details_header_view_ae2ad5b0cdc2e341eb4a4cd9c93b3f043}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_e_s_photo_details_header_view_a5937118479372c8e73bb9d99baeb66d3}{}\index{E\+S\+Photo\+Details\+Header\+View@{E\+S\+Photo\+Details\+Header\+View}!init\+With\+Frame\+:photo\+:@{init\+With\+Frame\+:photo\+:}}
+\index{init\+With\+Frame\+:photo\+:@{init\+With\+Frame\+:photo\+:}!E\+S\+Photo\+Details\+Header\+View@{E\+S\+Photo\+Details\+Header\+View}}
+\subsubsection[{init\+With\+Frame\+:photo\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\+With\+Frame\+: 
+\begin{DoxyParamCaption}
+\item[{(C\+G\+Rect)}]{frame}
+\item[{photo:(P\+F\+Object$\ast$)}]{a\+Photo}
+\end{DoxyParamCaption}
+}\label{interface_e_s_photo_details_header_view_a5937118479372c8e73bb9d99baeb66d3}
+Init method of the header
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame} & size of the header \\
+\hline
+{\em a\+Photo} & the photo we display in the viewcontroller\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+self 
+\end{DoxyReturn}
+\hypertarget{interface_e_s_photo_details_header_view_ad10e76324f01bf11128cd4e6677e7a9b}{}\index{E\+S\+Photo\+Details\+Header\+View@{E\+S\+Photo\+Details\+Header\+View}!init\+With\+Frame\+:photo\+:photographer\+:like\+Users\+:@{init\+With\+Frame\+:photo\+:photographer\+:like\+Users\+:}}
+\index{init\+With\+Frame\+:photo\+:photographer\+:like\+Users\+:@{init\+With\+Frame\+:photo\+:photographer\+:like\+Users\+:}!E\+S\+Photo\+Details\+Header\+View@{E\+S\+Photo\+Details\+Header\+View}}
+\subsubsection[{init\+With\+Frame\+:photo\+:photographer\+:like\+Users\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\+With\+Frame\+: 
+\begin{DoxyParamCaption}
+\item[{(C\+G\+Rect)}]{frame}
+\item[{photo:(P\+F\+Object$\ast$)}]{a\+Photo}
+\item[{photographer:(P\+F\+User$\ast$)}]{a\+Photographer}
+\item[{likeUsers:(N\+S\+Array$\ast$)}]{the\+Like\+Users}
+\end{DoxyParamCaption}
+}\label{interface_e_s_photo_details_header_view_ad10e76324f01bf11128cd4e6677e7a9b}
+Init method of the header if we have a photographer and a like\+Users array
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame} & Size of the header \\
+\hline
+{\em a\+Photo} & The actual photo we display \\
+\hline
+{\em a\+Photographer} & The user that took the photo \\
+\hline
+{\em the\+Like\+Users} & Array of users that liked the video\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+self 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_e_s_photo_details_header_view_abe93992a8f7c71454b8fce256b5b891e}{}\index{E\+S\+Photo\+Details\+Header\+View@{E\+S\+Photo\+Details\+Header\+View}!clock\+View@{clock\+View}}
+\index{clock\+View@{clock\+View}!E\+S\+Photo\+Details\+Header\+View@{E\+S\+Photo\+Details\+Header\+View}}
+\subsubsection[{clock\+View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Image\+View$\ast$) clock\+View\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_photo_details_header_view_abe93992a8f7c71454b8fce256b5b891e}
+Imageview with a clock image \hypertarget{interface_e_s_photo_details_header_view_af478dcf2fa013a647a29a506c48d01e1}{}\index{E\+S\+Photo\+Details\+Header\+View@{E\+S\+Photo\+Details\+Header\+View}!location\+View@{location\+View}}
+\index{location\+View@{location\+View}!E\+S\+Photo\+Details\+Header\+View@{E\+S\+Photo\+Details\+Header\+View}}
+\subsubsection[{location\+View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Image\+View$\ast$) location\+View\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_photo_details_header_view_af478dcf2fa013a647a29a506c48d01e1}
+Imageview containing the location 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Views/\+Photo\+Details\+Views/E\+S\+Photo\+Details\+Header\+View.\+h\item 
+Views/\+Photo\+Details\+Views/E\+S\+Photo\+Details\+Header\+View.\+m\end{DoxyCompactItemize}

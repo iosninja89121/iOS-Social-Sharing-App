@@ -1,0 +1,140 @@
+\hypertarget{interface_e_s_login_view_controller}{}\section{E\+S\+Login\+View\+Controller Class Reference}
+\label{interface_e_s_login_view_controller}\index{E\+S\+Login\+View\+Controller@{E\+S\+Login\+View\+Controller}}
+Inheritance diagram for E\+S\+Login\+View\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_e_s_login_view_controller}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_e_s_login_view_controller_a6022bab534ccd69eee337ee6bb326c05}{action\+Login}
+\item 
+(void) -\/ \hyperlink{interface_e_s_login_view_controller_a65da63b4653ce202f4a89cfef4291781}{action\+Facebook\+Login}
+\item 
+(void) -\/ \hyperlink{interface_e_s_login_view_controller_a8899150c612177688bede195cb1da45f}{request\+Facebook\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_login_view_controller_aaae39a10fc9b375e0bbc99c032002f78}{process\+Facebook\+:\+User\+Data\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_login_view_controller_a042a0f0194894b05946b466f6f9e358c}{user\+Logged\+In\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_login_view_controller_a244e68f96410a50424ff04d869e506cd}{check\+User\+Existance\+:with\+Zusatz\+:with\+Copy\+:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+I\+B\+Outlet U\+I\+Table\+View\+Cell $\ast$ \hyperlink{interface_e_s_login_view_controller_a691b4e1f4b0734b46af9294fa1ee66b7}{cell\+Email}
+\item 
+I\+B\+Outlet U\+I\+Table\+View\+Cell $\ast$ \hyperlink{interface_e_s_login_view_controller_a17fc8e4a369db0b8b6f10dbe149dd5be}{cell\+Password}
+\item 
+I\+B\+Outlet U\+I\+Table\+View\+Cell $\ast$ \hyperlink{interface_e_s_login_view_controller_a446ed3f533c39cdb63241e06a765f3e8}{cell\+Button}
+\item 
+I\+B\+Outlet U\+I\+Table\+View\+Cell $\ast$ \hyperlink{interface_e_s_login_view_controller_a9c4f81d25aa56e73c79f136f98507866}{cell\+Facebook}
+\item 
+I\+B\+Outlet U\+I\+Text\+Field $\ast$ \hyperlink{interface_e_s_login_view_controller_aa873ba82f5187014eaee65b33ecd3093}{field\+Email}
+\item 
+I\+B\+Outlet U\+I\+Text\+Field $\ast$ \hyperlink{interface_e_s_login_view_controller_adb60a47399173970c9523e1acaecb78c}{field\+Password}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_e_s_login_view_controller_a65da63b4653ce202f4a89cfef4291781}{}\index{E\+S\+Login\+View\+Controller@{E\+S\+Login\+View\+Controller}!action\+Facebook\+Login@{action\+Facebook\+Login}}
+\index{action\+Facebook\+Login@{action\+Facebook\+Login}!E\+S\+Login\+View\+Controller@{E\+S\+Login\+View\+Controller}}
+\subsubsection[{action\+Facebook\+Login}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) action\+Facebook\+Login 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_e_s_login_view_controller_a65da63b4653ce202f4a89cfef4291781}
+User requested to login via Facebook. \hypertarget{interface_e_s_login_view_controller_a6022bab534ccd69eee337ee6bb326c05}{}\index{E\+S\+Login\+View\+Controller@{E\+S\+Login\+View\+Controller}!action\+Login@{action\+Login}}
+\index{action\+Login@{action\+Login}!E\+S\+Login\+View\+Controller@{E\+S\+Login\+View\+Controller}}
+\subsubsection[{action\+Login}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) action\+Login 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_e_s_login_view_controller_a6022bab534ccd69eee337ee6bb326c05}
+Fetch the username and password from the textfields and log the user in. \hypertarget{interface_e_s_login_view_controller_a244e68f96410a50424ff04d869e506cd}{}\index{E\+S\+Login\+View\+Controller@{E\+S\+Login\+View\+Controller}!check\+User\+Existance\+:with\+Zusatz\+:with\+Copy\+:@{check\+User\+Existance\+:with\+Zusatz\+:with\+Copy\+:}}
+\index{check\+User\+Existance\+:with\+Zusatz\+:with\+Copy\+:@{check\+User\+Existance\+:with\+Zusatz\+:with\+Copy\+:}!E\+S\+Login\+View\+Controller@{E\+S\+Login\+View\+Controller}}
+\subsubsection[{check\+User\+Existance\+:with\+Zusatz\+:with\+Copy\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) check\+User\+Existance\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{username\+Fix}
+\item[{withZusatz:(int)}]{i}
+\item[{withCopy:(N\+S\+String $\ast$)}]{username\+Fix\+Copy}
+\end{DoxyParamCaption}
+}\label{interface_e_s_login_view_controller_a244e68f96410a50424ff04d869e506cd}
+Check if the unique mention name of the user already exists. If not, give him that mention name, if yes, try a new one.
+
+
+\begin{DoxyParams}{Parameters}
+{\em username\+Fix} & the current unique mention name we want to be sure of that it is indeed unique \\
+\hline
+{\em i} & a parameter added to the name in case it is not unique \\
+\hline
+{\em username\+Fix\+Copy} & the original mention name before adding the parameters to make it unique \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_e_s_login_view_controller_aaae39a10fc9b375e0bbc99c032002f78}{}\index{E\+S\+Login\+View\+Controller@{E\+S\+Login\+View\+Controller}!process\+Facebook\+:\+User\+Data\+:@{process\+Facebook\+:\+User\+Data\+:}}
+\index{process\+Facebook\+:\+User\+Data\+:@{process\+Facebook\+:\+User\+Data\+:}!E\+S\+Login\+View\+Controller@{E\+S\+Login\+View\+Controller}}
+\subsubsection[{process\+Facebook\+:\+User\+Data\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) process\+Facebook\+: 
+\begin{DoxyParamCaption}
+\item[{(P\+F\+User $\ast$)}]{user}
+\item[{UserData:(N\+S\+Dictionary $\ast$)}]{user\+Data}
+\end{DoxyParamCaption}
+}\label{interface_e_s_login_view_controller_aaae39a10fc9b375e0bbc99c032002f78}
+Process the facebook data of the user.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & P\+F\+User of the user \\
+\hline
+{\em user\+Data} & the user\textquotesingle{}s facebook data like friends and profile picture \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_e_s_login_view_controller_a8899150c612177688bede195cb1da45f}{}\index{E\+S\+Login\+View\+Controller@{E\+S\+Login\+View\+Controller}!request\+Facebook\+:@{request\+Facebook\+:}}
+\index{request\+Facebook\+:@{request\+Facebook\+:}!E\+S\+Login\+View\+Controller@{E\+S\+Login\+View\+Controller}}
+\subsubsection[{request\+Facebook\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) request\+Facebook\+: 
+\begin{DoxyParamCaption}
+\item[{(P\+F\+User $\ast$)}]{user}
+\end{DoxyParamCaption}
+}\label{interface_e_s_login_view_controller_a8899150c612177688bede195cb1da45f}
+Fetch the facebook data of the user.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & P\+F\+User of the user \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_e_s_login_view_controller_a042a0f0194894b05946b466f6f9e358c}{}\index{E\+S\+Login\+View\+Controller@{E\+S\+Login\+View\+Controller}!user\+Logged\+In\+:@{user\+Logged\+In\+:}}
+\index{user\+Logged\+In\+:@{user\+Logged\+In\+:}!E\+S\+Login\+View\+Controller@{E\+S\+Login\+View\+Controller}}
+\subsubsection[{user\+Logged\+In\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) user\+Logged\+In\+: 
+\begin{DoxyParamCaption}
+\item[{(P\+F\+User $\ast$)}]{user}
+\end{DoxyParamCaption}
+}\label{interface_e_s_login_view_controller_a042a0f0194894b05946b466f6f9e358c}
+User has successfully logged in. 
+
+\subsection{Property Documentation}
+\hypertarget{interface_e_s_login_view_controller_a446ed3f533c39cdb63241e06a765f3e8}{}\index{E\+S\+Login\+View\+Controller@{E\+S\+Login\+View\+Controller}!cell\+Button@{cell\+Button}}
+\index{cell\+Button@{cell\+Button}!E\+S\+Login\+View\+Controller@{E\+S\+Login\+View\+Controller}}
+\subsubsection[{cell\+Button}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Outlet U\+I\+Table\+View\+Cell$\ast$) cell\+Button\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_login_view_controller_a446ed3f533c39cdb63241e06a765f3e8}
+The actual login button. \hypertarget{interface_e_s_login_view_controller_a691b4e1f4b0734b46af9294fa1ee66b7}{}\index{E\+S\+Login\+View\+Controller@{E\+S\+Login\+View\+Controller}!cell\+Email@{cell\+Email}}
+\index{cell\+Email@{cell\+Email}!E\+S\+Login\+View\+Controller@{E\+S\+Login\+View\+Controller}}
+\subsubsection[{cell\+Email}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Outlet U\+I\+Table\+View\+Cell$\ast$) cell\+Email\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_login_view_controller_a691b4e1f4b0734b46af9294fa1ee66b7}
+Cell containing a textfield for the first name. \hypertarget{interface_e_s_login_view_controller_a9c4f81d25aa56e73c79f136f98507866}{}\index{E\+S\+Login\+View\+Controller@{E\+S\+Login\+View\+Controller}!cell\+Facebook@{cell\+Facebook}}
+\index{cell\+Facebook@{cell\+Facebook}!E\+S\+Login\+View\+Controller@{E\+S\+Login\+View\+Controller}}
+\subsubsection[{cell\+Facebook}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Outlet U\+I\+Table\+View\+Cell$\ast$) cell\+Facebook\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_login_view_controller_a9c4f81d25aa56e73c79f136f98507866}
+The facebook login button. \hypertarget{interface_e_s_login_view_controller_a17fc8e4a369db0b8b6f10dbe149dd5be}{}\index{E\+S\+Login\+View\+Controller@{E\+S\+Login\+View\+Controller}!cell\+Password@{cell\+Password}}
+\index{cell\+Password@{cell\+Password}!E\+S\+Login\+View\+Controller@{E\+S\+Login\+View\+Controller}}
+\subsubsection[{cell\+Password}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Outlet U\+I\+Table\+View\+Cell$\ast$) cell\+Password\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_login_view_controller_a17fc8e4a369db0b8b6f10dbe149dd5be}
+Cell containing a textfield for the password. \hypertarget{interface_e_s_login_view_controller_aa873ba82f5187014eaee65b33ecd3093}{}\index{E\+S\+Login\+View\+Controller@{E\+S\+Login\+View\+Controller}!field\+Email@{field\+Email}}
+\index{field\+Email@{field\+Email}!E\+S\+Login\+View\+Controller@{E\+S\+Login\+View\+Controller}}
+\subsubsection[{field\+Email}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Outlet U\+I\+Text\+Field$\ast$) field\+Email\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_login_view_controller_aa873ba82f5187014eaee65b33ecd3093}
+Textfield holding the first name. \hypertarget{interface_e_s_login_view_controller_adb60a47399173970c9523e1acaecb78c}{}\index{E\+S\+Login\+View\+Controller@{E\+S\+Login\+View\+Controller}!field\+Password@{field\+Password}}
+\index{field\+Password@{field\+Password}!E\+S\+Login\+View\+Controller@{E\+S\+Login\+View\+Controller}}
+\subsubsection[{field\+Password}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Outlet U\+I\+Text\+Field$\ast$) field\+Password\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_login_view_controller_adb60a47399173970c9523e1acaecb78c}
+Textfield where the user should enter his password. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Controllers/\+Login/E\+S\+Login\+View\+Controller.\+h\item 
+Controllers/\+Login/E\+S\+Login\+View\+Controller.\+m\end{DoxyCompactItemize}

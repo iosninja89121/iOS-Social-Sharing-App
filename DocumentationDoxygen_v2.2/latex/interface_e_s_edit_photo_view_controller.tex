@@ -1,0 +1,168 @@
+\hypertarget{interface_e_s_edit_photo_view_controller}{}\section{E\+S\+Edit\+Photo\+View\+Controller Class Reference}
+\label{interface_e_s_edit_photo_view_controller}\index{E\+S\+Edit\+Photo\+View\+Controller@{E\+S\+Edit\+Photo\+View\+Controller}}
+
+
+{\ttfamily \#import $<$E\+S\+Edit\+Photo\+View\+Controller.\+h$>$}
+
+Inheritance diagram for E\+S\+Edit\+Photo\+View\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.701754cm]{interface_e_s_edit_photo_view_controller}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_e_s_edit_photo_view_controller_aafd404376566c70889387a11d8ae763f}{init\+With\+Image\+:}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_e_s_edit_photo_view_controller_a0b244f052866fcda805b619cfbe21d50}{should\+Upload\+Image\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_edit_photo_view_controller_aa6118fdd6577b5cdd3176f673ad271c5}{keyboard\+Will\+Show\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_edit_photo_view_controller_ab5c0e10dba0d3999ddac31c8593501ae}{keyboard\+Will\+Hide\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_edit_photo_view_controller_ac69d2dce1a796b51b8ffef32bb4592a7}{done\+Button\+Action\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_edit_photo_view_controller_aba52ab4e9157852a9f4c2ccded564a16}{cancel\+Button\+Action\+:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+C\+L\+Geocoder $\ast$ \hyperlink{interface_e_s_edit_photo_view_controller_a9c0256bc0c68e185da4746f1fc966363}{geocoder}
+\item 
+C\+L\+Placemark $\ast$ \hyperlink{interface_e_s_edit_photo_view_controller_ace5372d346d0c41016fa45573d6088f9}{place\+Mark}
+\item 
+\hypertarget{interface_e_s_edit_photo_view_controller_a4785272276b39613ece6ed412d42eb49}{}C\+L\+Location\+Manager $\ast$ {\bfseries location\+Manager}\label{interface_e_s_edit_photo_view_controller_a4785272276b39613ece6ed412d42eb49}
+
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_e_s_edit_photo_view_controller_af0590524a962c7e5e2f3608accbdf1c1}{locality\+String}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+U\+I\+Scroll\+View $\ast$ \hyperlink{interface_e_s_edit_photo_view_controller_a3fa968f122fdee7d8c5f6c27a7365ec1}{scroll\+View}
+\item 
+U\+I\+Image $\ast$ \hyperlink{interface_e_s_edit_photo_view_controller_a0797810330842aa461d6985ea0ade2c5}{image}
+\item 
+U\+I\+Text\+Field $\ast$ \hyperlink{interface_e_s_edit_photo_view_controller_ac96f0e939d3d229c2493bf346f55a40b}{comment\+Text\+Field}
+\item 
+P\+F\+File $\ast$ \hyperlink{interface_e_s_edit_photo_view_controller_a98ac5e7f32b5d0b05de0d13af9afba07}{photo\+File}
+\item 
+P\+F\+File $\ast$ \hyperlink{interface_e_s_edit_photo_view_controller_a4fbd79755e22d14ea6d3e3ae87866792}{thumbnail\+File}
+\item 
+U\+I\+Background\+Task\+Identifier \hyperlink{interface_e_s_edit_photo_view_controller_ae5a6bcf0bf121023ec8d9b6dd942dfaa}{file\+Upload\+Background\+Task\+Id}
+\item 
+U\+I\+Background\+Task\+Identifier \hyperlink{interface_e_s_edit_photo_view_controller_ab9f5d2eb67909a03532d026fce42afcb}{photo\+Post\+Background\+Task\+Id}
+\item 
+U\+I\+Image\+View $\ast$ \hyperlink{interface_e_s_edit_photo_view_controller_ab2b5f951e3ee1d614418e91faba123b1}{photo\+Image\+View}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface of the Edit\+Photo\+View\+Controller. In this last controller before the uplad, the user has the possibility to add a comment to his filtered and edited photo. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_e_s_edit_photo_view_controller_aba52ab4e9157852a9f4c2ccded564a16}{}\index{E\+S\+Edit\+Photo\+View\+Controller@{E\+S\+Edit\+Photo\+View\+Controller}!cancel\+Button\+Action\+:@{cancel\+Button\+Action\+:}}
+\index{cancel\+Button\+Action\+:@{cancel\+Button\+Action\+:}!E\+S\+Edit\+Photo\+View\+Controller@{E\+S\+Edit\+Photo\+View\+Controller}}
+\subsubsection[{cancel\+Button\+Action\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) cancel\+Button\+Action\+: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}\label{interface_e_s_edit_photo_view_controller_aba52ab4e9157852a9f4c2ccded564a16}
+User doesn\textquotesingle{}t want to publish the photo and we dismiss the viewcontroller. \hypertarget{interface_e_s_edit_photo_view_controller_ac69d2dce1a796b51b8ffef32bb4592a7}{}\index{E\+S\+Edit\+Photo\+View\+Controller@{E\+S\+Edit\+Photo\+View\+Controller}!done\+Button\+Action\+:@{done\+Button\+Action\+:}}
+\index{done\+Button\+Action\+:@{done\+Button\+Action\+:}!E\+S\+Edit\+Photo\+View\+Controller@{E\+S\+Edit\+Photo\+View\+Controller}}
+\subsubsection[{done\+Button\+Action\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) done\+Button\+Action\+: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}\label{interface_e_s_edit_photo_view_controller_ac69d2dce1a796b51b8ffef32bb4592a7}
+User wants to upload the photo, thus we upload \hypertarget{interface_e_s_edit_photo_view_controller_aafd404376566c70889387a11d8ae763f}{}\index{E\+S\+Edit\+Photo\+View\+Controller@{E\+S\+Edit\+Photo\+View\+Controller}!init\+With\+Image\+:@{init\+With\+Image\+:}}
+\index{init\+With\+Image\+:@{init\+With\+Image\+:}!E\+S\+Edit\+Photo\+View\+Controller@{E\+S\+Edit\+Photo\+View\+Controller}}
+\subsubsection[{init\+With\+Image\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\+With\+Image\+: 
+\begin{DoxyParamCaption}
+\item[{(U\+I\+Image $\ast$)}]{a\+Image}
+\end{DoxyParamCaption}
+}\label{interface_e_s_edit_photo_view_controller_aafd404376566c70889387a11d8ae763f}
+Custom init method, we want to init the controller with an image.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a\+Image} & the actual image we display in the controller \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_e_s_edit_photo_view_controller_ab5c0e10dba0d3999ddac31c8593501ae}{}\index{E\+S\+Edit\+Photo\+View\+Controller@{E\+S\+Edit\+Photo\+View\+Controller}!keyboard\+Will\+Hide\+:@{keyboard\+Will\+Hide\+:}}
+\index{keyboard\+Will\+Hide\+:@{keyboard\+Will\+Hide\+:}!E\+S\+Edit\+Photo\+View\+Controller@{E\+S\+Edit\+Photo\+View\+Controller}}
+\subsubsection[{keyboard\+Will\+Hide\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) keyboard\+Will\+Hide\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Notification $\ast$)}]{note}
+\end{DoxyParamCaption}
+}\label{interface_e_s_edit_photo_view_controller_ab5c0e10dba0d3999ddac31c8593501ae}
+Keyboard will hide, displace all the subviews back into their original position. \hypertarget{interface_e_s_edit_photo_view_controller_aa6118fdd6577b5cdd3176f673ad271c5}{}\index{E\+S\+Edit\+Photo\+View\+Controller@{E\+S\+Edit\+Photo\+View\+Controller}!keyboard\+Will\+Show\+:@{keyboard\+Will\+Show\+:}}
+\index{keyboard\+Will\+Show\+:@{keyboard\+Will\+Show\+:}!E\+S\+Edit\+Photo\+View\+Controller@{E\+S\+Edit\+Photo\+View\+Controller}}
+\subsubsection[{keyboard\+Will\+Show\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) keyboard\+Will\+Show\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Notification $\ast$)}]{note}
+\end{DoxyParamCaption}
+}\label{interface_e_s_edit_photo_view_controller_aa6118fdd6577b5cdd3176f673ad271c5}
+The keyboard will show, slightly displace all the subviews upward so that they are not completely hidden by the keyboard. \hypertarget{interface_e_s_edit_photo_view_controller_a0b244f052866fcda805b619cfbe21d50}{}\index{E\+S\+Edit\+Photo\+View\+Controller@{E\+S\+Edit\+Photo\+View\+Controller}!should\+Upload\+Image\+:@{should\+Upload\+Image\+:}}
+\index{should\+Upload\+Image\+:@{should\+Upload\+Image\+:}!E\+S\+Edit\+Photo\+View\+Controller@{E\+S\+Edit\+Photo\+View\+Controller}}
+\subsubsection[{should\+Upload\+Image\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) should\+Upload\+Image\+: 
+\begin{DoxyParamCaption}
+\item[{(U\+I\+Image $\ast$)}]{an\+Image}
+\end{DoxyParamCaption}
+}\label{interface_e_s_edit_photo_view_controller_a0b244f052866fcda805b619cfbe21d50}
+We call this method right at the beginning, even if the user has not yet decided to upload the photo. This ensures, that the photo has valid data and infos and that a background task is available to upload it later on.
+
+
+\begin{DoxyParams}{Parameters}
+{\em an\+Image} & the photo that will be uploaded\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Y\+E\+S if the user presents all the necessary data, N\+O if not. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{interface_e_s_edit_photo_view_controller_a9c0256bc0c68e185da4746f1fc966363}{}\index{E\+S\+Edit\+Photo\+View\+Controller@{E\+S\+Edit\+Photo\+View\+Controller}!geocoder@{geocoder}}
+\index{geocoder@{geocoder}!E\+S\+Edit\+Photo\+View\+Controller@{E\+S\+Edit\+Photo\+View\+Controller}}
+\subsubsection[{geocoder}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\+L\+Geocoder$\ast$) geocoder\hspace{0.3cm}{\ttfamily [protected]}}\label{interface_e_s_edit_photo_view_controller_a9c0256bc0c68e185da4746f1fc966363}
+Geocoder, containing the geolocation information of the photo. \hypertarget{interface_e_s_edit_photo_view_controller_af0590524a962c7e5e2f3608accbdf1c1}{}\index{E\+S\+Edit\+Photo\+View\+Controller@{E\+S\+Edit\+Photo\+View\+Controller}!locality\+String@{locality\+String}}
+\index{locality\+String@{locality\+String}!E\+S\+Edit\+Photo\+View\+Controller@{E\+S\+Edit\+Photo\+View\+Controller}}
+\subsubsection[{locality\+String}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) locality\+String\hspace{0.3cm}{\ttfamily [protected]}}\label{interface_e_s_edit_photo_view_controller_af0590524a962c7e5e2f3608accbdf1c1}
+Location string. This string is displayed and contains the nearest city or state where the photo has been taken. \hypertarget{interface_e_s_edit_photo_view_controller_ace5372d346d0c41016fa45573d6088f9}{}\index{E\+S\+Edit\+Photo\+View\+Controller@{E\+S\+Edit\+Photo\+View\+Controller}!place\+Mark@{place\+Mark}}
+\index{place\+Mark@{place\+Mark}!E\+S\+Edit\+Photo\+View\+Controller@{E\+S\+Edit\+Photo\+View\+Controller}}
+\subsubsection[{place\+Mark}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\+L\+Placemark$\ast$) place\+Mark\hspace{0.3cm}{\ttfamily [protected]}}\label{interface_e_s_edit_photo_view_controller_ace5372d346d0c41016fa45573d6088f9}
+Placemark, based on the geolocation we have. 
+
+\subsection{Property Documentation}
+\hypertarget{interface_e_s_edit_photo_view_controller_ac96f0e939d3d229c2493bf346f55a40b}{}\index{E\+S\+Edit\+Photo\+View\+Controller@{E\+S\+Edit\+Photo\+View\+Controller}!comment\+Text\+Field@{comment\+Text\+Field}}
+\index{comment\+Text\+Field@{comment\+Text\+Field}!E\+S\+Edit\+Photo\+View\+Controller@{E\+S\+Edit\+Photo\+View\+Controller}}
+\subsubsection[{comment\+Text\+Field}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Text\+Field$\ast$) comment\+Text\+Field\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_edit_photo_view_controller_ac96f0e939d3d229c2493bf346f55a40b}
+Textfield that lets the user type in a comment. \hypertarget{interface_e_s_edit_photo_view_controller_ae5a6bcf0bf121023ec8d9b6dd942dfaa}{}\index{E\+S\+Edit\+Photo\+View\+Controller@{E\+S\+Edit\+Photo\+View\+Controller}!file\+Upload\+Background\+Task\+Id@{file\+Upload\+Background\+Task\+Id}}
+\index{file\+Upload\+Background\+Task\+Id@{file\+Upload\+Background\+Task\+Id}!E\+S\+Edit\+Photo\+View\+Controller@{E\+S\+Edit\+Photo\+View\+Controller}}
+\subsubsection[{file\+Upload\+Background\+Task\+Id}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Background\+Task\+Identifier) file\+Upload\+Background\+Task\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_e_s_edit_photo_view_controller_ae5a6bcf0bf121023ec8d9b6dd942dfaa}
+I\+D of the file upload backgroundtask. \hypertarget{interface_e_s_edit_photo_view_controller_a0797810330842aa461d6985ea0ade2c5}{}\index{E\+S\+Edit\+Photo\+View\+Controller@{E\+S\+Edit\+Photo\+View\+Controller}!image@{image}}
+\index{image@{image}!E\+S\+Edit\+Photo\+View\+Controller@{E\+S\+Edit\+Photo\+View\+Controller}}
+\subsubsection[{image}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Image$\ast$) image\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_edit_photo_view_controller_a0797810330842aa461d6985ea0ade2c5}
+The actual photo everything here is all about. \hypertarget{interface_e_s_edit_photo_view_controller_a98ac5e7f32b5d0b05de0d13af9afba07}{}\index{E\+S\+Edit\+Photo\+View\+Controller@{E\+S\+Edit\+Photo\+View\+Controller}!photo\+File@{photo\+File}}
+\index{photo\+File@{photo\+File}!E\+S\+Edit\+Photo\+View\+Controller@{E\+S\+Edit\+Photo\+View\+Controller}}
+\subsubsection[{photo\+File}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (P\+F\+File$\ast$) photo\+File\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_edit_photo_view_controller_a98ac5e7f32b5d0b05de0d13af9afba07}
+P\+F\+File of the photo, will be uploaded to Parse. \hypertarget{interface_e_s_edit_photo_view_controller_ab2b5f951e3ee1d614418e91faba123b1}{}\index{E\+S\+Edit\+Photo\+View\+Controller@{E\+S\+Edit\+Photo\+View\+Controller}!photo\+Image\+View@{photo\+Image\+View}}
+\index{photo\+Image\+View@{photo\+Image\+View}!E\+S\+Edit\+Photo\+View\+Controller@{E\+S\+Edit\+Photo\+View\+Controller}}
+\subsubsection[{photo\+Image\+View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Image\+View$\ast$) photo\+Image\+View\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_edit_photo_view_controller_ab2b5f951e3ee1d614418e91faba123b1}
+Image\+View containing the actual photo. \hypertarget{interface_e_s_edit_photo_view_controller_ab9f5d2eb67909a03532d026fce42afcb}{}\index{E\+S\+Edit\+Photo\+View\+Controller@{E\+S\+Edit\+Photo\+View\+Controller}!photo\+Post\+Background\+Task\+Id@{photo\+Post\+Background\+Task\+Id}}
+\index{photo\+Post\+Background\+Task\+Id@{photo\+Post\+Background\+Task\+Id}!E\+S\+Edit\+Photo\+View\+Controller@{E\+S\+Edit\+Photo\+View\+Controller}}
+\subsubsection[{photo\+Post\+Background\+Task\+Id}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Background\+Task\+Identifier) photo\+Post\+Background\+Task\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_e_s_edit_photo_view_controller_ab9f5d2eb67909a03532d026fce42afcb}
+I\+D of the post backgroundtask. \hypertarget{interface_e_s_edit_photo_view_controller_a3fa968f122fdee7d8c5f6c27a7365ec1}{}\index{E\+S\+Edit\+Photo\+View\+Controller@{E\+S\+Edit\+Photo\+View\+Controller}!scroll\+View@{scroll\+View}}
+\index{scroll\+View@{scroll\+View}!E\+S\+Edit\+Photo\+View\+Controller@{E\+S\+Edit\+Photo\+View\+Controller}}
+\subsubsection[{scroll\+View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Scroll\+View$\ast$) scroll\+View\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_edit_photo_view_controller_a3fa968f122fdee7d8c5f6c27a7365ec1}
+Scrollview containing all the subviews. \hypertarget{interface_e_s_edit_photo_view_controller_a4fbd79755e22d14ea6d3e3ae87866792}{}\index{E\+S\+Edit\+Photo\+View\+Controller@{E\+S\+Edit\+Photo\+View\+Controller}!thumbnail\+File@{thumbnail\+File}}
+\index{thumbnail\+File@{thumbnail\+File}!E\+S\+Edit\+Photo\+View\+Controller@{E\+S\+Edit\+Photo\+View\+Controller}}
+\subsubsection[{thumbnail\+File}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (P\+F\+File$\ast$) thumbnail\+File\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_edit_photo_view_controller_a4fbd79755e22d14ea6d3e3ae87866792}
+P\+F\+File of the photo thumbnail, will be uploaded to Parse. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Controllers/\+Take Photo/E\+S\+Edit\+Photo\+View\+Controller.\+h\item 
+Controllers/\+Take Photo/E\+S\+Edit\+Photo\+View\+Controller.\+m\end{DoxyCompactItemize}

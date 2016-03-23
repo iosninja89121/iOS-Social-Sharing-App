@@ -1,0 +1,49 @@
+\hypertarget{interface_recorder_view_controller}{}\section{Recorder\+View\+Controller Class Reference}
+\label{interface_recorder_view_controller}\index{Recorder\+View\+Controller@{Recorder\+View\+Controller}}
+Inheritance diagram for Recorder\+View\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_recorder_view_controller}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_recorder_view_controller_aa022e5bc0e73a48aa00df9099691d076}{cancel\+Button\+Action\+:}
+\item 
+(I\+B\+Action) -\/ \hyperlink{interface_recorder_view_controller_ac509c7d0f466411d771b7c113b2fb3e4}{save\+Video\+:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_k_z_camera_view}{K\+Z\+Camera\+View} $\ast$ \hyperlink{interface_recorder_view_controller_ad3bdb9e3f1cbbe380949aabdc2c28528}{cam}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_recorder_view_controller_aa022e5bc0e73a48aa00df9099691d076}{}\index{Recorder\+View\+Controller@{Recorder\+View\+Controller}!cancel\+Button\+Action\+:@{cancel\+Button\+Action\+:}}
+\index{cancel\+Button\+Action\+:@{cancel\+Button\+Action\+:}!Recorder\+View\+Controller@{Recorder\+View\+Controller}}
+\subsubsection[{cancel\+Button\+Action\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) cancel\+Button\+Action\+: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}\label{interface_recorder_view_controller_aa022e5bc0e73a48aa00df9099691d076}
+User has cancelled the video, we dismiss the controller. \hypertarget{interface_recorder_view_controller_ac509c7d0f466411d771b7c113b2fb3e4}{}\index{Recorder\+View\+Controller@{Recorder\+View\+Controller}!save\+Video\+:@{save\+Video\+:}}
+\index{save\+Video\+:@{save\+Video\+:}!Recorder\+View\+Controller@{Recorder\+View\+Controller}}
+\subsubsection[{save\+Video\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Action) save\+Video\+: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}\label{interface_recorder_view_controller_ac509c7d0f466411d771b7c113b2fb3e4}
+User has finished and wants to save the video. We save it with the save method with completion block implemented in the K\+Z\+Camera\+View.\+m file. 
+
+\subsection{Property Documentation}
+\hypertarget{interface_recorder_view_controller_ad3bdb9e3f1cbbe380949aabdc2c28528}{}\index{Recorder\+View\+Controller@{Recorder\+View\+Controller}!cam@{cam}}
+\index{cam@{cam}!Recorder\+View\+Controller@{Recorder\+View\+Controller}}
+\subsubsection[{cam}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf K\+Z\+Camera\+View}$\ast$) cam\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_recorder_view_controller_ad3bdb9e3f1cbbe380949aabdc2c28528}
+Camera\+View\+Controller, implemented by the \hyperlink{interface_k_z_camera_view}{K\+Z\+Camera\+View}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Controllers/\+Video/Recorder\+View\+Controller.\+h\item 
+Controllers/\+Video/Recorder\+View\+Controller.\+m\end{DoxyCompactItemize}
